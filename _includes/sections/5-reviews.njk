@@ -1,0 +1,25 @@
+<div class="section mb-16">
+
+  <div class="featured-menu-header flex flex-col items-center mb-8">
+    <img src="/assets/img/reviews.png" alt="order now">
+    <h2 class="text-5xl font-bold mb-4 text-center uppercase mt-4">Reviews</h2>
+  </div>
+
+  <div class="flex flex-col items-center mb-8 xl:p-0 p-4">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+      {%- for review in reviews -%}
+
+      <div class="bg-white/50 rounded-2xl p-4 flex flex-col items-start backdrop-blur">
+        <div class="font-bold mb-2">{{ review.name }}</div>
+        <p class="text-left font-thin leading-tight">{{ review.text }}</p>  
+      </div>
+
+      {%- endfor -%}
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section {
+  @apply max-w-screen-xl mx-auto;
+}
+
+.section-full {
+  @apply w-full mx-auto;
+}
+
+.deli-grad-text {
+  @apply bg-gradient-to-r from-lime-500 to-yellow-400 bg-clip-text text-transparent;
+}
+
+.deli-grad-bg {
+  @apply bg-gradient-to-r from-lime-500 to-yellow-400;
+}
+
+.prod-grad-bg {
+  @apply bg-gradient-to-r from-zinc-100 to-zinc-200;
+}
+
+.button-peel {
+  @apply rounded-full py-3 px-6 text-lg font-bold uppercase;
+}
+
+.test-grad-bg {
+  @apply bg-gradient-to-r from-slate-100/0 from-60% via-slate-100 to-slate-100;
+}
+
+@keyframes horizontal-slide {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(400px);
+  }
+}
+
+@keyframes catering-horizontal-slide {
+  from {
+    transform: translateX(-200px) translateY(300px);
+  }
+  to {
+    transform: translateX(400px) translateY(300px);
+  }
+}
+
+.scrolling-hero {
+  animation: horizontal-slide linear;
+  animation-timeline: scroll();
+  animation-range: 0% 20%;
+  @apply text-[100px] sm:text-[100px] xl:text-[160px] top-[50px] xl:top-[-50px] left-[-100px] xl:left-[-150px];
+  @apply absolute font-bold;
+  z-index: -1;
+}
+
+.scrolling-catering-ad {
+  animation: catering-horizontal-slide linear;
+  animation-timeline: scroll();
+  animation-range: 25% 100%;
+  @apply text-[50px] sm:text-[100px] xl:text-[160px] top-[50px] xl:top-[-50px] left-[-100px] xl:left-[-150px];
+  @apply absolute font-bold;
+  z-index: -1;
+}
+
+@keyframes vertical-slide {
+  from {
+    transform: translateX(-200px) translateY(300px) rotate(-90deg);
+  }
+  to {
+    transform: translateX(-200px) translateY(1300px) rotate(-90deg);
+  }
+}
+
+.scrolling-featured-menu {
+  animation: vertical-slide linear;
+  animation-timeline: scroll();
+  animation-range: 0% 100%;
+  @apply text-[200px] sm:text-[100px] md:text-[200px] xl:text-[250px] top-[50px] xl:top-[-50px] left-[-200px] sm:left-[0px] md:left-[0px] xl:left-[-150px];
+  @apply absolute font-bold;
+  z-index: -1;
+}
