@@ -4,4 +4,35 @@ description: Fresh Deli Food. Made with Love.
 layout: "base.njk"
 ---
 
-about
+<div class="section">
+  <div class="md:mx-8 lg:mx-16 xl:mx-32">
+    <h1 class="md:hidden text-center font-bold text-3xl my-8">About <span class="deli-grad-text">Pepper Farm Deli</span></h1>
+    <div class="flex flex-col md:flex-row gap-4">
+      
+      <img class="mb-8 w-full md:w-1/2" src="/assets/img/pepper-farm-deli.webp" alt="pepper farm deli splash">
+
+      <div class="flex flex-col md:w-1/2">
+        <h1 class="hidden md:block text-left font-bold text-3xl mb-4 md:pl-4">About <span class="deli-grad-text">Pepper Farm Deli</span></h1>
+        <p class="text-center font-thin text-lg md:text-left text-balance p-4">
+          Pepper Farm Deli was established in 2020 with the purpose of making some of the best food in Santee.  We wanted to be more than just a sandwich shop. Many hours were spent creating a menu that is sure to make you want to keep coming back for more. It’s proven to be the tastiest food in Santee, California.
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <h2 class="text-center font-bold text-2xl mb-8 mt-4">We only use the <span class="deli-grad-text">freshest ingredients</span></h2>
+      <ul class="list-disc list-outside font-thin text-lg text-balance ml-12 mb-4" >
+        <li>Soups are made in-house from scratch</li>
+        <li>Special sauces and dressings are made in-house from scratch</li>
+        <li>Vegetables are 100% organic</li>
+        <li>Chicken is anti-biotic free</li>
+        <li>We use Boar’s Head meat on all sandwiches</li>
+        <li>Quality fresh bread is delivered daily</li>
+      </ul>
+      <p class="text-center font-thin text-lg text-balance p-4 w-full md:w-3/4 mx-auto">
+        Want to know more or do you have a suggestion for something? Contact us and we’ll respond back as soon as possible. 
+      </p>
+    </div>
+  </div>
+</div>
+
+{% include "partials/contact-form.njk" %}

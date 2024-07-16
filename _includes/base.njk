@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="{{ site.description }}">
-  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ description or home.metaDescription }}">
+  <title>{{ title or home.metaTitle }}</title>
 
   <link rel="canonical" href="{{site.url}}{{ page.url }}" />
 
@@ -19,19 +19,25 @@
 
 <body class="bg-gradient-to-b from-zinc-50 to-zinc-300">
 
+  {# <div class="sticky top-0 z-50 h-2 bg-red-300 sm:bg-orange-300 md:bg-yellow-300 lg:bg-green-300 xl:bg-blue-300 2xl:bg-indigo-300"></div> #}
+
   {% include "sections/0-header.njk" %}
 
-  <main>
+  <main class="overflow-x-hidden">
 
     {{ content | safe }}
     
   </main>
+  {%- if '/menu/' in page.url -%}
+  <a href="#" class="back-to-top-scroll back-to-top z-50 p-4 m-4 fixed bottom-[50px] right-0 bg-red-500 text-white rounded-2xl font-bold shadow-md">Back to Top</a>
+  {%- endif -%}
+
 
   {% include "sections/7-footer.njk" %}
 
 </body>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 <script>{% include "js/main.js" %}</script>
 

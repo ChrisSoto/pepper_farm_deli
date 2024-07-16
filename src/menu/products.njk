@@ -1,0 +1,47 @@
+---
+pagination:
+  data: products
+  size: 1
+  alias: product
+permalink: /menu/{{ product.name | slugify }}/index.html
+layout: base.njk
+eleventyComputed:
+  title: "{{ product.name }} | Pepper Farm Deli"
+  description: "The {{ product.name }} is a {{ product.description }}."
+---
+
+<div class="section">
+  <div class="flex flex-col md:flex-row md:mt-8">
+    <h2 class="md:hidden text-center font-bold text-3xl my-8">{{ product.name }}</h2>
+    
+    {%- if product.images | length > 0 -%}
+
+      {%- for image in product.images -%}
+        <img 
+          class="h-[460px]  md:h-[640px] object-cover w-full md:w-1/2 md:pl-4 xl:pl-0" 
+          eleventy:widths="639"
+          src="https:{{ image.fields.file.url }}" 
+          alt="{{ product.fields.description }}"/>
+      {%- endfor -%}
+
+    {%- else -%}
+        <img 
+          class="h-[400px] object-cover w-full md:w-1/2" 
+          src="/assets/img/missing_image.webp" 
+          alt="This image is missing"/>
+    {%- endif -%}
+
+    <div class="flex flex-col my-8 md:my-0 md:w-1/2 px-4 lg:px-16 text-center">
+      <h2 class="hidden md:block text-center font-bold text-3xl md:mb-8">{{ product.name }}</h2>
+      <p class="text-xl mb-8 px-4 md:px-0">{{ product.description }}</p>
+      <div class="flex flex-row justify-center gap-8 mb-8">
+        <div class="text-5xl font-bold">$ {{ product.price }}</div>
+        {%- if product.orderLink -%}
+        <a class="solid-button" href="{{ product.orderLink }}">Order</a>
+        {%- endif -%}
+      </div>
+    </div>
+
+  </div>
+ 
+</div>

@@ -4,4 +4,63 @@ description: Fresh Deli Food. Made with Love.
 layout: "base.njk"
 ---
 
-catering
+<div class="section mb-16">
+  <div class="flex flex-col bg-amber-50 md:mx-16 lg:mx-32 xl:mx-64">
+
+    <h1 class="text-5xl font-bold my-8 text-center deli-grad-text uppercase">Catering</h1>
+
+    {%- for section in catering -%}
+      {%- for part in section.fields.cateringParts -%}
+
+        {# HEADINGS #}
+        {%- if part.sys.contentType.sys.id == 'cateringHeading' -%}
+          {%- if part.fields.displayOptions == 'Primary' -%}
+            <h2 class="text-3xl font-bold mb-8 p-4 bg-lime-900 text-lime-100 text-center uppercase px-4">{{ part.fields.title }}</h2>
+          {%- elif part.fields.displayOptions == 'Sub-heading' -%}
+            <h3 class="text-2xl font-bold mb-6 p-2 bg-amber-100 text-lime-900 text-center uppercase px-4">{{ part.fields.title }}</h3>
+          {%- elif part.fields.displayOptions == 'Aside' -%}
+            <h4 class="text-2xl font-bold mb-4 p-2 text-lime-900 text-left uppercase px-4">{{ part.fields.title }}</h4>
+          {%- endif -%}
+        {%- endif -%}
+
+        {# DESCRIPTIONS #}
+        {%- if part.sys.contentType.sys.id == 'cateringText' -%}
+          <p class="px-4 pb-4 text-center text-sm">{{ part.fields.text }}</p>
+        {%- endif -%}
+
+        {# CONTAINERS #}
+        {%- if part.sys.contentType.sys.id == 'cateringContainer' -%}
+          <div class="flex flex-col {{ 'bg-amber-100 rounded-lg p-4 mx-8' if part.fields.wrapItemsInBox }} mb-4">
+          {%- for item in part.fields.items -%}
+            {%- if item.sys.contentType.sys.id == 'cateringServingPrice' -%}
+              <div class="flex flex-row jusitfy-between px-4">
+                <div class="pr-8">{{ item.fields.serving }}</div>
+                {%- if part.fields.showItemPrice -%}
+                  <div class="font-bold text-lime-600">{{ item.fields.price }}</div>
+                {%- endif -%}
+              </div>
+            {%- elif item.sys.contentType.sys.id == 'product' -%}
+              <div class="flex flex-row jusitfy-between items-center px-4">
+
+                <div class="pr-8 flex flex-col pb-2">
+                  <div class="text-lg font-bold">{{ item.fields.name }}</div>
+                  {%- if part.fields.showItemDescriptions -%}
+                    <p class="text-sm">{{ item.fields.description }}</p>
+                  {%- endif -%}
+                </div>
+
+                {%- if part.fields.showItemPrice -%}
+                  <div class="font-bold text-lime-600">{{ item.fields.price }}</div>
+                {%- endif -%}
+
+              </div>
+            {%- endif -%}
+          {% endfor -%}
+          </div>
+        {%- endif -%}
+
+      {% endfor -%}
+    {%- endfor -%}
+
+  </div>
+</div>

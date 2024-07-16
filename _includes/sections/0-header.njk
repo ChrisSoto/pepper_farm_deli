@@ -3,9 +3,9 @@
   {# desktop menu #}
   <nav class="hidden sm:flex section flex justify-center items-center bg-white xl:rounded-full h-16 shadow-lg border border-slate-200 my-1 sm:my-16">
     <ul class="flex flex-row justify-around items-center gap-1 sm:gap-4 w-full">
-      <li><a href="/" class="nav-link hidden sm:block">Home</a></li>
-      <li><a href="" class="nav-link">Menu</a></li>
-      <li><a href="" class="nav-link">Catering</a></li>
+      <li><a href="/" class="nav-link hidden sm:block {{ 'active' if '/' == page.url }}">Home</a></li>
+      <li><a href="/menu/" class="nav-link {{ 'active' if '/menu/' in page.url }}">Menu</a></li>
+      <li><a href="/catering/" class="nav-link {{ 'active' if '/catering/' in page.url }}">Catering</a></li>
 
       <li class="relative sm:h-[153px] sm:w-[210px] h-[55px] w-[75px]">
         <a class="absolute top-0 left-0" href="/" class="nav-link">
@@ -13,18 +13,18 @@
         </a>
       </li>
 
-      <li><a href="" class="nav-link">About</a></li>
-      <li><a href="" class="nav-link hidden sm:block">Blog</a></li>
-      <li><a href="" class="nav-link deli-grad-text font-bold">Order</a></li>
+      <li><a href="/about/" class="nav-link {{ 'active' if '/about/' in page.url }}">About</a></li>
+      <li><a href="/contact/" class="nav-link {{ 'active' if '/contact/' in page.url }} hidden sm:block">Contact</a></li>
+      <li><a href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/" class="nav-link deli-grad-text font-bold">Order</a></li>
     </ul>
   </nav>
   
   {# mobile menu #}
-  <nav class="block sm:hidden section flex justify-center items-center bg-white h-16 shadow-lg border border-slate-200 my-1">
+  <nav class="sticky w-full top-0 z-50 sm:hidden section flex justify-center items-center bg-white h-16 shadow-lg border border-slate-200">
     <ul class="flex flex-row justify-around items-center gap-1 w-full">
 
-      <li><a href="" class="nav-link">Menu</a></li>
-      <li><a href="" class="nav-link">Catering</a></li>
+      <li><a href="/menu/" class="nav-link {{ 'active' if '/menu/' in page.url }}">Menu</a></li>
+      <li><a href="/catering/" class="nav-link {{ 'active' if '/catering/' in page.url }}">Catering</a></li>
 
       <li class="relative h-[55px] w-[75px]">
         <a class="absolute top-0 left-0" href="/" class="nav-link">
@@ -32,9 +32,26 @@
         </a>
       </li>
 
-      <li><a href="" class="nav-link">About</a></li>
-      <li><a href="" class="nav-link deli-grad-text font-bold">Order</a></li>
+      <li><a href="/about/" class="nav-link {{ 'active' if '/about/' in page.url }}">About</a></li>
+      <li><a href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/" class="nav-link deli-grad-text font-bold">Order</a></li>
     </ul>
   </nav>
 
 </header>
+
+<div class="spacer  mb-16 sm:mb-16 sm:hidden"></div>
+
+<div class="section w-full">
+
+  <div class="flex flex-col sm:flex-row justify-between items-center px-4 md:pb-4 mt-[-45px]">
+    <a href="https://maps.app.goo.gl/RsE3F5iA7ShZLqWX7" target="_blank" class="address flex flex-row items-center md:pb-0 pb-4 hover:underline">
+      <img class="pr-2 md:pr-4" eleventy:widths="40" src="/assets/img/map.png" alt="store hours icon"/>
+      <span>235 Town Center Parkway Suite H</span>
+    </a>
+    <a href="tel:+16192018129" class="phone flex flex-row items-center hover:underline">
+      <img class="pr-2 md:pr-4" eleventy:widths="40" src="/assets/img/phone.png" alt="store hours icon"/>
+      <span>1-619-201-8129</span>
+    </a>
+  </div>
+
+</div>

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply text-lime-950;
+}
+
 .section {
   @apply max-w-screen-xl mx-auto;
 }
@@ -9,6 +13,15 @@
 .section-full {
   @apply w-full mx-auto;
 }
+
+.nav-link.active {
+  @apply font-bold text-lime-900 underline;
+}
+
+#hero-img {
+  @apply bg-no-repeat bg-left;
+}
+
 
 .deli-grad-text {
   @apply bg-gradient-to-r from-lime-500 to-yellow-400 bg-clip-text text-transparent;
@@ -26,8 +39,24 @@
   @apply rounded-full py-3 px-6 text-lg font-bold uppercase;
 }
 
+.border-button {
+  @apply rounded-full py-3 px-6 text-lg font-bold uppercase text-zinc-500 cursor-pointer;
+}
+
+.border-button:hover {
+  @apply deli-grad-bg text-zinc-50;
+}
+
+.solid-button {
+  @apply rounded-full py-3 px-6 text-lg font-bold uppercase bg-black text-white transition-colors hover:bg-zinc-500 cursor-pointer;
+}
+
 .test-grad-bg {
   @apply bg-gradient-to-r from-slate-100/0 from-60% via-slate-100 to-slate-100;
+}
+
+#marquee {
+  @apply font-mono tracking-wide;
 }
 
 @keyframes horizontal-slide {
@@ -52,7 +81,7 @@
   animation: horizontal-slide linear;
   animation-timeline: scroll();
   animation-range: 0% 20%;
-  @apply text-[100px] sm:text-[100px] xl:text-[160px] top-[50px] xl:top-[-50px] left-[-100px] xl:left-[-150px];
+  @apply text-[100px] sm:text-[100px] xl:text-[160px] top-[150px] xl:top-[-50px] left-[-100px] xl:left-[-150px];
   @apply absolute font-bold;
   z-index: -1;
 }
@@ -63,15 +92,15 @@
   animation-range: 25% 100%;
   @apply text-[50px] sm:text-[100px] xl:text-[160px] top-[50px] xl:top-[-50px] left-[-100px] xl:left-[-150px];
   @apply absolute font-bold;
-  z-index: -1;
+  z-index: 1;
 }
 
 @keyframes vertical-slide {
   from {
-    transform: translateX(-200px) translateY(300px) rotate(-90deg);
+    transform: translateX(-200px) translateY(500px) rotate(-90deg);
   }
   to {
-    transform: translateX(-200px) translateY(1300px) rotate(-90deg);
+    transform: translateX(-200px) translateY(2000px) rotate(-90deg);
   }
 }
 
@@ -79,7 +108,27 @@
   animation: vertical-slide linear;
   animation-timeline: scroll();
   animation-range: 0% 100%;
-  @apply text-[200px] sm:text-[100px] md:text-[200px] xl:text-[250px] top-[50px] xl:top-[-50px] left-[-200px] sm:left-[0px] md:left-[0px] xl:left-[-150px];
+  @apply text-[200px] sm:text-[100px] md:text-[200px] xl:text-[250px] top-[500px] xl:top-[-50px] left-[-200px] sm:left-[0px] md:left-[0px] xl:left-[-150px];
   @apply absolute font-bold;
   z-index: -1;
+}
+
+@keyframes hidden-scroll {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.back-to-top-scroll {
+  animation: hidden-scroll linear;
+  animation-timeline: scroll();
+  animation-range: 0% 5%;
+}
+
+.hover-grow:hover {
+  transition: all .3s ease-in-out;
+  transform: scale(1.05);
 }
