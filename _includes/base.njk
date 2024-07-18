@@ -10,6 +10,14 @@
 
   <link rel="canonical" href="{{site.url}}{{ page.url }}" />
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#ffffff">
+
   {% set tailwind %} {% include "css/css.njk" %} {% endset %}
   <style>
     {{ tailwind | cssmin | safe }}
@@ -40,5 +48,17 @@
 <script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 <script>{% include "js/main.js" %}</script>
+
+{%- if '/contact/' in page.url or '/about/' in page.url -%}
+<script>{% include "js/contact.js" %}</script>
+{%- endif -%}
+
+{%- if '/catering-inquiry/' in page.url -%}
+<script>{% include "js/contact-catering.js" %}</script>
+{%- endif -%}
+
+{%- if '/' == page.url -%}
+<script>{% include "js/home-marquee.js" %}</script>
+{%- endif -%}
 
 </html>

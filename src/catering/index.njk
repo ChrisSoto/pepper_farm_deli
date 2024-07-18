@@ -1,13 +1,16 @@
 ---
-title: Pepper Farm Deli
-description: Fresh Deli Food. Made with Love.
+title: Catering Menu | Pepper Farm Deli
+description: Check out our Catering Menu.
 layout: "base.njk"
 ---
 
-<div class="section mb-16">
-  <div class="flex flex-col bg-amber-50 md:mx-16 lg:mx-32 xl:mx-64">
+<div class="section mt-16">
+
+  <div class="flex flex-col bg-amber-50 mt-8 md:mx-16 lg:mx-32 xl:mx-64">
 
     <h1 class="text-5xl font-bold my-8 text-center deli-grad-text uppercase">Catering</h1>
+
+    <p class="text-center mb-8">We would love to cater your event! Please <a class="font-bold text-lime-600" href="/catering-inquiry/">Click Here</a> to get started and we will reply shortly.</p>
 
     {%- for section in catering -%}
       {%- for part in section.fields.cateringParts -%}
@@ -63,4 +66,12 @@ layout: "base.njk"
     {%- endfor -%}
 
   </div>
+
+  <div class="flex flex-col bg-amber-50 md:mx-16 lg:mx-32 xl:mx-64 mb-16">
+    <h4 class="text-2xl font-bold mb-4 p-2 text-lime-900 text-left uppercase px-4">Over 25</h4>
+    <p class="px-4 pb-4 text-center flex flex-col sm:flex-row justify-center items-center">
+      <span class="mb-8 sm:mb-0">Please call at <a class="font-bold text-lime-600" href="tel:+1619201812">(619) 920-1812</a> or &nbsp;</span>
+      <span>fill out our <a class="font-bold text-lime-600" href="/catering-inquiry/">Catering Inquiry Form</a>.</p></span>
+  </div>
+
 </div>

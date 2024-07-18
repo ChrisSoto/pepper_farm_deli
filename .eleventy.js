@@ -37,7 +37,6 @@ export default function (eleventyConfig) {
     return client.getEntries({'include': 3, 'sys.id': process.env.CATERING_MENU})
       .then((data) => {
         const menu = data.items[0].fields.cateringSections;
-        console.log(menu)
         return menu;
       })
   });
@@ -82,6 +81,11 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "src/assets": "assets",
   })
+
+  eleventyConfig.addPassthroughCopy({ "src/favicon": "/" });
+  eleventyConfig.addPassthroughCopy("src/site.webmanifest");
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
+  eleventyConfig.addPassthroughCopy("src/browserconfig.xml");
 
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
