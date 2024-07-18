@@ -91,7 +91,6 @@ export default function (eleventyConfig) {
     return new CleanCSS({}).minify(code).styles;
   });
 
-  eleventyConfig.setWatchThrottleWaitTime(60000);
 }
 
 export const config = {
