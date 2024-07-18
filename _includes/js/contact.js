@@ -21,7 +21,6 @@ let formSent = false;
 
 window.onload = function() {
   function submitForm(event) {
-    event.preventPropagation();
     event.preventDefault();
     if (inputsValid(INPUTS)) {
       const formData = parseFormData('contact-form');
