@@ -17,6 +17,8 @@ const INPUTS = [
   }
 ];
 
+let formSent = false;
+
 window.onload = function() {
   function submitForm(event) {
     event.preventDefault();
