@@ -31,6 +31,10 @@
 
   {% include "sections/0-header.njk" %}
 
+  <a id="order-now-sticky" style="display: none;" href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h" class="sticky top-0 deli-grad-bg text-white p-4 text-center text-2xl shadow-xl font-bold uppercase z-50 hover:text-zinc-200">
+    order now
+  </a>
+
   <main class="overflow-x-hidden">
 
     {{ content | safe }}
@@ -59,6 +63,7 @@
 
 {%- if '/' == page.url -%}
 <script>{% include "js/home-marquee.js" %}</script>
+<script>{% include "js/order-now.js" %}</script>
 {%- endif -%}
 
 </html>
