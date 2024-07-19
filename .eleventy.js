@@ -85,6 +85,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/favicon": "/" });
   eleventyConfig.addPassthroughCopy("src/site.webmanifest");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
+  eleventyConfig.addPassthroughCopy("src/sitemap.xml");
   eleventyConfig.addPassthroughCopy("src/browserconfig.xml");
 
   eleventyConfig.addFilter("cssmin", function (code) {
