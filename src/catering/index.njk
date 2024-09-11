@@ -16,7 +16,7 @@ layout: "base.njk"
       {%- for part in section.fields.cateringParts -%}
 
         {# HEADINGS #}
-        {%- if part.sys.contentType.sys.id == 'cateringHeading' -%}
+        {# {%- if part.sys.contentType.sys.id == 'cateringHeading' -%}
           {%- if part.fields.displayOptions == 'Primary' -%}
             <h2 class="text-3xl font-bold mb-8 p-4 bg-lime-900 text-lime-100 text-center uppercase px-4">{{ part.fields.title }}</h2>
           {%- elif part.fields.displayOptions == 'Sub-heading' -%}
@@ -24,7 +24,11 @@ layout: "base.njk"
           {%- elif part.fields.displayOptions == 'Aside' -%}
             <h4 class="text-2xl font-bold mb-4 p-2 text-lime-900 text-left uppercase px-4">{{ part.fields.title }}</h4>
           {%- endif -%}
-        {%- endif -%}
+        {%- endif -%} #}
+
+        {# HEADINGS #}
+        {% from "macros/catering/section-heading.njk" import sectionHeading %}
+        {{ sectionHeading(part) }}
 
         {# DESCRIPTIONS #}
         {%- if part.sys.contentType.sys.id == 'cateringText' -%}
@@ -35,14 +39,22 @@ layout: "base.njk"
         {%- if part.sys.contentType.sys.id == 'cateringContainer' -%}
           <div class="flex flex-col {{ 'bg-amber-100 rounded-lg p-4 mx-8' if part.fields.wrapItemsInBox }} mb-4">
           {%- for item in part.fields.items -%}
+
+            {# HEADINGS #}
+            {% from "macros/catering/section-heading.njk" import sectionHeading %}
+            {{ sectionHeading(item) }}
+
             {%- if item.sys.contentType.sys.id == 'cateringServingPrice' -%}
+
               <div class="flex flex-row jusitfy-between px-4">
                 <div class="pr-8">{{ item.fields.serving }}</div>
                 {%- if part.fields.showItemPrice -%}
-                  <div class="font-bold text-lime-600">{{ item.fields.price }}</div>
+                  <div class="font-bold text-lime-600">{{ item.fields.price }} {%- if item.fields.isPp -%}&nbsp; PP{% endif -%}</div>
                 {%- endif -%}
               </div>
+
             {%- elif item.sys.contentType.sys.id == 'product' -%}
+
               <div class="flex flex-row jusitfy-between items-center px-4">
 
                 <div class="pr-8 flex flex-col pb-2">
@@ -57,6 +69,7 @@ layout: "base.njk"
                 {%- endif -%}
 
               </div>
+
             {%- endif -%}
           {% endfor -%}
           </div>
