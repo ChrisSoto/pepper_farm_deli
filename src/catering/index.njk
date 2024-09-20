@@ -47,9 +47,9 @@ layout: "base.njk"
             {%- if item.sys.contentType.sys.id == 'cateringServingPrice' -%}
 
               <div class="flex flex-row jusitfy-between px-4">
-                <div class="pr-8">{{ item.fields.serving }}</div>
-                {%- if part.fields.showItemPrice -%}
-                  <div class="font-bold text-lime-600">{{ item.fields.price }} {%- if item.fields.isPp -%}&nbsp; PP{% endif -%}</div>
+                <div class="pr-8">{{ item.fields.serving | safe }}</div>
+                {%- if part.fields.showItemPrice and item.fields.price -%}
+                  <div class="font-bold text-lime-600">${{ item.fields.price }} {%- if item.fields.isPp -%}&nbsp; PP{% endif -%}</div>
                 {%- endif -%}
               </div>
 
