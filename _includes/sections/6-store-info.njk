@@ -16,7 +16,7 @@
         <div class="text-left text-lime-600">
           {{ home.storeAddress.fields.address }}, {{ home.storeAddress.fields.suite }}<br>
           {{ home.storeAddress.fields.city }}, {{ home.storeAddress.fields.state }} {{ home.storeAddress.fields.zipcode }}
-        </div>
+        </div> 
       </a>
 
       <div class="flex flex-row justify-start items-center gap-8 mb-4">
@@ -27,7 +27,7 @@
           {%- for hour in home.storeAddress.fields.hours -%}
             {{ hour | safe }}<br>
           {%- endfor -%}
-        </div>
+        </div> 
       </div>
 
       <a href="tel:+16192018129" class="flex flex-row justify-start items-center gap-8 hover:underline">
