@@ -2,7 +2,7 @@ import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import EleventyFetch from "@11ty/eleventy-fetch";
 
-import CleanCSS from 'clean-css';
+import CleanCSS from "clean-css";
 
 import dotenv from "dotenv";
 dotenv.config({ path: "./.env" });
@@ -14,9 +14,15 @@ const client = contentful.createClient({
   accessToken: process.env.CONTENTFUL_ACCESS_KEY,
 });
 
-const home_end = "https://cdn.contentful.com/spaces/" + process.env.CONTENTFUL_SPACE_ID + "/environments/master/entries/" + process.env.HOME_ID + "?access_token=" + process.env.CONTENTFUL_ACCESS_KEY + "&include=3";
+const home_end =
+  "https://cdn.contentful.com/spaces/" +
+  process.env.CONTENTFUL_SPACE_ID +
+  "/environments/master/entries/" +
+  process.env.HOME_ID +
+  "?access_token=" +
+  process.env.CONTENTFUL_ACCESS_KEY +
+  "&include=3";
 export default function (eleventyConfig) {
-
   let contentfulData = null;
 
   eleventyConfig.addGlobalData("home", () => {
@@ -26,23 +32,26 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addGlobalData("menu", () => {
-    return client.getEntries({'include': 2, 'sys.id': process.env.MAIN_MENU})
+    return client
+      .getEntries({ include: 2, "sys.id": process.env.MAIN_MENU })
       .then((data) => {
         const menu = data.items[0].fields.productCategories;
         return menu;
-      })
+      });
   });
 
   eleventyConfig.addGlobalData("catering", () => {
-    return client.getEntries({'include': 3, 'sys.id': process.env.CATERING_MENU})
+    return client
+      .getEntries({ include: 3, "sys.id": process.env.CATERING_MENU })
       .then((data) => {
         const menu = data.items[0].fields.cateringSections;
         return menu;
-      })
+      });
   });
 
   eleventyConfig.addGlobalData("products", () => {
-    return client.getEntries({'include': 2, 'sys.id': process.env.MAIN_MENU})
+    return client
+      .getEntries({ include: 2, "sys.id": process.env.MAIN_MENU })
       .then((data) => {
         const menu = data.items[0].fields.productCategories;
 
@@ -50,7 +59,7 @@ export default function (eleventyConfig) {
 
         // transform data so that I can also have only products for product pagination
         menu.forEach((category) => {
-          if("products" in category.fields) {
+          if ("products" in category.fields) {
             category.fields.products.forEach((product) => {
               let productFields = product.fields;
               productFields.category = category.fields.name;
@@ -60,18 +69,19 @@ export default function (eleventyConfig) {
         });
 
         return allProducts;
-      })
+      });
   });
 
+  //
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-		extensions: "html",
-		formats: ["webp"],
-		defaultAttributes: {
-			loading: "lazy",
-			decoding: "async",
-		},
+    extensions: "html",
+    formats: ["webp"],
+    defaultAttributes: {
+      loading: "lazy",
+      decoding: "async",
+    },
   });
 
   eleventyConfig.addPassthroughCopy({
@@ -80,7 +90,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({
     "src/assets": "assets",
-  })
+  });
 
   eleventyConfig.addPassthroughCopy({ "src/favicon": "/" });
   eleventyConfig.addPassthroughCopy("src/site.webmanifest");
@@ -88,11 +98,9 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/sitemap.xml");
 
-
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
   });
-
 }
 
 export const config = {
@@ -100,6 +108,6 @@ export const config = {
     includes: "../_includes",
     data: "../_data",
     input: "src",
-    output: "dist"
-  }
+    output: "dist",
+  },
 };
