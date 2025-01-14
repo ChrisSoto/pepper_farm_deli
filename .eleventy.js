@@ -8,6 +8,7 @@ import dotenv from "dotenv";
 dotenv.config({ path: "./.env" });
 
 import contentful from "contentful";
+import { getW3CDate } from "./utility/util.js";
 
 const client = contentful.createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -96,10 +97,14 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/site.webmanifest");
   eleventyConfig.addPassthroughCopy("src/browserconfig.xml");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
-  eleventyConfig.addPassthroughCopy("src/sitemap.xml");
+  // eleventyConfig.addPassthroughCopy("src/sitemap.xml");
 
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
+  });
+
+  eleventyConfig.addFilter("w3c", (date) => {
+    return getW3CDate(date);
   });
 }
 

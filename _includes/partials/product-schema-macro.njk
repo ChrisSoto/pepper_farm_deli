@@ -1,0 +1,14 @@
+{%- macro productSchema(data) -%}
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "{{data.name}}",
+  "image": "http:{{data.images[0].fields.file.url}}",
+  "description": "{{data.description}}",
+  "offers": {
+    "@type": "Offer",
+    "price": "{{data.price}}",
+    "priceCurrency": "USD",
+  }
+}
+{%- endmacro -%}

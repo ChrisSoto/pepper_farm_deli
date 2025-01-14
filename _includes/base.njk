@@ -33,6 +33,16 @@
     gtag('config', 'G-7KFLNQZT9F');
   </script>
 
+  <meta property="og:title" content="{{ site.title }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:image" content="{{ site.logo }}" />
+
+  <script type="application/ld+json">{% include "partials/restaurant-schema.njk" %}</script>
+
+  {% if 'menu' in page.url %}
+  <script type="application/ld+json">{% include "partials/menu-schema.njk" %}</script>
+  {% endif %}
+
 </head>
 
 <body class="bg-gradient-to-b from-zinc-50 to-zinc-300">

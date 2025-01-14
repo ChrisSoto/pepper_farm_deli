@@ -1,0 +1,52 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+    <loc>{{ site.url }}/</loc>
+    <lastmod>{{ site.time }}</lastmod>
+</url>
+
+<url>
+    <loc>{{ site.url }}/menu/</loc>
+    <lastmod>{{ site.time }}</lastmod>
+</url>
+
+<url>
+    <loc>{{ site.url }}/catering/</loc>
+    <lastmod>{{ site.time }}</lastmod>
+</url>
+
+<url>
+    <loc>{{ site.url }}/catering-inquiry/</loc>
+    <lastmod>{{ site.time }}</lastmod>
+</url>
+
+<url>
+    <loc>{{ site.url }}/about/</loc>
+    <lastmod>{{ site.time }}</lastmod>
+</url>
+
+<url>
+    <loc>{{ site.url }}/contact/</loc>
+    <lastmod>{{ site.time }}</lastmod>
+</url>
+
+{% for page in seoPages %}
+<url>
+  <loc>{{ site.url }}/{{ page.fields.metaTitle | slugify }}/</loc>
+  <lastmod>{{ page.sys.updatedAt | w3c }}</lastmod>
+</url>
+{% endfor %}
+
+{% for product in products %}
+<url>
+  <loc>{{ site.url }}/menu/{{ product.name | slugify }}/</loc>
+  <lastmod>{{ product.sys.updatedAt | w3c  }}</lastmod>
+</url>
+{% endfor %}
+
+</urlset>

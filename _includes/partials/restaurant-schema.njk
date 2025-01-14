@@ -1,0 +1,60 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "image": "https://media-cdn.grubhub.com/image/upload/w_100,h_100,f_auto,fl_lossy,q_80,c_fit/jgmjt5gwspenejobgw9j",
+  "name": "Pepper Farm Deli",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "235 Town Center Pkwy H",
+    "addressLocality": "Santee",
+    "addressRegion": "CA",
+    "postalCode": "92071",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 32.8415891,
+    "longitude": -116.9857095
+  },
+  "url": "https://pepperfarmdeli.com/",
+  "telephone": "+16195627415",
+  "menu": "https://pepperfarmdeli.com/menu/",
+  "servesCuisine": [
+    "Deli",
+    "Dinner",
+    "Lunch",
+    "Sandwiches",
+    "Wraps",
+    "Smoothies",
+    "Salads",
+    "Flatbreads",
+    "Burgers"
+  ],
+  "priceRange": "$$",
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {%- for category in menu -%}
+      {
+        "@type": "MenuSection",
+        "name": "{{ category.fields.name }}",
+        "description": "{{ category.fields.description }}",
+        "image": "https:{{ category.fields.icon.fields.file.url }}"
+      }{{ ',' if not loop.last else ''}}
+      {% endfor %}
+    ]
+  },
+  "potentialAction": {
+    "@type": "OrderAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/",
+      "inLanguage": "en-US",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    }
+  }
+}
+

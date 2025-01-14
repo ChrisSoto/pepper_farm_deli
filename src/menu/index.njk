@@ -12,7 +12,7 @@ layout: "base.njk"
       <a href="#{{ category.fields.name | slugify }}" class="flex flex-col items-center w-[100px] sm:w-[150px] hover:underline">
 
         <div class="deli-grad-bg h-20 w-20 rounded-2xl mb-2">
-          <img eleventy:widths="60" class="mx-auto mt-4 h-12 w-12" src="https:{{ category.fields.icon.fields.file.url }}" alt="{{ category.description }}"/>
+          <img eleventy:widths="60" class="mx-auto mt-4 h-12 w-12" src="https:{{ category.fields.icon.fields.file.url }}" alt="{{ category.field.description }}"/>
         </div>
 
         <div class="text-center leading-tight font-bold mb-4">

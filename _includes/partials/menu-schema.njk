@@ -1,0 +1,32 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Menu",
+  "name": "Menu",
+  "mainEntityOfPage": "https://pepperfarmdeli.com/menu/",
+  "inLanguage": "English",
+  "hasMenuSection": [
+    {%- for category in menu -%}
+    {
+      "@type": "MenuSection",
+      "name": "{{category.fields.name}}",
+      "hasMenuItem": [
+      {% for product in category.fields.products %}
+        {
+          "@type": "MenuItem",
+          "name": "{{product.fields.name}}",
+          "description": "{{product.fields.description}}",
+          {% if product.fields.images[0] %}
+          "image": "https:{{ product.fields.images[0].fields.file.url }}"
+          {% endif %}
+          "offers": {
+            "@type": "Offer",
+            "price": "{{product.fields.price}}",
+            "priceCurrency": "USD"
+          }
+        }{{ ',' if not loop.last else ''}}
+      {% endfor %}
+      ]
+    }{{ ',' if not loop.last else ''}}
+    {% endfor %}
+  ]
+}

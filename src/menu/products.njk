@@ -10,7 +10,12 @@ eleventyComputed:
   description: "The {{ product.name }} is a {{ product.description }}."
 ---
 
-<div class="section">
+<script type="application/ld+json">
+  {% from "partials/product-schema-macro.njk" import productSchema %}
+  {{ productSchema(product) }}
+</script>
+
+<div class="section mb-4">
   <div class="flex flex-col md:flex-row md:mt-8">
     <h2 class="md:hidden text-center font-bold text-3xl my-8">{{ product.name }}</h2>
     
