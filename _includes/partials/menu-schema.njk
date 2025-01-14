@@ -16,7 +16,7 @@
           "name": "{{product.fields.name}}",
           "description": "{{product.fields.description}}",
           {% if product.fields.images[0] %}
-          "image": "https:{{ product.fields.images[0].fields.file.url }}"
+          "image": "https:{{ product.fields.images[0].fields.file.url }}",
           {% endif %}
           "offers": {
             "@type": "Offer",

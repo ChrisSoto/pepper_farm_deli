@@ -44,6 +44,35 @@
       {% endfor %}
     ]
   },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "08:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Sunday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+  ],
+  "delivery": {
+    "@type": "DeliveryService",
+    "provider": [
+      {
+        "@type": "Organization",
+        "name": "Uber Eats",
+        "url": "https://www.ubereats.com/store/pepper-farm-deli/w3dNm-8xRvetqmpA9nq2rg"
+      },
+      {
+        "@type": "Organization",
+        "name": "Grubhub",
+        "url": "https://www.grubhub.com/restaurant/pepper-farm-deli-235-town-center-pkwy-santee/3069315"
+      }
+    ]
+  },
   "potentialAction": {
     "@type": "OrderAction",
     "target": {

@@ -10,6 +10,8 @@ dotenv.config({ path: "./.env" });
 import contentful from "contentful";
 import { getW3CDate } from "./utility/util.js";
 
+import MarkdownIt from "markdown-it";
+
 const client = contentful.createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_KEY,
@@ -47,6 +49,15 @@ export default function (eleventyConfig) {
       .then((data) => {
         const menu = data.items[0].fields.cateringSections;
         return menu;
+      });
+  });
+
+  eleventyConfig.addGlobalData("contactFaqs", () => {
+    return client
+      .getEntries({ include: 2, "sys.id": process.env.CONTACT_FAQ })
+      .then((data) => {
+        const faqs = data.items[0].fields.items;
+        return faqs;
       });
   });
 
@@ -105,6 +116,10 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("w3c", (date) => {
     return getW3CDate(date);
+  });
+
+  eleventyConfig.addFilter("md", (string) => {
+    return MarkdownIt().render(string);
   });
 }
 
