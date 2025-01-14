@@ -44,6 +44,7 @@ Comes with drink and chips of your choice.">
   "@type": "Restaurant",
   "image": "https://media-cdn.grubhub.com/image/upload/w_100,h_100,f_auto,fl_lossy,q_80,c_fit/jgmjt5gwspenejobgw9j",
   "name": "Pepper Farm Deli",
+  "description": "Santee's Favorite Deli. Since 2020, we've been purveyors of delicious food at affordable prices. We pride ourselves on using only the freshest ingredients and crafting great sandwiches!",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "235 Town Center Pkwy H",
@@ -181,33 +182,47 @@ Comes with drink and chips of your choice.">
       "closes": "17:00"
     }
   ],
-  "delivery": {
-    "@type": "DeliveryService",
-    "provider": [
-      {
-        "@type": "Organization",
-        "name": "Uber Eats",
-        "url": "https://www.ubereats.com/store/pepper-farm-deli/w3dNm-8xRvetqmpA9nq2rg"
+  "potentialAction": [
+    {
+      "@type": "OrderAction",
+      "agent": {
+        "@type": "Service",
+        "@id": "https://pos.toasttab.com/"
+        "serviceType": "Online Order for Self Pickup",
+        "name": "Toast"
       },
-      {
-        "@type": "Organization",
-        "name": "Grubhub",
+      "target": {
+        "@type": "URL",
+        "url": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/"
+      }
+    },
+    {
+      "@type": "OrderAction",
+      "agent": {
+        "@type": "Service",
+        "@id": "https://ubereats.com/"
+        "serviceType": "Online Order for Food Delivery",
+        "name": "Uber Eats",
+      },
+      "target": {
+        "@type": "URL",
+        "url": "https://www.ubereats.com/store/pepper-farm-deli/w3dNm-8xRvetqmpA9nq2rg"
+      }
+    },
+    {
+      "@type": "OrderAction",
+      "agent": {
+        "@type": "Service",
+        "@id": "https://grubhub.com/"
+        "serviceType": "Online Order for Food Delivery",
+        "name": "Grub Hub"
+      },
+      "target": {
+        "@type": "URL",
         "url": "https://www.grubhub.com/restaurant/pepper-farm-deli-235-town-center-pkwy-santee/3069315"
       }
-    ]
-  },
-  "potentialAction": {
-    "@type": "OrderAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/",
-      "inLanguage": "en-US",
-      "actionPlatform": [
-        "http://schema.org/DesktopWebPlatform",
-        "http://schema.org/MobileWebPlatform"
-      ]
-    }
-  }
+    },
+  ]
 }
 
 </script>
