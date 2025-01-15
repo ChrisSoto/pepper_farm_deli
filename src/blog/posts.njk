@@ -1,0 +1,30 @@
+---
+pagination:
+  data: blog
+  size: 1
+  alias: post
+permalink: /blog/{{ post.fields.hero[0].fields.h1 | slugify }}/index.html
+layout: base.njk
+eleventyComputed:
+  title: "{{ post.fields.meta.fields.title | safe }}"
+  description: "{{ post.fields.meta.fields.description | safe }}"
+  featuredImage: "{{ post.fields.thumbnail.fields.file.url | cfimg }}"
+---
+
+<div id="blog-post" class="max-w-screen-md mx-auto p-4">
+  
+  <div class="mb-8 mt-4">
+    <h1>{{ post.fields.hero[0].fields.h1 }}</h1>
+    <span class="text-zinc-500 text-sm" >Posted on: {{ post.sys.createdAt | w3c }}</span>
+  </div>
+  
+  <img eleventy:images="740" class="object-center w-full pb-8" src="{{ post.fields.hero[0].fields.image[0].fields.file.url | cfimg }}" alt="{{ post.fields.title }}">
+
+  {{ post.fields.content | richText | safe }}
+
+  <div class="bg-zinc-100 rounded-md p-4 my-4">
+  {% from 'macros/faq/faq-section.njk' import faqSection %}
+  {{ faqSection(post.fields.faq) }}
+  </div>
+
+</div>

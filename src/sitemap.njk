@@ -35,9 +35,9 @@ eleventyExcludeFromCollections: true
     <lastmod>{{ site.time }}</lastmod>
 </url>
 
-{% for page in seoPages %}
+{% for page in blog %}
 <url>
-  <loc>{{ site.url }}/{{ page.fields.metaTitle | slugify }}/</loc>
+  <loc>{{ site.url }}/blog/{{ page.fields.hero[0].fields.h1 | slugify }}/</loc>
   <lastmod>{{ page.sys.updatedAt | w3c }}</lastmod>
 </url>
 {% endfor %}

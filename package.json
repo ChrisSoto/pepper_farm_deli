@@ -15,11 +15,12 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0-alpha.10",
+    "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-fetch": "^4.0.1",
     "@11ty/eleventy-img": "^4.0.2",
     "clean-css": "^5.3.3",
     "contentful": "^10.12.6",
+    "@contentful/rich-text-html-renderer": "^16.6.8",
     "dotenv": "^16.4.5",
     "firebase": "^10.12.2",
     "markdown-it": "^14.1.0",

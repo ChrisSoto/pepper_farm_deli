@@ -1,6 +1,8 @@
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import EleventyFetch from "@11ty/eleventy-fetch";
+import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
+import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 
 import CleanCSS from "clean-css";
 
@@ -17,14 +19,22 @@ const client = contentful.createClient({
   accessToken: process.env.CONTENTFUL_ACCESS_KEY,
 });
 
-const home_end =
-  "https://cdn.contentful.com/spaces/" +
-  process.env.CONTENTFUL_SPACE_ID +
-  "/environments/master/entries/" +
-  process.env.HOME_ID +
-  "?access_token=" +
-  process.env.CONTENTFUL_ACCESS_KEY +
-  "&include=3";
+function richTextOptions() {
+  return {
+    renderNode: {
+      [BLOCKS.EMBEDDED_ASSET]: (node) => {
+        const alt = node.data.target.fields.description;
+        const url = node.data.target.fields.file.url;
+        return `
+          <div class="blog-image flex flex-row justify-center items-center">
+            <img src="https:${url}?w=650" alt="${alt}">
+          </div>
+        `;
+      },
+    },
+  };
+}
+
 export default function (eleventyConfig) {
   let contentfulData = null;
 
@@ -58,6 +68,15 @@ export default function (eleventyConfig) {
       .then((data) => {
         const faqs = data.items[0].fields.items;
         return faqs;
+      });
+  });
+
+  eleventyConfig.addGlobalData("blog", () => {
+    return client
+      .getEntries({ include: 3, "sys.id": process.env.BLOG_LIST })
+      .then((data) => {
+        const posts = data.items[0].fields.items;
+        return posts;
       });
   });
 
@@ -120,6 +139,15 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("md", (string) => {
     return MarkdownIt().render(string);
+  });
+
+  eleventyConfig.addFilter("cfimg", (url) => {
+    if (url) return "https:" + url;
+    return "/assets/img/broken.webp";
+  });
+
+  eleventyConfig.addFilter("richText", (data) => {
+    return documentToHtmlString(data, richTextOptions());
   });
 }
 

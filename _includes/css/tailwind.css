@@ -22,7 +22,6 @@ body {
   @apply bg-no-repeat bg-left;
 }
 
-
 .deli-grad-text {
   @apply bg-gradient-to-r from-lime-500 to-yellow-400 bg-clip-text text-transparent;
 }
@@ -57,6 +56,46 @@ body {
 
 #marquee {
   @apply font-mono tracking-wide;
+}
+
+#blog-post h1,
+#blog-post h2,
+#blog-post h3,
+#blog-post h4,
+#blog-post h5,
+#blog-post h6 {
+  @apply font-bold my-4;
+}
+
+#blog-post h1 {
+  @apply text-4xl;
+}
+#blog-post h2 {
+  @apply text-3xl;
+}
+#blog-post h3 {
+  @apply text-2xl mb-2;
+}
+#blog-post h4 {
+  @apply text-xl mb-2;
+}
+#blog-post h5 {
+  @apply text-lg mb-2;
+}
+#blog-post h6 {
+  @apply mb-2;
+}
+
+#blog-post a {
+  @apply text-lime-600 font-bold;
+}
+
+#blog-post p {
+  @apply mb-2;
+}
+
+#blog-post ul {
+  @apply list-disc list-outside	ml-4 pl-2;
 }
 
 @keyframes horizontal-slide {
@@ -129,6 +168,6 @@ body {
 }
 
 .hover-grow:hover {
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   transform: scale(1.05);
 }

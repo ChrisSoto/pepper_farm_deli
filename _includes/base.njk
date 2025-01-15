@@ -39,7 +39,7 @@
 
   <script type="application/ld+json">{% include "partials/restaurant-schema.njk" %}</script>
 
-  {% if 'menu' in page.url %}
+  {% if page.url == '/menu/' or page.url == '/menu' %}
   <script type="application/ld+json">{% include "partials/menu-schema.njk" %}</script>
   {% endif %}
 

@@ -13,11 +13,12 @@
       {% for product in category.fields.products %}
         {
           "@type": "MenuItem",
-          "name": "{{product.fields.name}}",
-          "description": "{{product.fields.description}}",
+          "name": "{{product.fields.name | safe}}",
+          "description": "{{product.fields.description | safe}}",
           {% if product.fields.images[0] %}
           "image": "https:{{ product.fields.images[0].fields.file.url }}",
           {% endif %}
+          "url": "{{ site.url }}/menu/{{ product.fields.name | slugify }}/",
           "offers": {
             "@type": "Offer",
             "price": "{{product.fields.price}}",
