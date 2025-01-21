@@ -1,0 +1,16 @@
+{%- macro heroMacro(hero) -%}
+
+<div class="section-full sm:max-h-[500px] max-h-[400px] flex justify-start items-start rounded-lg relative">
+    <div class="flex flex-col justify-center items-end gap-4 absolute p-8 h-full w-full md:w-2/3">
+        <h1 class="deli-grad-text-shadow font-bold text-2xl text-primary md:text-4xl md:font-decorative">{{ hero.h1 }}</h1>
+        <div class="bg-white/80 p-4 rounded-md">{{ hero.content | richText | safe }}</div>
+        <div class="flex flex-row gap-2">
+        {% for link in hero.links %}
+        <a href="{{ link.fields.url }}" class="landing-page-action group relative inline-flex bg-zinc-200 h-12 items-center justify-center overflow-hidden rounded-md border border-neutral-200 bg-transparent px-6 font-medium text-neutral-600 transition-all duration-100 [box-shadow:5px_5px_rgb(82_82_82)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(82_82_82)] text-center text-sm">{{ link.fields.name }}</a>
+        {% endfor %}
+        </div>
+    </div>
+    <img eleventy:widths="1500" loading="eager" class="rounded-lg shadow-md object-cover object-right sm:h-[500px] h-[400px]" src="{{ hero.image[0].fields.file.url | cfimg }}" alt="{{ hero.image[0].fields.title }}">
+</div>
+
+{%- endmacro -%}

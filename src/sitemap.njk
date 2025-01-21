@@ -42,6 +42,13 @@ eleventyExcludeFromCollections: true
 </url>
 {% endfor %}
 
+{% for page in landings %}
+<url>
+  <loc>{{ site.url }}/{{ page.fields.meta.fields.title | slugify }}/</loc>
+  <lastmod>{{ page.sys.updatedAt | w3c }}</lastmod>
+</url>
+{% endfor %}
+
 {% for product in products %}
 <url>
   <loc>{{ site.url }}/menu/{{ product.name | slugify }}/</loc>

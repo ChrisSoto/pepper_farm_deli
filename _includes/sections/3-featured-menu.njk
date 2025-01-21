@@ -47,8 +47,8 @@
     <div class="featured-product flex flex-col items-center {{ '' if loop.last else 'mb-16' }}">
 
       {%- for image in item.fields.images -%}
-      <a style="z-index: 10" href="/menu/{{ item.fields.name | slugify }}/">
-        <img class="-mb-20 z-10 sm:w-[225px] w-[325px] h-[325px] sm:h-[225px] sm:w-[225px] rounded-full object-cover border-4 border-lime-500 hover:border-lime-600 transition-all duration-300 hover-grow hover:shadow-2xl" eleventy:widths="325" src="https:{{ image.fields.file.url }}" alt="{{ product.alt }}">
+      <a class="home-product-link" style="z-index: 10" href="/menu/{{ item.fields.name | slugify }}/">
+        <img class="home-product-link -mb-20 z-10 sm:w-[225px] w-[325px] h-[325px] sm:h-[225px] sm:w-[225px] rounded-full object-cover border-4 border-lime-500 hover:border-lime-600 transition-all duration-300 hover-grow hover:shadow-2xl" eleventy:widths="325" src="https:{{ image.fields.file.url }}" alt="{{ product.alt }}">
       </a>
       {%- endfor -%}
 

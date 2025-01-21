@@ -80,6 +80,15 @@ export default function (eleventyConfig) {
       });
   });
 
+  eleventyConfig.addGlobalData("landings", () => {
+    return client
+      .getEntries({ include: 3, "sys.id": process.env.LANDING_PAGES })
+      .then((data) => {
+        const posts = data.items[0].fields.items;
+        return posts;
+      });
+  });
+
   eleventyConfig.addGlobalData("products", () => {
     return client
       .getEntries({ include: 2, "sys.id": process.env.MAIN_MENU })
@@ -124,10 +133,10 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy({ "src/favicon": "/" });
+  eleventyConfig.addPassthroughCopy({ "app/catering/dist": "/test" });
   eleventyConfig.addPassthroughCopy("src/site.webmanifest");
   eleventyConfig.addPassthroughCopy("src/browserconfig.xml");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
-  // eleventyConfig.addPassthroughCopy("src/sitemap.xml");
 
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;

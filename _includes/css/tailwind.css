@@ -26,6 +26,11 @@ body {
   @apply bg-gradient-to-r from-lime-500 to-yellow-400 bg-clip-text text-transparent;
 }
 
+.deli-grad-text-shadow {
+  text-shadow: 1px 3px 0px rgb(6, 65, 16);
+  @apply text-lime-500;
+}
+
 .deli-grad-bg {
   @apply bg-gradient-to-r from-lime-500 to-yellow-400;
 }
