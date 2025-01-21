@@ -112,7 +112,7 @@ export default function (eleventyConfig) {
       });
   });
 
-  // rerun2
+  // rerun3
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
