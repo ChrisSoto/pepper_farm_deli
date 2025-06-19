@@ -19,6 +19,8 @@ const client = contentful.createClient({
   accessToken: process.env.CONTENTFUL_ACCESS_KEY,
 });
 
+//update 2
+
 function richTextOptions() {
   return {
     renderNode: {
