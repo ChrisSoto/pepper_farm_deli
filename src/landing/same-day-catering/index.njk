@@ -3,6 +3,7 @@ permalink: /same-day-catering/index.html
 layout: landing.njk
 title: Peper Farm Deli - Same-Day Catering Emergency
 description: Professional sandwich trays & buffets ready today. Serving Santee & Surrounding Areas.
+phone: 619-201-8129
 ---
 
 {% include 'sections/landing-header.njk' %}
@@ -27,12 +28,12 @@ description: Professional sandwich trays & buffets ready today. Serving Santee &
 
                 <!-- Primary CTA -->
                 <div class="space-y-4 w-full">
-                    <div class="deli-grad-bg text-lime-950 py-4 px-8 mx-8 md:mx-0 rounded-lg text-center font-bold">
+                    <a href="tel:{{ phone }}" onclick="trackPhoneClick()" class="block deli-grad-bg text-lime-950 py-4 px-8 mx-8 md:mx-0 rounded-lg text-center font-bold">
                         GIVE US A CALL NOW
-                    </div>
-                    <div class="bg-gray-300 text-lime-700 font-bold mx-8 md:mx-0 py-3 px-6 rounded-lg text-center">
+                    </a>
+                    <a class="block bg-gray-300 text-lime-700 font-bold mx-8 md:mx-0 py-3 px-6 rounded-lg text-center">
                         REQUEST A QUOTE
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Urgency/Scarcity -->
@@ -78,9 +79,9 @@ description: Professional sandwich trays & buffets ready today. Serving Santee &
                         <li class="font-bold">Little Italy - <span class="font-normal">ham, salami, mortadella, provolone cheese, tomatoes, red onions, banana peppers, arugula, balsamic & olive oil</span></li>
                         <li class="font-bold">Vegetarian - <span class="font-normal">pepper jack cheese, cucumbers, tomatoes, pickled onions, red bell peppers, sprouts, avocado, balsamic & olive oil</span></li>
                     </ul>
-                    <div class="deli-grad-bg text-lime-950 py-4 px-8 mx-8 md:mx-0 rounded-lg text-center font-bold mt-auto">
+                    <a href="tel:{{ phone }}" onclick="trackPhoneClick()" class="deli-grad-bg text-lime-950 py-4 px-8 mx-8 md:mx-0 rounded-lg text-center font-bold mt-auto">
                         CALL US NOW
-                    </div>
+                    </a>
                     <div class="mx-auto mt-4 italic">All served on a hoagie roll!</div>
                 </div>
 
@@ -95,9 +96,9 @@ description: Professional sandwich trays & buffets ready today. Serving Santee &
                         <li class="font-bold">Beet - <span class="font-normal">Spring mix, beets, pears, walnuts, goat cheese, pomegranate-champagne vinaigrette dressing on the side.</span></li>
                     </ul>
         
-                    <div class="deli-grad-bg text-lime-950 py-4 px-8 mx-8 md:mx-0 rounded-lg text-center font-bold mt-auto">
+                    <a href="tel:{{ phone }}" onclick="trackPhoneClick()" class="deli-grad-bg text-lime-950 py-4 px-8 mx-8 md:mx-0 rounded-lg text-center font-bold mt-auto">
                         CALL US NOW
-                    </div>
+                    </a>
 
                     <div class="mx-auto mt-4 italic">Healthy and delicious!</div>
                 </div>
@@ -117,9 +118,9 @@ description: Professional sandwich trays & buffets ready today. Serving Santee &
                     <div class="text-center mb-4 pb-4">
                         Sauteed Mix Veggies - Macaroni Salad - Potato Salad - Fruit Salad - Mac & Cheese - Skillet Potatoes
                     </div>
-                    <div class="deli-grad-bg text-lime-950 py-4 px-8 mx-8 md:mx-0 rounded-lg text-center font-bold mt-auto">
+                    <a href="tel:{{ phone }}" onclick="trackPhoneClick()" class="deli-grad-bg text-lime-950 py-4 px-8 mx-8 md:mx-0 rounded-lg text-center font-bold mt-auto">
                         CALL US NOW
-                    </div>
+                    </a>
                     <div class="mx-auto mt-4 italic">Great for large groups!</div>
                 </div>
 
@@ -204,7 +205,16 @@ description: Professional sandwich trays & buffets ready today. Serving Santee &
 
     <!-- Sticky Bottom CTA (Mobile) -->
     <div class="fixed bottom-0 left-0 right-0 bg-gray-800 p-4 z-50 md:hidden">
-        <div class="deli-grad-bg text-lime-950 py-3 px-6 rounded-lg text-center font-bold">
+        <a href="tel:{{ phone }}" onclick="trackPhoneClick()" class="block deli-grad-bg text-lime-950 py-3 px-6 rounded-lg text-center font-bold">
             CALL NOW FOR SAME-DAY CATERING
-        </div>
+        </a>
     </div>
+
+<script>
+    function trackPhoneClick() {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'landing-phone-click'
+        });
+    }
+</script>
