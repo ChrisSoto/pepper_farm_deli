@@ -25,6 +25,9 @@ window.onload = function() {
     if (inputsValid(INPUTS)) {
       const formData = parseFormData('contact-form');
       sendForm(formData);
+      window.dataLayer.push({
+        'event': 'landing-submit-lead', // This MUST match the Event name in your GTM Custom Event Trigger
+      });
     } else {
       formErrors(INPUTS);
     }
