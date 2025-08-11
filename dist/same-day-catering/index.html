@@ -428,7 +428,7 @@
                     <a href="tel:619-201-8129" onclick="trackPhoneClick()" class="block deli-grad-bg text-lime-950 py-4 px-8 mx-8 md:mx-0 rounded-lg text-center font-bold">
                         GIVE US A CALL NOW
                     </a>
-                    <a class="block bg-gray-300 text-lime-700 font-bold mx-8 md:mx-0 py-3 px-6 rounded-lg text-center">
+                    <a href="#contact-form" class="block bg-gray-300 text-lime-700 font-bold mx-8 md:mx-0 py-3 px-6 rounded-lg text-center">
                         REQUEST A QUOTE
                     </a>
                 </div>
@@ -628,6 +628,8 @@
 </div>
             </div>
 
+            <h2 class="text-center text-3xl font-bold mb-8 mt-16">Request a Quote</h2>
+
             <!-- Contact Form -->
             <div class="flex justify-center items-center lg:max-w-screen-md xl:max-w-screen-lg md:max-w-screen-sm bg-lime-500 w-full shadow-md mx-auto mb-16">
   <div class="flex flex-col justify-center w-full p-4">
@@ -729,6 +731,169 @@
         });
     }
 </script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>function inputsValid(inputsList) {
+  for (let i = 0; i < inputsList.length; i++) {
+    if (inputsList[i].required && !inputValid("#" + inputsList[i].id)) {
+      inputsList[i].valid = false;
+    } else {
+      inputsList[i].valid = true;
+    }
+  }
+
+  for (let i = 0; i < inputsList.length; i++) {
+    if (!inputsList[i].valid) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+function markValidity(id) {
+  if (inputValid("#" + id)) {
+    $("#" + id)
+      .removeClass("bg-red-200")
+      .addClass("bg-gray-100");
+  } else {
+    $("#" + id)
+      .removeClass("bg-gray-100")
+      .addClass("bg-red-200");
+  }
+}
+
+function writeToLocalStorage(id) {
+  let edValue = document.getElementById(id);
+  let value = edValue.value;
+  localStorage.setItem(id, value);
+}
+
+function clearForm(formId) {
+  $(formId).trigger("reset");
+}
+
+function inputValid(id) {
+  const prop = $(id);
+  if (prop.length == 0) {
+    return false;
+  }
+  return prop[0].validity.valid;
+}
+
+function check(id) {
+  markValidity(id);
+}
+
+function sendForm(form) {
+  console.log("Submitted form", form);
+  window.dataLayer.push({
+    'event': 'landing-submit-lead', // This MUST match the Event name in your GTM Custom Event Trigger
+  });
+  // fetch(form.url, {
+  //   method: "POST",
+  //   body: form.data,
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  // })
+  //   .then((response) => response.json())
+  //   .then((data) => {
+  //     clearForm("#" + form.id);
+      
+  //     alert("Thank you for your interest. We will be in touch shortly.");
+  //   })
+  //   .catch((err) => alert(err));
+}
+
+function formErrors(inputs) {
+  for (let i = 0; i < inputs.length; i++) {
+    markValidity(inputs[i].id);
+  }
+
+  alert("Please check your form for errors.");
+}
+
+function setupAccordion() {
+  const accordion = $(".accordion");
+  if (accordion) {
+    $(".accordion-panel").slideUp();
+    $(".accordion-panel:first").slideDown();
+    $(".accordion-title:first").toggleClass("active");
+    $(".accordion-panel:first").toggleClass("active");
+    $(".accordion-title").on("click", function () {
+      $(".accordion-panel").filter($(this).next()).toggleClass("active");
+      $(this).toggleClass("active");
+      $(this).next().slideToggle();
+    });
+  }
+}
+</script>
+<script>const INPUTS = [
+  {
+    id: 'full-name',
+    required: true,
+  },
+  {
+    id: 'e-mail',
+    required: true,
+  },
+  {
+    id: 'phone-number',
+    required: false,
+  },
+  {
+    id: 'question',
+    required: true,
+  }
+];
+
+let formSent = false;
+
+window.onload = function() {
+  function submitForm(event) {
+    event.preventDefault();
+    if (inputsValid(INPUTS)) {
+      const formData = parseFormData('contact-form');
+      sendForm(formData);
+    } else {
+      formErrors(INPUTS);
+    }
+  }
+  
+  $('#contact-submit').on('click', submitForm);
+}
+
+function parseFormData(formId) {
+  const form = $('#' + formId);
+  const formAction = document.getElementById(formId);
+  const formData = form.serializeArray();
+  let data = getContactData(formData);
+  let url = formAction.action;
+  data = JSON.stringify(data);
+
+  // testing
+  // let url = 'http://127.0.0.1:5001/imageonsd-af038/us-central1/addContact';
+  
+  return {
+    id: formId,
+    url,
+    data,
+  }
+}
+
+function getContactData(data) {
+  let name = data[0].value;
+  let email = data[1].value;
+  let phone = data[2].value;
+  let question = data[3].value;
+
+  return {
+    name,
+    email,
+    phone,
+    question,
+  };
+}</script>
 
 </body>
 </html>
