@@ -609,20 +609,20 @@ function sendForm(form) {
   window.dataLayer.push({
     'event': 'landing-submit-lead', // This MUST match the Event name in your GTM Custom Event Trigger
   });
-  // fetch(form.url, {
-  //   method: "POST",
-  //   body: form.data,
-  //   headers: {
-  //     "Content-Type": "application/json",
-  //   },
-  // })
-  //   .then((response) => response.json())
-  //   .then((data) => {
-  //     clearForm("#" + form.id);
+  fetch(form.url, {
+    method: "POST",
+    body: form.data,
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      clearForm("#" + form.id);
       
-  //     alert("Thank you for your interest. We will be in touch shortly.");
-  //   })
-  //   .catch((err) => alert(err));
+      alert("Thank you for your interest. We will be in touch shortly.");
+    })
+    .catch((err) => alert(err));
 }
 
 function formErrors(inputs) {
