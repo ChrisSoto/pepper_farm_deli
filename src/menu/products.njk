@@ -1,4 +1,4 @@
-{# ---
+---
 pagination:
   data: products
   size: 1
@@ -8,7 +8,7 @@ layout: base.njk
 eleventyComputed:
   title: "{{ product.name }} | Pepper Farm Deli"
   description: "The {{ product.name }} is a {{ product.description }}."
---- #}
+---
 
 <script type="application/ld+json">
   {% from "partials/product-schema-macro.njk" import productSchema %}

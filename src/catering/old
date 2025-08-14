@@ -1,0 +1,89 @@
+---
+title: Catering Menu | Pepper Farm Deli
+description: Check out our Catering Menu.
+layout: "base.njk"
+---
+
+<div class="section mt-16">
+
+  <div class="flex flex-col bg-amber-50 mt-8 md:mx-16 lg:mx-32 xl:mx-64">
+
+    <h1 class="text-5xl font-bold my-8 text-center deli-grad-text uppercase">Catering</h1>
+
+    <p class="text-center mb-8 px-4">We would love to cater your event! Please <a class="font-bold text-lime-600" href="/catering-inquiry/">Click Here</a> to get started and we will reply shortly.</p>
+
+    {%- for section in catering -%}
+      {%- for part in section.fields.cateringParts -%}
+
+        {# HEADINGS #}
+        {# {%- if part.sys.contentType.sys.id == 'cateringHeading' -%}
+          {%- if part.fields.displayOptions == 'Primary' -%}
+            <h2 class="text-3xl font-bold mb-8 p-4 bg-lime-900 text-lime-100 text-center uppercase px-4">{{ part.fields.title }}</h2>
+          {%- elif part.fields.displayOptions == 'Sub-heading' -%}
+            <h3 class="text-2xl font-bold mb-6 p-2 bg-amber-100 text-lime-900 text-center uppercase px-4">{{ part.fields.title }}</h3>
+          {%- elif part.fields.displayOptions == 'Aside' -%}
+            <h4 class="text-2xl font-bold mb-4 p-2 text-lime-900 text-left uppercase px-4">{{ part.fields.title }}</h4>
+          {%- endif -%}
+        {%- endif -%} #}
+
+        {# HEADINGS #}
+        {% from "macros/catering/section-heading.njk" import sectionHeading %}
+        {{ sectionHeading(part) }}
+
+        {# DESCRIPTIONS #}
+        {%- if part.sys.contentType.sys.id == 'cateringText' -%}
+          <p class="px-4 pb-4 text-center text-sm">{{ part.fields.text }}</p>
+        {%- endif -%}
+
+        {# CONTAINERS #}
+        {%- if part.sys.contentType.sys.id == 'cateringContainer' -%}
+          <div class="flex flex-col {{ 'bg-amber-100 rounded-lg p-4 mx-8' if part.fields.wrapItemsInBox }} mb-4">
+          {%- for item in part.fields.items -%}
+
+            {# HEADINGS #}
+            {% from "macros/catering/section-heading.njk" import sectionHeading %}
+            {{ sectionHeading(item) }}
+
+            {%- if item.sys.contentType.sys.id == 'cateringServingPrice' -%}
+
+              <div class="flex flex-row jusitfy-between px-4">
+                <div class="pr-8">{{ item.fields.serving | safe }}</div>
+                {%- if part.fields.showItemPrice and item.fields.price -%}
+                  <div class="font-bold text-lime-600">${{ item.fields.price }} {%- if item.fields.isPp -%}&nbsp; PP{% endif -%}</div>
+                {%- endif -%}
+              </div>
+
+            {%- elif item.sys.contentType.sys.id == 'product' -%}
+
+              <div class="flex flex-row jusitfy-between items-center px-4">
+
+                <div class="pr-8 flex flex-col pb-2">
+                  <div class="text-lg font-bold">{{ item.fields.name }}</div>
+                  {%- if part.fields.showItemDescriptions -%}
+                    <p class="text-sm">{{ item.fields.description }}</p>
+                  {%- endif -%}
+                </div>
+
+                {%- if part.fields.showItemPrice -%}
+                  <div class="font-bold text-lime-600">{{ item.fields.price }}</div>
+                {%- endif -%}
+
+              </div>
+
+            {%- endif -%}
+          {% endfor -%}
+          </div>
+        {%- endif -%}
+
+      {% endfor -%}
+    {%- endfor -%}
+
+  </div>
+
+  <div class="flex flex-col bg-amber-50 md:mx-16 lg:mx-32 xl:mx-64 mb-16">
+    <p class="px-4 pb-4 text-center flex flex-col sm:flex-row justify-center items-center">
+      <span class="mb-8 sm:mb-0">Feel free to call at <a class="font-bold text-lime-600" href="tel:+16192018129">(619) 201-8129</a> or &nbsp;</span>
+      <span>fill out our <a class="font-bold text-lime-600" href="/catering-inquiry/">Catering Inquiry Form</a>.</p></span>
+  </div>
+
+</div>
