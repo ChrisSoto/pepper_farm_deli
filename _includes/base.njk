@@ -52,7 +52,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   {% include "sections/0-header.njk" %}
 
-  <a id="order-now-sticky" style="display: none;" href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h" class="sticky top-0 deli-grad-bg text-white p-4 text-center text-2xl shadow-xl font-bold uppercase z-50 hover:text-zinc-200">
+  <a onclick="window.dataLayer.push({'event': 'order_started_event'});" id="order-now-sticky" style="display: none;" href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h" class="sticky top-0 deli-grad-bg text-white p-4 text-center text-2xl shadow-xl font-bold uppercase z-50 hover:text-zinc-200">
     order now
   </a>
 

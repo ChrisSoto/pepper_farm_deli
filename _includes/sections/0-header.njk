@@ -15,7 +15,7 @@
 
       <li><a href="/about/" class="nav-link {{ 'active' if '/about/' in page.url }}">About</a></li>
       <li><a href="/contact/" class="nav-link {{ 'active' if '/contact/' in page.url }} hidden sm:block">Contact Us</a></li>
-      <li><a id="header-order-link" href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/" class="nav-link deli-grad-text font-bold">Order</a></li>
+      <li><a onclick="window.dataLayer.push({'event': 'order_started_event'});" id="header-order-link" href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/" class="nav-link deli-grad-text font-bold">Order</a></li>
     </ul>
   </nav>
   
@@ -33,7 +33,7 @@
       </li>
 
       <li><a href="/about/" class="nav-link {{ 'active' if '/about/' in page.url }}">About</a></li>
-      <li><a id="header-order-link" href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/" class="nav-link deli-grad-text font-bold">Order</a></li>
+      <li><a onclick="window.dataLayer.push({'event': 'order_started_event'});" id="header-order-link" href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/" class="nav-link deli-grad-text font-bold">Order</a></li>
     </ul>
   </nav>
 

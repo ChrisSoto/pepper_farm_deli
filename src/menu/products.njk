@@ -42,7 +42,7 @@ eleventyComputed:
       <div class="flex flex-row justify-center gap-8 mb-8">
         <div class="text-5xl font-bold">$ {{ product.price }}</div>
         {%- if product.orderLink -%}
-        <a id="order-product-page" class="solid-button" href="{{ product.orderLink }}">Order</a>
+        <a onclick="window.dataLayer.push({'event': 'order_started_event'});" id="order-product-page" class="solid-button" href="{{ product.orderLink }}">Order</a>
         {%- endif -%}
       </div>
     </div>
