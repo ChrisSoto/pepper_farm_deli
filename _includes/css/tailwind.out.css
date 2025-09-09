@@ -677,6 +677,10 @@ video {
   margin-bottom: 0.25rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -703,6 +707,10 @@ video {
 
 .ml-12 {
   margin-left: 3rem;
+}
+
+.mt-0 {
+  margin-top: 0px;
 }
 
 .mt-16 {
@@ -885,6 +893,10 @@ video {
   max-width: 72rem;
 }
 
+.max-w-\[269px\] {
+  max-width: 269px;
+}
+
 .max-w-none {
   max-width: none;
 }
@@ -895,6 +907,10 @@ video {
 
 .max-w-screen-md {
   max-width: 768px;
+}
+
+.max-w-screen-xl {
+  max-width: 1280px;
 }
 
 .flex-1 {

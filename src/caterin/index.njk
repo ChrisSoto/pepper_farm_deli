@@ -1,0 +1,19 @@
+---
+title: Catering Inquiry | Pepper Farm Deli
+description: Fill out this form to contact us concerning catering.
+layout: "base.njk"
+---
+
+<div class="container max-w-screen-xl mx-auto mb-12">
+    <h1 class="text-5xl font-bold my-8 text-center deli-grad-text uppercase">Catering Menu</h1>
+
+    <div class="flex flex-wrap justify-center gap-4 mt-0 mb-16 mx-auto">
+        {% for category in catering.items %}
+            <a href="/catering/{{ category.fields.name | slugify}}" class="w-full max-w-[269px]">
+                <img class="w-full mb-2" src="{{ category.fields.image.fields.file.url | cfimg }}" alt="{{ category.fields.name }}"/>
+                <h4 class="text-center font-bold text-xl text-lime-800">{{ category.fields.name }}</h4>
+            </a>
+        {% endfor %}
+    </div>
+
+</div>

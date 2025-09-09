@@ -25,7 +25,7 @@ eleventyComputed:
         <img 
           class="h-[460px]  md:h-[640px] object-cover w-full md:w-1/2 md:pl-4 xl:pl-0" 
           eleventy:widths="639"
-          src="https:{{ image.fields.file.url }}" 
+          src="{{ image.fields.file.url | cfimg }}" 
           alt="{{ product.fields.description }}"/>
       {%- endfor -%}
 

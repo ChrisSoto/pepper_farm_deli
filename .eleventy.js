@@ -59,7 +59,16 @@ export default function (eleventyConfig) {
     return client
       .getEntries({ include: 3, "sys.id": process.env.CATERING_MENU })
       .then((data) => {
-        const menu = data.items[0].fields.cateringSections;
+        const menu = data.items[0].fields;
+        return menu;
+      });
+  });
+
+    eleventyConfig.addGlobalData("cateringProducts", () => {
+    return client
+      .getEntries({ include: 3, "sys.id": process.env.ALL_CATERING_PRODUCTS })
+      .then((data) => {
+        const menu = data.items[0].fields;
         return menu;
       });
   });
@@ -154,7 +163,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("cfimg", (url) => {
     if (url) return "https:" + url;
-    return "/assets/img/broken.webp";
+    return "https://images.ctfassets.net/q2xrgqvb5kbx/6UWgnjWKpa7ohhylXW9ihK/c708812f4472fd10f527627e3784ed5a/generic_bg.jpg"
   });
 
   eleventyConfig.addFilter("richText", (data) => {
