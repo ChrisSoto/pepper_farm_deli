@@ -4,24 +4,16 @@ description: Fill out this form to contact us concerning catering.
 layout: "base.njk"
 ---
 
-<div class="section mb-18">
-  <div class="flex flex-col">
+<div class="container max-w-screen-xl mx-auto mb-12">
+    <h1 class="text-5xl font-bold my-8 text-center deli-grad-text uppercase">Catering Menu</h1>
 
-    <h1 class="text-5xl font-bold my-8 text-center deli-grad-text uppercase">Catering Inquiry</h1>
+    <div class="flex flex-wrap justify-center gap-4 mt-0 mb-16 mx-auto">
+        {% for category in catering.items %}
+            <a href="/catering/{{ category.fields.name | slugify}}" class="w-full max-w-[269px]">
+                <img eleventy:widths="400" class="w-full mb-2 rounded-lg" src="{{ category.fields.icon.fields.file.url | cfimg("fit=thumb&w=400&h=300") | safe }}" alt="{{ category.fields.name }}"/>
+                <h4 class="text-center font-bold text-xl text-lime-800">{{ category.fields.name }}</h4>
+            </a>
+        {% endfor %}
+    </div>
 
-    <p class="mb-8 text-center px-4">
-      We would love to cater your event! Please fill out the following form and we will reply shortly.
-    </p>
-
-    <p class="mb-8 text-center px-4">
-      You can also reach us at <a href="mailto:pepperfarmdeli@gmail.com" class="text-lime-600 hover:underline">pepperfarmdeli@gmail.co</a>
-    </p>
-
-    <p class="mb-8 text-center px-4">
-     Or call us at <a href="tel:+16192018129" class="text-lime-600 hover:underline">619-201-8129</a>
-    </p>
-
-  </div>
 </div>
-
-{% include "partials/catering-inquiry-form.njk" %}

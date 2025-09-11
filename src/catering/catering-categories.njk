@@ -1,0 +1,24 @@
+---
+pagination:
+  data: catering.items
+  size: 1
+  alias: category
+permalink: /catering/{{ category.fields.name | slugify }}/index.html
+layout: base.njk
+eleventyComputed:
+  title: "{{ category.fields.name }} | Pepper Farm Deli"
+  description: "The {{ category.fields.name }} is a {{ category.fields.description }}."
+---
+
+<div class="container max-w-screen-xl mx-auto mt-6 mb-12">
+    <span class="block text-center mb-8 text-red-400">Back to <a href="/catering">Catering Menu</a></span>
+    <h1 class="text-5xl font-bold my-8 text-center deli-grad-text uppercase">{{ category.fields.name }}</h1>
+    <div class="flex flex-wrap justify-center gap-4 mt-0 mb-16 mx-auto">
+        {% for product in category.fields.products %}
+            <a href="/catering/{{ product.fields.name | slugify}}" class="w-full max-w-[269px]">
+                <img class="w-full mb-2 rounded-lg" src="{{ product.fields.images[0].fields.file.url | cfimg("fit=thumb&w=400&h=300") | safe }}" alt="{{ product.fields.name }}"/>
+                <h4 class="text-center font-bold text-xl text-lime-800">{{ product.fields.name }}</h4>
+            </a>
+        {% endfor %}
+    </div>
+</div>

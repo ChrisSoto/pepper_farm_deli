@@ -161,8 +161,13 @@ export default function (eleventyConfig) {
     return MarkdownIt().render(string);
   });
 
-  eleventyConfig.addFilter("cfimg", (url) => {
-    if (url) return "https:" + url;
+  eleventyConfig.addFilter("cfimg", (url, params) => {
+    if (url) {
+      if (params) {
+        return "https:" + url + "?" + params;
+      }
+      return "https:" + url;
+    }
     return "https://images.ctfassets.net/q2xrgqvb5kbx/6UWgnjWKpa7ohhylXW9ihK/c708812f4472fd10f527627e3784ed5a/generic_bg.jpg"
   });
 

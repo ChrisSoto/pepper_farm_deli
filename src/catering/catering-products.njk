@@ -1,0 +1,63 @@
+---
+pagination:
+  data: cateringProducts.items
+  size: 1
+  alias: product
+permalink: /catering/{{ product.fields.name | slugify }}/index.html
+layout: base.njk
+eleventyComputed:
+  title: "{{ product.fields.name }} | Pepper Farm Deli"
+  description: "The {{ product.fields.name }} is a {{ product.fields.description }}."
+---
+
+<script type="application/ld+json">
+  {% from "partials/product-schema-macro.njk" import productSchema %}
+  {{ productSchema(product) }}
+</script>
+
+<div class="section mb-16">
+  <div class="flex flex-col md:flex-row md:mt-8">
+    <h2 class="md:hidden text-center font-bold text-3xl my-8">{{ product.fields.name }}</h2>
+    
+    {%- if product.fields.images | length > 0 -%}
+
+      {%- for image in product.fields.images -%}
+        <img 
+          class="w-full md:w-1/2 md:pl-4 xl:pl-0" 
+          eleventy:widths="600"
+          src="{{ image.fields.file.url | cfimg("fit=thumb&w=600&h=400") | safe }}" 
+          alt="{{ product.fields.description }}"/>
+      {%- endfor -%}
+
+    {%- else -%}
+        <img 
+          class="h-[400px] object-cover w-full md:w-1/2" 
+          src="/assets/img/missing_image.webp" 
+          alt="This image is missing"/>
+    {%- endif -%}
+
+    <div class="flex flex-col my-8 md:my-0 md:w-1/2 px-4 lg:px-16 text-center">
+      <h2 class="hidden md:block text-center font-bold text-3xl md:mb-8">{{ product.fields.name }}</h2>
+      <p class="text-xl mb-8 px-4 md:px-0">{{ product.fields.description }}</p>
+      <div class="flex flex-row justify-center gap-8 mb-8">
+        {%- if product.fields.price -%}
+        <div class="text-5xl font-bold">$ {{ product.fields.price }}</div>
+        {%- elif product.fields.complexPrice -%}
+        <div class="flex flex-col lg:flex-row gap-4">
+          {% for complex in product.fields.complexPrice -%}
+          <div class="flex flex-col">
+            <div class="text-2xl font-bold text-lime-700">{{ complex.fields.protion }}</div>
+            <div class="text-4xl font-bold text-red-600">${{ complex.fields.value }}</div>
+          </div>
+          {% endfor %}
+          </div>
+        {%- endif -%}
+        {%- if product.fields.orderLink -%}
+        <a onclick="window.dataLayer.push({'event': 'order_started_event'});" id="order-product-page" class="solid-button" href="{{ product.fields.orderLink }}">Order</a>
+        {%- endif -%}
+      </div>
+    </div>
+
+  </div>
+ 
+</div>
