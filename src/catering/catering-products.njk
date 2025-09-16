@@ -52,10 +52,10 @@ eleventyComputed:
           {% endfor %}
           </div>
         {%- endif -%}
-        {%- if product.fields.orderLink -%}
-        <a onclick="window.dataLayer.push({'event': 'order_started_event'});" id="order-product-page" class="solid-button" href="{{ product.fields.orderLink }}">Order</a>
-        {%- endif -%}
+
+        
       </div>
+      <a onclick="window.dataLayer.push({'event': 'order_started_event'});" id="order-product-page" class="solid-button" href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/">Start Your Order</a>
     </div>
 
   </div>
