@@ -881,6 +881,10 @@ video {
   width: 100%;
 }
 
+.w-\[300px\] {
+  width: 300px;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }

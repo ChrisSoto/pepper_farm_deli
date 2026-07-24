@@ -5,11 +5,16 @@ layout: "base.njk"
 ---
 
 <div class="container max-w-screen-xl mx-auto mb-12">
-    <h1 class="text-5xl font-bold my-8 text-center deli-grad-text uppercase">Catering Menu</h1>
+    <h1 class="text-5xl font-bold mt-8 mb-4 text-center deli-grad-text uppercase">Catering Menu</h1>
+
+    <div class="flex flex-col gap-6 text-center justify-center items-center">
+        <h2 class="text-2xl font-bold">We Offer <span class="text-red-500">Breakfast, Lunch,</span> and <span class="text-red-500">Dinner!</span></h2>
+        <a  href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h" target="_blank" class="deli-grad-bg mb-8 solid-button w-[300px]">Click Here to View</a>
+    </div>
 
     <div class="flex flex-wrap justify-center gap-4 mt-0 mb-16 mx-auto">
         {% for category in catering.items %}
-            <a href="/catering/{{ category.fields.name | slugify}}" class="w-full max-w-[269px]">
+            <a href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h" target="_blank" class="w-full max-w-[269px]">
                 <img eleventy:widths="400" class="w-full mb-2 rounded-lg" src="{{ category.fields.icon.fields.file.url | cfimg("fit=thumb&w=400&h=300") | safe }}" alt="{{ category.fields.name }}"/>
                 <h4 class="text-center font-bold text-xl text-lime-800">{{ category.fields.name }}</h4>
             </a>
