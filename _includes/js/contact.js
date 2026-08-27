@@ -19,7 +19,7 @@ const INPUTS = [
 
 let formSent = false;
 
-window.onload = function() {
+window.addEventListener('DOMContentLoaded', function() {
   function submitForm(event) {
     event.preventDefault();
     if (inputsValid(INPUTS)) {
@@ -30,8 +30,9 @@ window.onload = function() {
     }
   }
   
-  $('#contact-submit').on('click', submitForm);
-}
+  $('#contact-form').on('submit', submitForm);
+  $('#contact-form input, #contact-form textarea').on('blur', function () { markValidity(this.id); });
+});
 
 function parseFormData(formId) {
   const form = $('#' + formId);
