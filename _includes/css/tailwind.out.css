@@ -1801,6 +1801,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   min-height: 24px;
 }
 
+.nav-link, footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+}
+
 .field_label {
   --tw-text-opacity: 1;
   color: rgb(26 46 5 / var(--tw-text-opacity));

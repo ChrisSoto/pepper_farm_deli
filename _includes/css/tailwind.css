@@ -19,6 +19,7 @@ a, button, input, select, textarea, [tabindex] {
 }
 
 .nav-link, .border-button, .solid-button, .back-to-top, button, input[type="submit"] { min-width: 24px; min-height: 24px; }
+.nav-link, footer a { @apply inline-flex items-center; min-height: 24px; }
 .field_label { @apply text-lime-950; }
 .required, .field-error, .form-status-error { @apply text-red-900; }
 .field-error { @apply mt-1 text-sm font-bold; }
