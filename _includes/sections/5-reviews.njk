@@ -11,12 +11,13 @@
 
       {%- for review in home.reviews -%}
 
-      <div class="bg-white/50 rounded-2xl p-4 flex flex-col items-start backdrop-blur h-[225px]">
+      <div class="bg-white rounded-2xl p-4 flex flex-col items-start h-[225px]">
         
         <div class="font-bold mb-2">{{ review.fields.reviewerName }}</div>
-        <div class="stars flex flex-row mb-2 text-yellow-500" role="img" aria-label="5 out of 5 stars">
-          <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+        <div class="stars flex flex-row gap-1 mb-2" aria-hidden="true">
+          <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
         </div>
+        <span class="sr-only">5 out of 5 stars</span>
         <p class="text-left font-thin leading-tight text-clip overflow-auto overflow-x-hidden elipsis" tabindex="0">{{ review.fields.reviewText }}</p>
       </div>
 

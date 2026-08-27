@@ -42,7 +42,7 @@ a, button, input, select, textarea, [tabindex] {
 }
 
 .deli-grad-text {
-  @apply bg-gradient-to-r from-lime-500 to-yellow-400 bg-clip-text text-transparent;
+  @apply text-lime-800;
 }
 
 .deli-grad-text-shadow {
@@ -194,6 +194,11 @@ a, button, input, select, textarea, [tabindex] {
 .hover-grow:hover {
   transition: all 0.3s ease-in-out;
   transform: scale(1.05);
+}
+
+.star {
+  @apply block h-4 w-4 bg-yellow-500;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
 @media (prefers-reduced-motion: reduce) {
