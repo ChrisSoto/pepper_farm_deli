@@ -6,8 +6,8 @@
 <div class="accordion">
 
   {%- for question in questions -%}
-    <h4 class="accordion-title font-bold text-2xl mb-2 text-orange-800">{{ question.fields.question }}</h4>
-    <div class="accordion-panel pb-4">
+    <h3><button type="button" class="accordion-title font-bold text-2xl mb-2 text-orange-800" aria-expanded="false" aria-controls="faq-panel-{{ loop.index }}">{{ question.fields.question }}</button></h3>
+    <div id="faq-panel-{{ loop.index }}" class="accordion-panel pb-4" hidden>
       {{ question.fields.answer | md | safe }}
     </div>
   {%- endfor -%}

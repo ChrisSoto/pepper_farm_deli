@@ -23,6 +23,10 @@ window.onload = function() {
   let pos = containerWidth;
 
   function scrollMarquee() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      marquee.style.transform = 'none';
+      return;
+    }
     pos = pos - 5;
     if (pos < -textWidth) {
       pos = containerWidth;

@@ -3,9 +3,9 @@
   {# desktop menu #}
   <nav class="hidden sm:flex section justify-center items-center bg-white xl:rounded-full h-16 shadow-lg border border-slate-200 my-1 sm:my-16">
     <ul class="flex flex-row justify-around items-center gap-1 sm:gap-4 w-full">
-      <li><a href="/" class="nav-link hidden sm:block {{ 'active' if '/' == page.url }}">Home</a></li>
-      <li><a href="/menu/" class="nav-link {{ 'active' if '/menu/' in page.url }}">Menu</a></li>
-      <li><a href="/catering/" class="nav-link {{ 'active' if '/catering/' in page.url }}">Catering</a></li>
+      <li><a href="/" class="nav-link {{ 'active' if '/' == page.url }}"{% if '/' == page.url %} aria-current="page"{% endif %}>Home</a></li>
+      <li><a href="/menu/" class="nav-link {{ 'active' if '/menu/' in page.url }}"{% if '/menu/' in page.url %} aria-current="page"{% endif %}>Menu</a></li>
+      <li><a href="/catering/" class="nav-link {{ 'active' if '/catering/' in page.url }}"{% if '/catering/' in page.url %} aria-current="page"{% endif %}>Catering</a></li>
 
       <li class="relative sm:h-[153px] sm:w-[210px] h-[55px] w-[75px]">
         <a class="absolute top-0 left-0" href="/" class="nav-link">
@@ -13,27 +13,29 @@
         </a>
       </li>
 
-      <li><a href="/about/" class="nav-link {{ 'active' if '/about/' in page.url }}">About</a></li>
-      <li><a href="/contact/" class="nav-link {{ 'active' if '/contact/' in page.url }} hidden sm:block">Contact Us</a></li>
-      <li><a onclick="window.dataLayer.push({'event': 'order_started_event'});" id="header-order-link" href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/" class="nav-link deli-grad-text font-bold">Order</a></li>
+      <li><a href="/about/" class="nav-link {{ 'active' if '/about/' in page.url }}"{% if '/about/' in page.url %} aria-current="page"{% endif %}>About</a></li>
+      <li><a href="/contact/" class="nav-link {{ 'active' if '/contact/' in page.url }}"{% if '/contact/' in page.url %} aria-current="page"{% endif %}>Contact Us</a></li>
+      <li><a onclick="window.dataLayer.push({'event': 'order_started_event'});" href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/" class="nav-link deli-grad-text font-bold">Order</a></li>
     </ul>
   </nav>
   
   {# mobile menu #}
-  <nav class="sticky w-full top-0 z-50 sm:hidden section flex justify-center items-center bg-white h-16 shadow-lg border border-slate-200">
-    <ul class="flex flex-row justify-around items-center gap-1 w-full">
+  <nav class="sticky w-full top-0 z-50 sm:hidden section flex justify-center items-center bg-white min-h-16 shadow-lg border border-slate-200" aria-label="Mobile navigation">
+    <ul class="grid grid-cols-4 items-center gap-1 w-full text-center">
 
-      <li><a href="/menu/" class="nav-link {{ 'active' if '/menu/' in page.url }}">Menu</a></li>
-      <li><a href="/catering/" class="nav-link {{ 'active' if '/catering/' in page.url }}">Catering</a></li>
+      <li><a href="/" class="nav-link {{ 'active' if '/' == page.url }}"{% if '/' == page.url %} aria-current="page"{% endif %}>Home</a></li>
+      <li><a href="/menu/" class="nav-link {{ 'active' if '/menu/' in page.url }}"{% if '/menu/' in page.url %} aria-current="page"{% endif %}>Menu</a></li>
+      <li><a href="/catering/" class="nav-link {{ 'active' if '/catering/' in page.url }}"{% if '/catering/' in page.url %} aria-current="page"{% endif %}>Catering</a></li>
 
-      <li class="relative h-[55px] w-[75px]">
+      <li class="row-span-2 relative h-[55px] w-[75px] mx-auto">
         <a class="absolute top-0 left-0" href="/" class="nav-link">
           <img src="/assets/img/pepper_deli_farm_nav_logo.png" alt="Pepper Deli Farm Logo Home Button">
         </a>
       </li>
 
-      <li><a href="/about/" class="nav-link {{ 'active' if '/about/' in page.url }}">About</a></li>
-      <li><a onclick="window.dataLayer.push({'event': 'order_started_event'});" id="header-order-link" href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/" class="nav-link deli-grad-text font-bold">Order</a></li>
+      <li><a href="/about/" class="nav-link {{ 'active' if '/about/' in page.url }}"{% if '/about/' in page.url %} aria-current="page"{% endif %}>About</a></li>
+      <li><a href="/contact/" class="nav-link {{ 'active' if '/contact/' in page.url }}"{% if '/contact/' in page.url %} aria-current="page"{% endif %}>Contact</a></li>
+      <li><a onclick="window.dataLayer.push({'event': 'order_started_event'});" href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/" class="nav-link deli-grad-text font-bold">Order</a></li>
     </ul>
   </nav>
 
@@ -45,12 +47,13 @@
 <div class="section w-full">
 
   <div class="flex flex-col sm:flex-row justify-between items-center px-4 md:pb-4 mt-[-45px]">
-    <a href="https://maps.app.goo.gl/RsE3F5iA7ShZLqWX7" target="_blank" class="address flex flex-row items-center md:pb-0 pb-4 hover:underline">
-      <img class="pr-2 md:pr-4" eleventy:widths="40" src="/assets/img/map.png" alt="store hours icon"/>
+    <a href="https://maps.app.goo.gl/RsE3F5iA7ShZLqWX7" target="_blank" rel="noopener noreferrer" class="address flex flex-row items-center md:pb-0 pb-4 hover:underline">
+      <img class="pr-2 md:pr-4" eleventy:widths="40" src="/assets/img/map.png" alt="Map"/>
       <span>235 Town Center Parkway Suite H</span>
+      <span class="sr-only"> (opens in a new tab)</span>
     </a>
     <a id="header-phone" href="tel:+16192018129" onclick="window.dataLayer.push({'event': 'landing-phone-click'});" class="phone flex flex-row items-center hover:underline">
-      <img class="pr-2 md:pr-4" eleventy:widths="40" src="/assets/img/phone.png" alt="store hours icon"/>
+      <img class="pr-2 md:pr-4" eleventy:widths="40" src="/assets/img/phone.png" alt="Phone"/>
       <span>619-201-8129</span>
     </a>
   </div>

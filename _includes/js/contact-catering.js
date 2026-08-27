@@ -1,4 +1,4 @@
-let INPUTS = [
+const INPUTS = [
   {
     id: "full-name",
     required: true,
@@ -9,7 +9,7 @@ let INPUTS = [
   },
   {
     id: "phone-number",
-    required: false,
+    required: true,
   },
   {
     id: "event-date",
@@ -37,7 +37,7 @@ let INPUTS = [
   },
 ];
 
-window.onload = function () {
+window.addEventListener("DOMContentLoaded", function () {
   function submitForm(event) {
     event.preventDefault();
     if (inputsValid(INPUTS)) {
@@ -48,8 +48,9 @@ window.onload = function () {
     }
   }
 
-  $("#contact-catering-submit").on("click", submitForm);
-};
+  $("#contact-form").on("submit", submitForm);
+  $("#contact-form input, #contact-form select, #contact-form textarea").on("blur", function () { markValidity(this.id); });
+});
 
 function parseFormData(formId) {
   const form = $("#" + formId);
