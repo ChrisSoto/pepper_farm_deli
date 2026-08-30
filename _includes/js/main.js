@@ -17,14 +17,24 @@ function inputsValid(inputsList) {
 }
 
 function markValidity(id) {
-  if (inputValid("#" + id)) {
-    $("#" + id)
-      .removeClass("bg-red-200")
-      .addClass("bg-gray-100");
+  const field = document.getElementById(id);
+  if (!field) return;
+  const errorId = id + "-error";
+  let error = document.getElementById(errorId);
+  if (!error) {
+    error = document.createElement("p");
+    error.id = errorId;
+    error.className = "field-error";
+    field.insertAdjacentElement("afterend", error);
+  }
+  const invalid = !field.validity.valid;
+  field.setAttribute("aria-invalid", String(invalid));
+  if (invalid) {
+    field.setAttribute("aria-describedby", errorId);
+    error.textContent = field.validity.typeMismatch ? "Enter a valid " + field.type + "." : "This field is required.";
   } else {
-    $("#" + id)
-      .removeClass("bg-gray-100")
-      .addClass("bg-red-200");
+    field.removeAttribute("aria-describedby");
+    error.textContent = "";
   }
 }
 
@@ -36,6 +46,7 @@ function writeToLocalStorage(id) {
 
 function clearForm(formId) {
   $(formId).trigger("reset");
+  document.querySelectorAll(formId + " [aria-invalid]").forEach((field) => field.setAttribute("aria-invalid", "false"));
 }
 
 function inputValid(id) {
@@ -62,13 +73,25 @@ function sendForm(form) {
       "Content-Type": "application/json",
     },
   })
-    .then((response) => response.json())
+    .then((response) => {
+      if (!response.ok) throw new Error("Unable to submit the form. Please try again.");
+      return response.json();
+    })
     .then((data) => {
       clearForm("#" + form.id);
       
-      alert("Thank you for your interest. We will be in touch shortly.");
+      announceFormStatus("Thank you for your interest. We will be in touch shortly.", false);
     })
-    .catch((err) => alert(err));
+    .catch(() => announceFormStatus("We could not submit the form. Please try again or call 619-201-8129.", true));
+}
+
+function announceFormStatus(message, isError) {
+  const status = document.getElementById("form-status");
+  if (!status) return;
+  status.setAttribute("role", isError ? "alert" : "status");
+  status.textContent = message;
+  status.classList.toggle("form-status-error", isError);
+  status.focus();
 }
 
 function formErrors(inputs) {
@@ -76,20 +99,46 @@ function formErrors(inputs) {
     markValidity(inputs[i].id);
   }
 
-  alert("Please check your form for errors.");
+  announceFormStatus("Please correct the errors below.", true);
+  const firstInvalid = inputs.map((input) => document.getElementById(input.id)).find((input) => input && input.getAttribute("aria-invalid") === "true");
+  if (firstInvalid) firstInvalid.focus();
 }
 
 function setupAccordion() {
   const accordion = $(".accordion");
   if (accordion) {
-    $(".accordion-panel").slideUp();
-    $(".accordion-panel:first").slideDown();
-    $(".accordion-title:first").toggleClass("active");
-    $(".accordion-panel:first").toggleClass("active");
-    $(".accordion-title").on("click", function () {
-      $(".accordion-panel").filter($(this).next()).toggleClass("active");
-      $(this).toggleClass("active");
-      $(this).next().slideToggle();
+    $(".accordion-panel").prop("hidden", true);
+    $(".accordion-title").attr("aria-expanded", "false").on("click", function () {
+      const panel = document.getElementById(this.getAttribute("aria-controls"));
+      const expanded = this.getAttribute("aria-expanded") === "true";
+      this.setAttribute("aria-expanded", String(!expanded));
+      panel.hidden = expanded;
     });
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  setupAccordion();
+
+  document.querySelector(".skip-link")?.addEventListener("click", () => {
+    requestAnimationFrame(() => document.getElementById("main-content")?.focus());
+  });
+
+  document.querySelectorAll('a[target="_blank"]').forEach((link) => {
+    link.rel = "noopener noreferrer";
+    if (!link.querySelector(".new-tab-warning")) {
+      const warning = document.createElement("span");
+      warning.className = "sr-only new-tab-warning";
+      warning.textContent = " (opens in a new tab)";
+      link.appendChild(warning);
+    }
+  });
+
+  const focusHashTarget = () => {
+    if (!window.location.hash) return;
+    const target = document.getElementById(window.location.hash.slice(1));
+    if (target) target.focus();
+  };
+  window.addEventListener("hashchange", focusHashTarget);
+  focusHashTarget();
+});
