@@ -64,7 +64,7 @@ export default function (eleventyConfig) {
       });
   });
 
-    eleventyConfig.addGlobalData("cateringProducts", () => {
+  eleventyConfig.addGlobalData("cateringProducts", () => {
     return client
       .getEntries({ include: 3, "sys.id": process.env.ALL_CATERING_PRODUCTS })
       .then((data) => {
@@ -168,7 +168,7 @@ export default function (eleventyConfig) {
       }
       return "https:" + url;
     }
-    return "https://images.ctfassets.net/q2xrgqvb5kbx/6UWgnjWKpa7ohhylXW9ihK/c708812f4472fd10f527627e3784ed5a/generic_bg.jpg"
+    return "https://images.ctfassets.net/q2xrgqvb5kbx/6UWgnjWKpa7ohhylXW9ihK/c708812f4472fd10f527627e3784ed5a/generic_bg.jpg";
   });
 
   eleventyConfig.addFilter("richText", (data) => {
