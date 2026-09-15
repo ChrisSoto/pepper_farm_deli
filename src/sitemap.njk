@@ -43,10 +43,12 @@ eleventyExcludeFromCollections: true
 {% endfor %}
 
 {% for page in landings %}
+{% if page.fields.meta.fields.title | slugify != "ultimate-gyro-sandwich-fresh-hand-carved-gyro-in-santee-ca" %}
 <url>
   <loc>{{ site.url }}/{{ page.fields.meta.fields.title | slugify }}/</loc>
   <lastmod>{{ page.sys.updatedAt | w3c }}</lastmod>
 </url>
+{% endif %}
 {% endfor %}
 
 {% for product in products %}

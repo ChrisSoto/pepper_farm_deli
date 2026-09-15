@@ -171,8 +171,18 @@ export default function (eleventyConfig) {
     return "https://images.ctfassets.net/q2xrgqvb5kbx/6UWgnjWKpa7ohhylXW9ihK/c708812f4472fd10f527627e3784ed5a/generic_bg.jpg"
   });
 
+  eleventyConfig.addFilter("menuDescription", (description, name) => {
+    if (!description || /^description coming soon\.+$/i.test(description.trim())) {
+      return `${name} freshly prepared at Pepper Farm Deli in Santee.`;
+    }
+    return description;
+  });
+
+  eleventyConfig.addFilter("currentYear", () => new Date().getFullYear());
+
   eleventyConfig.addFilter("richText", (data) => {
-    return documentToHtmlString(data, richTextOptions());
+    return documentToHtmlString(data, richTextOptions())
+      .replace(/https?:\/\/(?:www\.)?markdownlivepreview\.com/gi, "");
   });
 }
 

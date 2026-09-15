@@ -47,14 +47,16 @@ layout: "base.njk"
                     class="h-[350px] object-cover w-auto" 
                     eleventy:widths="400"
                     src="{{ image.fields.file.url | cfimg }}" 
-                    alt="{{ product.fields.description }}"/>
+                    alt="{{ product.fields.name }}"
+                    onerror="this.onerror=null;this.src='/assets/img/missing_image.webp';"/>
                 {%- endfor -%}
 
               {%- else -%}
                   <img 
                     class="h-[350px] object-cover w-auto" 
                     src="/assets/img/missing_image.webp" 
-                    alt="Image unavailable for {{ product.fields.name }}"/>
+                    alt="{{ product.fields.name }} image unavailable"
+                    onerror="this.onerror=null;"/>
               {%- endif -%}
 
               <div class="p-4">
@@ -62,7 +64,7 @@ layout: "base.njk"
                   <h3 class="text-2xl font-bold w-3/4 hover:underline"><a href="/menu/{{ product.fields.name | slugify }}">{{ product.fields.name }}</a></h3>
                   <data class="text-2xl font-bold text-right text-zinc-700 w-1/4" value="{{ product.fields.price }}" aria-label="Price: {{ product.fields.price }} US dollars">${{ product.fields.price }}</data>
                 </div>
-                <p class="text-balance">{{ product.fields.description }}</p>
+                <p class="text-balance">{{ product.fields.description | menuDescription(product.fields.name) }}</p>
               </div>
 
               

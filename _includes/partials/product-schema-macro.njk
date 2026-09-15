@@ -3,8 +3,12 @@
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "{{data.name}}",
-  "image": "http:{{data.images[0].fields.file.url}}",
-  "description": "{{data.description}}",
+  {% if data.images and data.images[0] %}
+  "image": "https:{{data.images[0].fields.file.url}}",
+  {% else %}
+  "image": "https://pepperfarmdeli.com/assets/img/missing_image.webp",
+  {% endif %}
+  "description": "{{data.description | menuDescription(data.name) | replace('"', '\\"')}}",
   "offers": {
     "@type": "Offer",
     "price": "{{data.price}}",

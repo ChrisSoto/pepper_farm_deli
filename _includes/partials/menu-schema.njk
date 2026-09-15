@@ -1,5 +1,5 @@
 {
-  "@context": "http://schema.org",
+  "@context": "https://schema.org",
   "@type": "Menu",
   "name": "Menu",
   "mainEntityOfPage": "https://pepperfarmdeli.com/menu/",
@@ -14,7 +14,7 @@
         {
           "@type": "MenuItem",
           "name": "{{product.fields.name | safe}}",
-          "description": "{{product.fields.description | safe}}",
+          "description": "{{product.fields.description | menuDescription(product.fields.name) | replace('"', '\\"')}}",
           {% if product.fields.images[0] %}
           "image": "https:{{ product.fields.images[0].fields.file.url }}",
           {% endif %}

@@ -7,7 +7,7 @@ permalink: /menu/{{ product.name | slugify }}/index.html
 layout: base.njk
 eleventyComputed:
   title: "{{ product.name }} | Pepper Farm Deli"
-  description: "The {{ product.name }} is a {{ product.description }}."
+  description: "{{ product.description | menuDescription(product.name) }}"
 ---
 
 <script type="application/ld+json">
@@ -17,7 +17,7 @@ eleventyComputed:
 
 <div class="section mb-4">
   <div class="flex flex-col md:flex-row md:mt-8">
-    <h2 class="md:hidden text-center font-bold text-3xl my-8">{{ product.name }}</h2>
+    <h1 class="text-center font-bold text-3xl my-8 md:mb-8">{{ product.name }}</h1>
     
     {%- if product.images | length > 0 -%}
 
@@ -26,19 +26,20 @@ eleventyComputed:
           class="h-[460px]  md:h-[640px] object-cover w-full md:w-1/2 md:pl-4 xl:pl-0" 
           eleventy:widths="639"
           src="{{ image.fields.file.url | cfimg }}" 
-          alt="{{ product.fields.description }}"/>
+          alt="{{ product.name }}"
+          onerror="this.onerror=null;this.src='/assets/img/missing_image.webp';"/>
       {%- endfor -%}
 
     {%- else -%}
         <img 
           class="h-[400px] object-cover w-full md:w-1/2" 
           src="/assets/img/missing_image.webp" 
-          alt="Image unavailable for {{ product.name }}"/>
+          alt="{{ product.name }} image unavailable"
+          onerror="this.onerror=null;"/>
     {%- endif -%}
 
     <div class="flex flex-col my-8 md:my-0 md:w-1/2 px-4 lg:px-16 text-center">
-      <h2 class="hidden md:block text-center font-bold text-3xl md:mb-8">{{ product.name }}</h2>
-      <p class="text-xl mb-8 px-4 md:px-0">{{ product.description }}</p>
+      <p class="text-xl mb-8 px-4 md:px-0">{{ product.description | menuDescription(product.name) }}</p>
       <div class="flex flex-row justify-center gap-8 mb-8">
         <div class="text-5xl font-bold">$ {{ product.price }}</div>
         {%- if product.orderLink -%}
