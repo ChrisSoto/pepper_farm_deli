@@ -1,6 +1,6 @@
 ---
-title: Catering Inquiry | Pepper Farm Deli
-description: Fill out this form to contact us concerning catering.
+title: Santee Catering | Sandwich Trays, Buffets & Office Catering
+description: Order Pepper Farm Deli catering in Santee for office meetings, parties, and events. Explore trays, buffets, and group meal options.
 layout: "base.njk"
 ---
 
@@ -22,3 +22,11 @@ layout: "base.njk"
     </div>
 
 </div>
+
+<section class="container max-w-screen-xl mx-auto mb-16 px-4" aria-labelledby="catering-faq-heading">
+  <h2 id="catering-faq-heading" class="text-3xl font-bold mb-6 text-center">Catering FAQs</h2>
+  <div class="bg-zinc-100 rounded-md p-4">
+    {% from 'macros/faq/faq-section.njk' import faqSection %}
+    {{ faqSection(phase2Faqs.catering) }}
+  </div>
+</section>

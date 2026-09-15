@@ -1,6 +1,6 @@
 ---
-title: Pepper Farm Deli
-description: Fresh Deli Food. Made with Love.
+title: Pepper Farm Deli Menu | Sandwiches, Burgers, Breakfast & Smoothies in Santee
+description: Browse Pepper Farm Deli's Santee menu of fresh sandwiches, burgers, breakfast, salads, wraps, smoothies, soups, and more.
 layout: "base.njk"
 ---
 
@@ -26,6 +26,14 @@ layout: "base.njk"
   </div>
 
 </div>
+
+<section class="section mb-16" aria-labelledby="menu-faq-heading">
+  <h2 id="menu-faq-heading" class="text-3xl font-bold mb-6 text-center">Menu FAQs</h2>
+  <div class="bg-zinc-100 rounded-md p-4">
+    {% from 'macros/faq/faq-section.njk' import faqSection %}
+    {{ faqSection(phase2Faqs.menu) }}
+  </div>
+</section>
 
 <div class="section-full">
     <div class="flex flex-col mb-8">

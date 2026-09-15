@@ -147,6 +147,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "app/catering/dist": "/test" });
   eleventyConfig.addPassthroughCopy("src/site.webmanifest");
   eleventyConfig.addPassthroughCopy("src/browserconfig.xml");
+  eleventyConfig.addPassthroughCopy({ "src/.htaccess": ".htaccess" });
   eleventyConfig.addPassthroughCopy("src/robots.txt");
 
   eleventyConfig.addFilter("cssmin", function (code) {
@@ -183,6 +184,22 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("richText", (data) => {
     return documentToHtmlString(data, richTextOptions())
       .replace(/https?:\/\/(?:www\.)?markdownlivepreview\.com/gi, "");
+  });
+
+  eleventyConfig.addTransform("copyFixes", (content, outputPath) => {
+    if (!outputPath?.endsWith(".html")) return content;
+
+    return content
+      .replace(/flabreads/gi, "flatbreads")
+      .replace(/letuce/gi, "lettuce")
+      .replace(/avocadoes/gi, "avocados")
+      .replace(/pepperonicis/gi, "pepperoncini")
+      .replace(/restaraunt/gi, "restaurant")
+      .replace(/definately/gi, "definitely")
+      .replace(/tantiliz8ng/gi, "tantalizing")
+      .replace(/to terribly/gi, "too terribly")
+      .replace(/centery/gi, "center")
+      .replace(/peper farm deli/gi, "Pepper Farm Deli");
   });
 }
 

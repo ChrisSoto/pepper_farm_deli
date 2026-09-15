@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "@type": "Restaurant",
   "@id": "https://pepperfarmdeli.com/#restaurant",
-  "image": "{{site.logo}}",
+  "image": ["{{ site.logo }}", "{{ site.url }}/assets/img/store-image.png"],
   "name": "Pepper Farm Deli",
   "description": "Santee's Favorite Deli. Since 2020, we've been purveyors of delicious food at affordable prices. We pride ourselves on using only the freshest ingredients and crafting great sandwiches!",
   "address": {
@@ -24,6 +24,8 @@
     "https://www.facebook.com/pepperfarmdelisantee"
   ],
   "url": "https://pepperfarmdeli.com/",
+  "mainEntityOfPage": "https://pepperfarmdeli.com/",
+  "hasMap": "https://maps.app.goo.gl/RsE3F5iA7ShZLqWX7",
   "telephone": "+16192018129",
   "menu": "https://pepperfarmdeli.com/menu/",
   "servesCuisine": [
@@ -39,6 +41,7 @@
     "Catering"
   ],
   "priceRange": "$$",
+  "areaServed": ["Santee, CA", "San Diego County, CA"],
   "makesOffer": [
     {
       "@type": "Offer",
@@ -56,99 +59,6 @@
           "longitude": -116.9857095
         },
         "geoRadius": "15mi"
-      }
-    }
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "2279",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "4.8",
-        "bestRating": "5",
-        "worstRating": "1",
-        "reviewCount": "387"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "Google Reviews"
-      }
-    },
-    {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "4.7",
-        "bestRating": "5",
-        "worstRating": "1",
-        "reviewCount": "601"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "Yelp"
-      }
-    },
-    {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "4.6",
-        "bestRating": "5",
-        "worstRating": "1",
-        "reviewCount": "231"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "Grubhub"
-      }
-    },
-    {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "4.7",
-        "bestRating": "5",
-        "worstRating": "1",
-        "reviewCount": "1000"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "Uber Eats"
-      }
-    },
-    {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "4.8",
-        "bestRating": "5",
-        "worstRating": "1",
-        "reviewCount": "50"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "DoorDash"
-      }
-    },
-    {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5.0",
-        "bestRating": "5",
-        "worstRating": "1",
-        "reviewCount": "10"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "Facebook"
       }
     }
   ],

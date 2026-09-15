@@ -30,15 +30,21 @@
     {{ tailwind | cssmin | safe }}
   </style>
 
-  <meta property="og:title" content="{{ site.title }}" />
-  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:title" content="{{ title or home.metaTitle }}" />
+  <meta property="og:description" content="{{ description or home.metaDescription }}" />
   <meta property="og:image" content="{{ site.logo }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ title or home.metaTitle }}" />
+  <meta name="twitter:description" content="{{ description or home.metaDescription }}" />
+  <meta name="twitter:image" content="{{ featuredImage or site.logo }}" />
 
   <script type="application/ld+json">{% include "partials/restaurant-schema.njk" %}</script>
 
   {% if page.url == '/menu/' or page.url == '/menu' %}
   <script type="application/ld+json">{% include "partials/menu-schema.njk" %}</script>
   {% endif %}
+
+  {% include "partials/breadcrumb-schema.njk" %}
 
 </head>
 <body class="bg-zinc-50">
