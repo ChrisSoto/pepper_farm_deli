@@ -31,15 +31,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-PKVBBC2T');</script>
 <!-- End Google Tag Manager -->
 
-  <meta property="og:title" content="{{ site.title }}" />
-  <meta property="og:description" content="{{ site.description }}" />
-  <meta property="og:image" content="{{ site.logo }}" />
+  <meta property="og:title" content="{{ title or home.metaTitle }}" />
+  <meta property="og:description" content="{{ description or home.metaDescription }}" />
+  <meta property="og:image" content="{{ featuredImage or site.logo }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:type" content="{{ 'article' if '/blog/' in page.url and page.url != '/blog/' else 'website' }}" />
+  <meta property="og:site_name" content="Pepper Farm Deli" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ title or home.metaTitle }}" />
+  <meta name="twitter:description" content="{{ description or home.metaDescription }}" />
+  <meta name="twitter:image" content="{{ featuredImage or site.logo }}" />
 
   <script type="application/ld+json">{% include "partials/restaurant-schema.njk" %}</script>
 
   {% if page.url == '/menu/' or page.url == '/menu' %}
   <script type="application/ld+json">{% include "partials/menu-schema.njk" %}</script>
   {% endif %}
+
+  {% include "partials/breadcrumb-schema.njk" %}
 
 </head>
 
@@ -73,6 +82,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+<script>{% include "js/analytics.js" %}</script>
 <script>{% include "js/main.js" %}</script>
 
 {%- if '/contact/' in page.url or '/about/' in page.url -%}

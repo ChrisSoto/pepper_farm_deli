@@ -1,16 +1,32 @@
 ---
 pagination:
+  addAllPagesToCollections: true
   data: blog
   size: 6
   alias: posts
 layout: base.njk
-title: Blog Pepper Farm Deli | Santee's favorite deli since 2021
-description: Fresh Deli Food. Made with Love.
+title: Pepper Farm Deli Blog | Santee Food, Sandwiches & Catering
+description: Read Pepper Farm Deli's guides to sandwiches, breakfast, healthy options, soups, and catering in Santee, CA.
 ---
 
 <div class="max-w-screen-md mx-auto">
   <div class="flex flex-col m-4">
     <h1 class="text-red-500 text-5xl font-bold my-8 font-display text-center sm:text-left">Pepper Farm Deli Blog</h1>
+    {% if pagination.pageNumber == 0 %}
+    {% for article in localArticles %}
+    <article class="mb-8">
+      <h2 class="text-2xl font-bold mb-2"><a class="text-lime-800 underline" href="/blog/{{ article.slug }}/">{{ article.title }}</a></h2>
+      <p>{{ article.description }}</p>
+    </article>
+    {% endfor %}
+    {% endif %}
+
+    <div class="flex flex-col items-start sm:flex-row mb-4">
+        <div class="flex flex-col mb-4 sm:mr-4 sm:w-3/4">
+            <h2 class="text-zinc-600 hover:underline hover:text-red-500 text-3xl font-bold cursor-pointer mb-2"><a href="/blog/planning-an-office-lunch-in-santee/">Planning an Office Lunch in Santee: A Sandwich Catering Checklist</a></h2>
+            <p class="text-pretty">A practical guide to planning a smooth group lunch, from headcounts and dietary needs to ordering and pickup timing. <span class="text-red-400 italic font-thin hover:underline hover:text-red-500"><a href="/blog/planning-an-office-lunch-in-santee/">...Read More</a></span></p>
+        </div>
+    </div>
 
     {% for post in posts %}
     <div class="flex flex-col items-start sm:flex-row mb-4">
@@ -23,7 +39,7 @@ description: Fresh Deli Food. Made with Love.
     {% endfor %}
   </div>
 
-  <nav aria-labelledby="my-pagination" class="w-full my-8 p-4">
+  <nav aria-label="Blog pages" class="w-full my-8 p-4">
       <ol class="flex flex-row justify-end gap-4">
       {%- for pageEntry in pagination.pages %}
           <li><a class="bg-red-500 text-white text-lg rounded-full p-2 px-6" href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>Page {{ loop.index }}</a></li>

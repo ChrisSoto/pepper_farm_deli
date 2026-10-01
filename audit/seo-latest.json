@@ -1,0 +1,235 @@
+{
+  "pages": 230,
+  "sitemapUrls": 230,
+  "errors": [],
+  "warnings": [
+    {
+      "page": "/menu/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/abc-wrap/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/ahi-surf-and-turf/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/apple-berry/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/big-city-wrap/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/blue-moon/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/bovine-special-half/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/breakfast-burger/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/breakfast-veggie-wrap/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/cheese-quesadilla-with-fries/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/cheeseburger-with-fries/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/cheesy-flatbread/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/chicken-noodle/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/chicken-tenders-and-fries/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/chilli/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/chipotle-burger/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/clam-chowder/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/cobb-salad/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/egg-and-cheese-sandwich/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/filet-mignon/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/french-dip-special-half/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/french-fries/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/fruit-salad/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/greek-gyro-sandwich/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/green-beret-special-vegetarian-half/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/green-bird-special-half/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/grilled-cheese-sandwich/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/grilled-chicken/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/grilled-chicken-with-fries/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/half-chef-salad/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/ham-egg-and-cheese-sandwich/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/house-salad/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/jumbo-garlic-shrimp/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/kids-ham-and-cheese/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/kids-turkey-and-cheese/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/little-italy-special-half/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/mac-and-cheese/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/mango-mamba/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/mushroom-avocado-burger/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/peanut-butter-fit/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/pepper-farm-breakfast-plate/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/pepperoni-flatbread/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/philly-cheesesteak-special-half/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/raspy-pineapple/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/san-diego-river-breakfast-plate/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/sauteed-asparagus/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/sauteed-broccoli/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/sauteed-portabello-mushroom/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/skillet-potatoes/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/starvin-marvin/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/strawberry-banana/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/surf-and-turf-plate/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/tomato-basil/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/tropical-green/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/ultimate-wrap/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/veggie-wrap/",
+      "message": "Original food photograph needed"
+    },
+    {
+      "page": "/menu/wild-caught-salmon/",
+      "message": "Original food photograph needed"
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import contentful from "contentful";
 import { getW3CDate } from "./utility/util.js";
 
 import MarkdownIt from "markdown-it";
+import { json, menuDescription, foodSchema, sitemapEntries } from "./utility/seo.js";
 
 const client = contentful.createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -38,6 +39,16 @@ function richTextOptions() {
 }
 
 export default function (eleventyConfig) {
+  eleventyConfig.addFilter("json", json);
+  eleventyConfig.addFilter("foodSchema", foodSchema);
+  eleventyConfig.addFilter("sitemapEntries", sitemapEntries);
+  eleventyConfig.addFilter("orderLink", (value) => {
+    try {
+      const url = new URL(value);
+      if (url.protocol === "https:" && url.hostname === "order.toasttab.com") return url.href;
+    } catch {}
+    return "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h";
+  });
   let contentfulData = null;
 
   eleventyConfig.addGlobalData("home", () => {
@@ -65,12 +76,13 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addGlobalData("cateringProducts", () => {
-    return client
-      .getEntries({ include: 3, "sys.id": process.env.ALL_CATERING_PRODUCTS })
-      .then((data) => {
-        const menu = data.items[0].fields;
-        return menu;
-      });
+    return Promise.all([
+      client.getEntries({ include: 3, "sys.id": process.env.ALL_CATERING_PRODUCTS }),
+      client.getEntries({ include: 3, "sys.id": process.env.CATERING_MENU })
+    ]).then(([data, categories]) => {
+      const entries = [...data.items[0].fields.items, ...categories.items[0].fields.items.flatMap(category => category.fields.products || [])];
+      return { ...data.items[0].fields, items: [...new Map(entries.filter(entry => entry.fields).map(entry => [entry.sys.id, entry])).values()] };
+    });
   });
 
   eleventyConfig.addGlobalData("contactFaqs", () => {
@@ -147,6 +159,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "app/catering/dist": "/test" });
   eleventyConfig.addPassthroughCopy("src/site.webmanifest");
   eleventyConfig.addPassthroughCopy("src/browserconfig.xml");
+  eleventyConfig.addPassthroughCopy({ "src/.htaccess": ".htaccess" });
   eleventyConfig.addPassthroughCopy("src/robots.txt");
 
   eleventyConfig.addFilter("cssmin", function (code) {
@@ -171,8 +184,31 @@ export default function (eleventyConfig) {
     return "https://images.ctfassets.net/q2xrgqvb5kbx/6UWgnjWKpa7ohhylXW9ihK/c708812f4472fd10f527627e3784ed5a/generic_bg.jpg";
   });
 
+  eleventyConfig.addFilter("menuDescription", menuDescription);
+
+  eleventyConfig.addFilter("currentYear", () => new Date().getFullYear());
+
   eleventyConfig.addFilter("richText", (data) => {
-    return documentToHtmlString(data, richTextOptions());
+    return documentToHtmlString(data, richTextOptions())
+      .replace(/https?:\/\/(?:www\.)?markdownlivepreview\.com/gi, "")
+      .replace(/href="\/(?:location|hours)\/?"/gi, 'href="/contact/"')
+      .replace(/href="\/order\/?"/gi, 'href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h"');
+  });
+
+  eleventyConfig.addTransform("copyFixes", (content, outputPath) => {
+    if (!outputPath?.endsWith(".html")) return content;
+
+    return content
+      .replace(/flabreads/gi, "flatbreads")
+      .replace(/letuce/gi, "lettuce")
+      .replace(/avocadoes/gi, "avocados")
+      .replace(/pepperonicis/gi, "pepperoncini")
+      .replace(/restaraunt/gi, "restaurant")
+      .replace(/definately/gi, "definitely")
+      .replace(/tantiliz8ng/gi, "tantalizing")
+      .replace(/to terribly/gi, "too terribly")
+      .replace(/centery/gi, "center")
+      .replace(/peper farm deli/gi, "Pepper Farm Deli");
   });
 }
 

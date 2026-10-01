@@ -1,48 +1,57 @@
 ---
 pagination:
+  addAllPagesToCollections: true
   data: products
   size: 1
   alias: product
 permalink: /menu/{{ product.name | slugify }}/index.html
 layout: base.njk
 eleventyComputed:
-  title: "{{ product.name }} | Pepper Farm Deli"
-  description: "The {{ product.name }} is a {{ product.description }}."
+  title: "{{ product.name }} in Santee | Pepper Farm Deli"
+  description: "{{ product.description | menuDescription(product.name) }}"
 ---
 
 <script type="application/ld+json">
   {% from "partials/product-schema-macro.njk" import productSchema %}
-  {{ productSchema(product) }}
+  {{ productSchema(product, site.url + page.url) }}
 </script>
 
 <div class="section mb-4">
+  <nav class="my-4" aria-label="Breadcrumb"><a class="text-lime-800 underline" href="/menu/">Menu</a> / <a class="text-lime-800 underline" href="/menu/#{{ product.category | slugify }}">{{ product.category }}</a> / {{ product.name }}</nav>
+  <h1 class="text-center font-bold text-3xl my-8">{{ product.name }}</h1>
   <div class="flex flex-col md:flex-row md:mt-8">
-    <h2 class="md:hidden text-center font-bold text-3xl my-8">{{ product.name }}</h2>
     
     {%- if product.images | length > 0 -%}
 
       {%- for image in product.images -%}
         <img 
           class="h-[460px]  md:h-[640px] object-cover w-full md:w-1/2 md:pl-4 xl:pl-0" 
-          eleventy:widths="639"
+          eleventy:widths="400,639"
+          sizes="(min-width: 768px) 50vw, 100vw"
+          loading="{{ 'eager' if loop.first else 'lazy' }}"
           src="{{ image.fields.file.url | cfimg }}" 
-          alt="{{ product.fields.description }}"/>
+          alt="{{ product.name }}"
+          onerror="this.onerror=null;this.src='/assets/img/missing_image.webp';"/>
       {%- endfor -%}
 
     {%- else -%}
         <img 
           class="h-[400px] object-cover w-full md:w-1/2" 
           src="/assets/img/missing_image.webp" 
-          alt="Image unavailable for {{ product.name }}"/>
+          alt="{{ product.name }} image unavailable"
+          onerror="this.onerror=null;"/>
     {%- endif -%}
 
     <div class="flex flex-col my-8 md:my-0 md:w-1/2 px-4 lg:px-16 text-center">
-      <h2 class="hidden md:block text-center font-bold text-3xl md:mb-8">{{ product.name }}</h2>
-      <p class="text-xl mb-8 px-4 md:px-0">{{ product.description }}</p>
+      <p class="text-xl mb-8 px-4 md:px-0">{{ product.description | menuDescription(product.name) }}</p>
+      <p class="mb-4">Available from Pepper Farm Deli at 235 Town Center Parkway, Suite H, Santee. Confirm current pricing, ingredients, and availability when ordering.</p>
+      <p class="mb-4">Ingredient or dietary questions? <a class="text-lime-800 underline" href="tel:+16192018129">Call 619-201-8129</a> before placing your order.</p>
       <div class="flex flex-row justify-center gap-8 mb-8">
         <div class="text-5xl font-bold">$ {{ product.price }}</div>
         {%- if product.orderLink -%}
-        <a onclick="window.dataLayer.push({'event': 'order_started_event'});" id="order-product-page" class="solid-button" href="{{ product.orderLink }}">Order</a>
+        <a onclick="window.dataLayer.push({'event': 'order_started_event'});" id="order-product-page" class="solid-button" href="{{ product.orderLink | orderLink }}">Order</a>
+        {%- else -%}
+        <a class="solid-button" href="{{ site.orderUrl }}">View ordering options</a>
         {%- endif -%}
       </div>
     </div>
@@ -50,3 +59,16 @@ eleventyComputed:
   </div>
  
 </div>
+<section class="section mb-16" aria-labelledby="related-menu-heading">
+  <h2 id="related-menu-heading" class="text-2xl font-bold mb-4">More {{ product.category }}</h2>
+  <ul class="flex flex-wrap gap-4">
+  {% set relatedCount = 0 %}
+  {% for related in products %}
+    {% if related.category == product.category and related.name != product.name and relatedCount < 4 %}
+      <li><a class="text-lime-800 underline" href="/menu/{{ related.name | slugify }}/">{{ related.name }}</a></li>
+      {% set relatedCount = relatedCount + 1 %}
+    {% endif %}
+  {% endfor %}
+  </ul>
+  <p class="mt-6">Planning a group meal? Explore our <a class="text-lime-800 underline" href="/catering/">Santee catering menu</a>.</p>
+</section>

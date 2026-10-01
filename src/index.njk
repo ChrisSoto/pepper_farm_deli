@@ -1,5 +1,7 @@
 ---
 layout: "base.njk"
+title: Pepper Farm Deli | Gourmet Sandwiches, Breakfast & Catering in Santee
+description: Enjoy fresh sandwiches, burgers, breakfast, salads, smoothies, and catering at Pepper Farm Deli in Santee, CA.
 ---
 
 {% include "sections/1-hero.njk" %}
@@ -8,3 +10,18 @@ layout: "base.njk"
 {% include "sections/4-catering-ad.njk" %}
 {% include "sections/5-reviews.njk" %}
 {% include "sections/6-store-info.njk" %}
+<section class="section mb-16" aria-labelledby="blog-heading">
+  <h2 id="blog-heading" class="text-3xl font-bold mb-6 text-center">From the Blog</h2>
+  <div class="bg-zinc-100 rounded-md p-6 text-center">
+    <h3 class="text-2xl font-bold mb-3"><a class="text-lime-800 hover:underline" href="/blog/planning-an-office-lunch-in-santee/">Planning an Office Lunch in Santee: A Sandwich Catering Checklist</a></h3>
+    <p class="mb-4">Use this practical checklist to plan a smooth group lunch, from headcounts and dietary needs to ordering and pickup timing.</p>
+    <a class="solid-button inline-block" href="/blog/">Read the Pepper Farm Deli Blog</a>
+  </div>
+</section>
+<section class="section mb-16" aria-labelledby="home-faq-heading">
+  <h2 id="home-faq-heading" class="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h2>
+  <div class="bg-zinc-100 rounded-md p-4">
+    {% from 'macros/faq/faq-section.njk' import faqSection %}
+    {{ faqSection(phase2Faqs.home) }}
+  </div>
+</section>

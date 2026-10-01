@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.pepperfarmdeli\.com$ [NC]
+RewriteRule ^ https://pepperfarmdeli.com%{REQUEST_URI} [R=301,L]
+
+# Preserve established URLs when linking to the canonical pages.
+RewriteRule ^privacy-policy\.html$ /privacy-policy/ [R=301,L]
+RewriteRule ^terms-of-use\.html$ /terms-of-use/ [R=301,L]
+RewriteRule ^(?:location|hours)/?$ /contact/ [R=301,L]
+RewriteRule ^order/?$ https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h [R=302,L]
+RewriteRule ^menu/porto-vegetarian-sandwich/?$ /menu/tuscan-vegetarian-sandwich/ [R=301,L]
+RewriteRule ^menu/portobello-mushroom-avocado-burger/?$ /menu/mushroom-avocado-burger/ [R=301,L]
+RewriteRule ^catering/sauteed-portobello-mushroom/?$ /catering/sauteed-mushroom/ [R=301,L]
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json application/xml image/svg+xml
+</IfModule>
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 7 days"
+  ExpiresByType image/png "access plus 7 days"
+  ExpiresByType image/jpeg "access plus 7 days"
+</IfModule>

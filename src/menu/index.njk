@@ -1,6 +1,6 @@
 ---
-title: Pepper Farm Deli
-description: Fresh Deli Food. Made with Love.
+title: Pepper Farm Deli Menu | Sandwiches, Burgers, Breakfast & Smoothies in Santee
+description: Browse Pepper Farm Deli's Santee menu of fresh sandwiches, burgers, breakfast, salads, wraps, smoothies, soups, and more.
 layout: "base.njk"
 ---
 
@@ -27,6 +27,14 @@ layout: "base.njk"
 
 </div>
 
+<section class="section mb-16" aria-labelledby="menu-faq-heading">
+  <h2 id="menu-faq-heading" class="text-3xl font-bold mb-6 text-center">Menu FAQs</h2>
+  <div class="bg-zinc-100 rounded-md p-4">
+    {% from 'macros/faq/faq-section.njk' import faqSection %}
+    {{ faqSection(phase2Faqs.menu) }}
+  </div>
+</section>
+
 <div class="section-full">
     <div class="flex flex-col mb-8">
 
@@ -47,14 +55,16 @@ layout: "base.njk"
                     class="h-[350px] object-cover w-auto" 
                     eleventy:widths="400"
                     src="{{ image.fields.file.url | cfimg }}" 
-                    alt="{{ product.fields.description }}"/>
+                    alt="{{ product.fields.name }}"
+                    onerror="this.onerror=null;this.src='/assets/img/missing_image.webp';"/>
                 {%- endfor -%}
 
               {%- else -%}
                   <img 
                     class="h-[350px] object-cover w-auto" 
                     src="/assets/img/missing_image.webp" 
-                    alt="Image unavailable for {{ product.fields.name }}"/>
+                    alt="{{ product.fields.name }} image unavailable"
+                    onerror="this.onerror=null;"/>
               {%- endif -%}
 
               <div class="p-4">
@@ -62,7 +72,7 @@ layout: "base.njk"
                   <h3 class="text-2xl font-bold w-3/4 hover:underline"><a href="/menu/{{ product.fields.name | slugify }}">{{ product.fields.name }}</a></h3>
                   <data class="text-2xl font-bold text-right text-zinc-700 w-1/4" value="{{ product.fields.price }}" aria-label="Price: {{ product.fields.price }} US dollars">${{ product.fields.price }}</data>
                 </div>
-                <p class="text-balance">{{ product.fields.description }}</p>
+                <p class="text-balance">{{ product.fields.description | menuDescription(product.fields.name) }}</p>
               </div>
 
               
@@ -70,7 +80,7 @@ layout: "base.njk"
               <div class="flex flex-row justify-end items-center p-8 gap-4 mt-auto">
                 <a class="border-button" href="/menu/{{ product.fields.name | slugify }}">Details</a>
                 {%- if product.fields.orderLink -%}
-                <a onclick="window.dataLayer.push({'event': 'order_started_event'});" class="solid-button" href="{{ product.fields.orderLink }}">Order</a>
+                <a onclick="window.dataLayer.push({'event': 'order_started_event'});" class="solid-button" href="{{ product.fields.orderLink | orderLink }}">Order</a>
                 {%- endif -%}
               </div>
 

@@ -1,6 +1,6 @@
 ---
-title: Catering Inquiry | Pepper Farm Deli
-description: Fill out this form to contact us concerning catering.
+title: Santee Catering | Sandwich Trays, Buffets & Office Catering
+description: Order Pepper Farm Deli catering in Santee for office meetings, parties, and events. Explore trays, buffets, and group meal options.
 layout: "base.njk"
 ---
 
@@ -14,11 +14,39 @@ layout: "base.njk"
 
     <div class="flex flex-wrap justify-center gap-4 mt-0 mb-16 mx-auto">
         {% for category in catering.items %}
-            <a href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h" target="_blank" class="w-full max-w-[269px]">
+            <a href="/catering/{{ category.fields.name | slugify }}/" class="w-full max-w-[269px]">
                 <img eleventy:widths="400" class="w-full mb-2 rounded-lg" src="{{ category.fields.icon.fields.file.url | cfimg("fit=thumb&w=400&h=300") | safe }}" alt="{{ category.fields.name }}"/>
-                <h4 class="text-center font-bold text-xl text-lime-800">{{ category.fields.name }}</h4>
+                <h3 class="text-center font-bold text-xl text-lime-800">{{ category.fields.name }}</h3>
             </a>
         {% endfor %}
     </div>
 
 </div>
+
+<section class="section mb-16" aria-labelledby="plan-catering-heading">
+  <h2 id="plan-catering-heading" class="text-3xl font-bold mb-4">Plan your Santee group meal</h2>
+  <p class="mb-6">Explore breakfast platters, sandwiches, wraps, salads, and sides for office meetings and celebrations. Portion labels below come from our catering menu. Half sandwiches are pieces, not guaranteed servings; ask us to size your meal for your group.</p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+  {% for item in cateringProducts.items %}
+    {% if item.fields.name == 'Greenbird Sandwich Platter' or item.fields.name == 'Egg and cheese Platter' or item.fields.name == 'Simple Dimple' or item.fields.name == 'Organic Fruit' %}
+    <div class="bg-zinc-100 rounded-lg p-6">
+      <h3 class="text-xl font-bold mb-3"><a class="text-lime-800 underline" href="/catering/{{ item.fields.name | slugify }}/">{{ item.fields.name }}</a></h3>
+      <p class="mb-3">{{ item.fields.description }}</p>
+      <ul>{% for price in item.fields.complexPrice %}<li>{{ price.fields.protion }}: ${{ price.fields.value }}</li>{% endfor %}</ul>
+    </div>
+    {% endif %}
+  {% endfor %}
+  </div>
+  <h3 class="text-2xl font-bold mb-3">What to confirm before ordering</h3>
+  <p class="mb-4">Tell us your date, meal time, headcount, budget, and dietary needs. Minimum quantities and lead times depend on the selection and kitchen capacity. Confirm pickup at 235 Town Center Parkway, Suite H, Santee, or ask whether delivery is available for your address and what fees apply.</p>
+  <p class="mb-6">Menu prices and availability may change. The team will confirm your selections, total, and timing before your order is finalized. For today's availability, <a class="text-lime-800 underline" href="/same-day-catering/">see our same-day catering guidance</a>.</p>
+  <div class="flex flex-wrap gap-4 mb-6"><a class="solid-button" href="/catering-inquiry/">Request catering</a><a class="border-button" href="tel:+16192018129">Call 619-201-8129</a></div>
+  <p>Planning resources: <a class="text-lime-800 underline" href="/blog/planning-an-office-lunch-in-santee/">office lunches</a> and <a class="text-lime-800 underline" href="/blog/planning-party-catering-in-santee/">party catering</a>.</p>
+</section>
+<section class="container max-w-screen-xl mx-auto mb-16 px-4" aria-labelledby="catering-faq-heading">
+  <h2 id="catering-faq-heading" class="text-3xl font-bold mb-6 text-center">Catering FAQs</h2>
+  <div class="bg-zinc-100 rounded-md p-4">
+    {% from 'macros/faq/faq-section.njk' import faqSection %}
+    {{ faqSection(phase2Faqs.catering) }}
+  </div>
+</section>

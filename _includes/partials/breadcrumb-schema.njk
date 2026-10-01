@@ -1,0 +1,16 @@
+{% if page.url != '/' %}
+{% set parentUrl = '/menu/' if '/menu/' in page.url else ('/catering/' if '/catering/' in page.url else ('/blog/' if '/blog/' in page.url else '')) %}
+{% set parentName = 'Menu' if parentUrl == '/menu/' else ('Catering' if parentUrl == '/catering/' else 'Blog') %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org", "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+    {% if parentUrl and page.url != parentUrl %}
+    { "@type": "ListItem", "position": 2, "name": {{ parentName | json | safe }}, "item": "{{ site.url }}{{ parentUrl }}" },
+    {% endif %}
+    { "@type": "ListItem", "position": {{ 3 if parentUrl and page.url != parentUrl else 2 }}, "name": {{ title | json | safe }}, "item": "{{ site.url }}{{ page.url }}" }
+  ]
+}
+</script>
+{% endif %}

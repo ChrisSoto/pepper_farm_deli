@@ -1,0 +1,38 @@
+---
+pagination:
+  data: localArticles
+  size: 1
+  alias: article
+  addAllPagesToCollections: true
+permalink: /blog/{{ article.slug }}/index.html
+layout: base.njk
+eleventyComputed:
+  title: "{{ article.title }} | Pepper Farm Deli"
+  description: "{{ article.description }}"
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org", "@type": "BlogPosting",
+  "@id": "{{ site.url }}{{ page.url }}#article",
+  "mainEntityOfPage": "{{ site.url }}{{ page.url }}",
+  "headline": {{ article.title | json | safe }},
+  "description": {{ article.description | json | safe }},
+  "datePublished": {{ article.date | json | safe }},
+  "dateModified": {{ article.date | json | safe }},
+  "author": { "@type": "Organization", "name": "Pepper Farm Deli", "url": "{{ site.url }}/" },
+  "publisher": { "@type": "Organization", "name": "Pepper Farm Deli", "logo": { "@type": "ImageObject", "url": "{{ site.logo }}" } }
+}
+</script>
+<article class="max-w-screen-md mx-auto p-4">
+  <nav class="my-4" aria-label="Breadcrumb"><a class="text-lime-800 underline" href="/blog/">Local food guides</a> / {{ article.title }}</nav>
+  <h1 class="text-4xl font-bold mb-4">{{ article.title }}</h1>
+  <p class="text-zinc-600 mb-6">By Pepper Farm Deli · <time datetime="{{ article.date }}">October 1, 2026</time></p>
+  <p class="mb-6">{{ article.intro }}</p>
+  {% for section in article.sections %}
+  <h2 class="text-2xl font-bold mt-8 mb-3">{{ section.heading }}</h2>
+  <p class="mb-6">{{ section.text }}</p>
+  {% endfor %}
+  <h2 class="text-2xl font-bold mt-8 mb-3">Plan your visit or order</h2>
+  <ul class="list-disc pl-6 mb-6">{% for link in article.links %}<li class="mb-2"><a class="text-lime-800 underline" href="{{ link.url }}">{{ link.label }}</a></li>{% endfor %}</ul>
+  <p class="mb-8">Questions? <a class="text-lime-800 underline" href="tel:+16192018129">Call Pepper Farm Deli at 619-201-8129</a>.</p>
+</article>

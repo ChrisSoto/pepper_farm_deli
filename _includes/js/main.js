@@ -62,10 +62,7 @@ function check(id) {
 }
 
 function sendForm(form) {
-  console.log("Submitted form", form);
-  window.dataLayer.push({
-    'event': 'landing-submit-lead', // This MUST match the Event name in your GTM Custom Event Trigger
-  });
+  const formType = window.location.pathname === "/catering-inquiry/" ? "catering" : "contact";
   fetch(form.url, {
     method: "POST",
     body: form.data,
@@ -78,11 +75,18 @@ function sendForm(form) {
       return response.json();
     })
     .then((data) => {
+      if (!data.result) throw new Error("No submission confirmation received.");
+      window.trackDeliEvent("generate_lead", { form_type: formType });
+      // Preserve the existing GTM trigger, but fire it only after confirmed success.
+      window.trackDeliEvent("landing-submit-lead", { form_type: formType });
       clearForm("#" + form.id);
       
       announceFormStatus("Thank you for your interest. We will be in touch shortly.", false);
     })
-    .catch(() => announceFormStatus("We could not submit the form. Please try again or call 619-201-8129.", true));
+    .catch(() => {
+      window.trackDeliEvent("form_error", { form_type: formType });
+      announceFormStatus("We could not submit the form. Please try again or call 619-201-8129.", true);
+    });
 }
 
 function announceFormStatus(message, isError) {
