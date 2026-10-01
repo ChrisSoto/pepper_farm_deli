@@ -4,63 +4,7 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<url>
-    <loc>{{ site.url }}/</loc>
-    <lastmod>{{ site.time }}</lastmod>
-</url>
-
-<url>
-    <loc>{{ site.url }}/menu/</loc>
-    <lastmod>{{ site.time }}</lastmod>
-</url>
-
-<url>
-    <loc>{{ site.url }}/catering/</loc>
-    <lastmod>{{ site.time }}</lastmod>
-</url>
-
-<url>
-    <loc>{{ site.url }}/catering-inquiry/</loc>
-    <lastmod>{{ site.time }}</lastmod>
-</url>
-
-<url>
-    <loc>{{ site.url }}/about/</loc>
-    <lastmod>{{ site.time }}</lastmod>
-</url>
-
-<url>
-  <loc>{{ site.url }}/contact/</loc>
-  <lastmod>{{ site.time }}</lastmod>
-</url>
-
-<url>
-  <loc>{{ site.url }}/blog/planning-an-office-lunch-in-santee/</loc>
-  <lastmod>2026-09-15</lastmod>
-</url>
-
-{% for page in blog %}
-<url>
-  <loc>{{ site.url }}/blog/{{ page.fields.hero[0].fields.h1 | slugify }}/</loc>
-  <lastmod>{{ page.sys.updatedAt | w3c }}</lastmod>
-</url>
+{% for url in collections.all | sitemapEntries %}
+  <url><loc>{{ site.url }}{{ url }}</loc></url>
 {% endfor %}
-
-{% for page in landings %}
-{% if page.fields.meta.fields.title | slugify != "ultimate-gyro-sandwich-fresh-hand-carved-gyro-in-santee-ca" %}
-<url>
-  <loc>{{ site.url }}/{{ page.fields.meta.fields.title | slugify }}/</loc>
-  <lastmod>{{ page.sys.updatedAt | w3c }}</lastmod>
-</url>
-{% endif %}
-{% endfor %}
-
-{% for product in products %}
-<url>
-  <loc>{{ site.url }}/menu/{{ product.name | slugify }}/</loc>
-  <lastmod>{{ product.sys.updatedAt | w3c  }}</lastmod>
-</url>
-{% endfor %}
-
 </urlset>

@@ -1,136 +1,25 @@
 {
   "@context": "https://schema.org",
   "@type": "Restaurant",
-  "@id": "https://pepperfarmdeli.com/#restaurant",
-  "image": ["{{ site.logo }}", "{{ site.url }}/assets/img/store-image.png"],
+  "@id": "{{ site.url }}/#restaurant",
   "name": "Pepper Farm Deli",
-  "description": "Santee's Favorite Deli. Since 2020, we've been purveyors of delicious food at affordable prices. We pride ourselves on using only the freshest ingredients and crafting great sandwiches!",
+  "url": "{{ site.url }}/",
+  "image": ["{{ site.logo }}", "{{ site.url }}/assets/img/store-image.png"],
+  "description": "Pepper Farm Deli serves sandwiches, breakfast, salads, and catering in Santee, California.",
   "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "235 Town Center Parkway, Suite H",
-    "addressLocality": "Santee",
-    "addressRegion": "CA",
-    "postalCode": "92071",
-    "addressCountry": "US"
+    "@type": "PostalAddress", "streetAddress": "235 Town Center Parkway, Suite H",
+    "addressLocality": "Santee", "addressRegion": "CA", "postalCode": "92071", "addressCountry": "US"
   },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 32.8415891,
-    "longitude": -116.9857095
-  },
-  "sameAs": [
-    "https://www.instagram.com/pepperfarmdeli/",
-    "https://www.tiktok.com/@pepperfarmdeli",
-    "https://www.facebook.com/pepperfarmdelisantee"
-  ],
-  "url": "https://pepperfarmdeli.com/",
-  "mainEntityOfPage": "https://pepperfarmdeli.com/",
-  "hasMap": "https://maps.app.goo.gl/RsE3F5iA7ShZLqWX7",
   "telephone": "+16192018129",
-  "menu": "https://pepperfarmdeli.com/menu/",
-  "servesCuisine": [
-    "Deli",
-    "Dinner",
-    "Lunch",
-    "Sandwiches",
-    "Wraps",
-    "Smoothies",
-    "Salads",
-    "Flatbreads",
-    "Burgers",
-    "Catering"
-  ],
+  "geo": { "@type": "GeoCoordinates", "latitude": 32.8415891, "longitude": -116.9857095 },
+  "hasMap": "https://maps.app.goo.gl/RsE3F5iA7ShZLqWX7",
+  "sameAs": ["https://www.instagram.com/pepperfarmdeli/", "https://www.facebook.com/pepperfarmdeli"],
+  "hasMenu": "{{ site.url }}/menu/",
+  "servesCuisine": ["Deli", "Sandwiches", "Breakfast", "Salads"],
   "priceRange": "$$",
-  "areaServed": ["Santee, CA", "San Diego County, CA"],
-  "makesOffer": [
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "FoodService",
-        "name": "Catering Services",
-        "description": "Full-service catering for corporate events, private parties, and special occasions. We offer custom menu planning, delivery, setup, and flexible portions to accommodate any size group.",
-        "serviceType": "Catering"
-      },
-      "areaServed": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": 32.8415891,
-          "longitude": -116.9857095
-        },
-        "geoRadius": "15mi"
-      }
-    }
-  ],
-  "hasMenu": {
-    "@type": "Menu",
-    "hasMenuSection": [
-      {%- for category in menu -%}
-      {
-        "@type": "MenuSection",
-        "name": "{{ category.fields.name }}",
-        "description": "{{ category.fields.description }}",
-        "image": "https:{{ category.fields.icon.fields.file.url }}",
-        "url": "{{ site.url }}/menu/#{{ category.fields.name | slugify }}/"
-      }{{ ',' if not loop.last else ''}}
-      {% endfor %}
-    ]
-  },
   "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      "opens": "08:00",
-      "closes": "19:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Sunday"],
-      "opens": "08:00",
-      "closes": "17:00"
-    }
-  ],
-  "potentialAction": [
-    {
-      "@type": "OrderAction",
-      "agent": {
-        "@type": "Service",
-        "@id": "https://pos.toasttab.com/",
-        "serviceType": "Online Order for Self Pickup",
-        "name": "Toast"
-      },
-      "url": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/"
-    },
-    {
-      "@type": "OrderAction",
-      "agent": {
-        "@type": "Service",
-        "@id": "https://ubereats.com/",
-        "serviceType": "Online Order for Food Delivery",
-        "name": "Uber Eats"
-      },
-      "url": "https://www.ubereats.com/store/pepper-farm-deli/w3dNm-8xRvetqmpA9nq2rg"
-    },
-    {
-      "@type": "OrderAction",
-      "agent": {
-        "@type": "Service",
-        "@id": "https://grubhub.com/",
-        "serviceType": "Online Order for Food Delivery",
-        "name": "Grubhub"
-      },
-      "url": "https://www.grubhub.com/restaurant/pepper-farm-deli-235-town-center-pkwy-santee/3069315"
-    },
-    {
-      "@type": "OrderAction",
-      "agent": {
-        "@type": "Service",
-        "@id": "https://doordash.com/",
-        "serviceType": "Online Order for Food Delivery",
-        "name": "Doordash"
-      },
-      "url": "https://www.doordash.com/store/pepper-farm-deli-santee-2431793/"
-    }
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "08:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "17:00" }
   ]
 }
 

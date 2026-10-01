@@ -1,5 +1,6 @@
 ---
 pagination:
+  addAllPagesToCollections: true
   data: blog
   size: 1
   alias: post
@@ -17,8 +18,8 @@ eleventyComputed:
   "@type": "BlogPosting",
   "@id": "{{ site.url }}{{ page.url }}#article",
   "mainEntityOfPage": "{{ site.url }}{{ page.url }}",
-  "headline": "{{ post.fields.hero[0].fields.h1 | replace('"', '\\"') }}",
-  "description": "{{ post.fields.meta.fields.description | replace('"', '\\"') }}",
+  "headline": {{ post.fields.hero[0].fields.h1 | json | safe }},
+  "description": {{ post.fields.meta.fields.description | json | safe }},
   "image": "{{ post.fields.thumbnail.fields.file.url | cfimg }}",
   "datePublished": "{{ post.sys.createdAt | w3c }}",
   "dateModified": "{{ post.sys.updatedAt | w3c }}",

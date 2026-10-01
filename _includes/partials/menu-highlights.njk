@@ -1,0 +1,21 @@
+{% for category in menu %}
+  {% if category.fields.name in selectedCategories %}
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">{{ category.fields.name }}</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    {% for entry in category.fields.products %}
+      {% if loop.index <= 4 %}
+      <div class="bg-zinc-100 rounded-lg p-4">
+        {% if entry.fields.images[0] %}
+        <img class="w-full h-60 object-cover rounded-lg mb-4" eleventy:widths="400" src="{{ entry.fields.images[0].fields.file.url | cfimg }}" alt="{{ entry.fields.name }}">
+        {% endif %}
+        <h3 class="text-xl font-bold mb-2"><a class="text-lime-800 underline" href="/menu/{{ entry.fields.name | slugify }}/">{{ entry.fields.name }}</a></h3>
+        <p>{{ entry.fields.description | menuDescription(entry.fields.name) }}</p>
+      </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+    <p class="mt-4"><a class="text-lime-800 underline" href="/menu/#{{ category.fields.name | slugify }}">View all {{ category.fields.name }}</a></p>
+  </section>
+  {% endif %}
+{% endfor %}

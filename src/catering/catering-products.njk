@@ -1,5 +1,6 @@
 ---
 pagination:
+  addAllPagesToCollections: true
   data: cateringProducts.items
   size: 1
   alias: product
@@ -7,26 +8,29 @@ permalink: /catering/{{ product.fields.name | slugify }}/index.html
 layout: base.njk
 eleventyComputed:
   title: "{{ product.fields.name }} Catering in Santee | Pepper Farm Deli"
-  description: "The {{ product.fields.name }} is a {{ product.fields.description }}."
+  description: "{{ product.fields.description | menuDescription(product.fields.name) }}"
 ---
 
 <script type="application/ld+json">
   {% from "partials/product-schema-macro.njk" import productSchema %}
-  {{ productSchema(product) }}
+  {{ productSchema(product, site.url + page.url) }}
 </script>
 
 <div class="section mb-16">
+  <nav class="my-4" aria-label="Breadcrumb"><a class="text-lime-800 underline" href="/catering/">Catering menu</a> / {{ product.fields.name }}</nav>
+  <h1 class="text-center font-bold text-3xl my-8">{{ product.fields.name }}</h1>
   <div class="flex flex-col md:flex-row md:mt-8">
-    <h2 class="md:hidden text-center font-bold text-3xl my-8">{{ product.fields.name }}</h2>
     
     {%- if product.fields.images | length > 0 -%}
 
       {%- for image in product.fields.images -%}
         <img 
           class="w-full md:w-1/2 md:pl-4 xl:pl-0" 
-          eleventy:widths="600"
+          eleventy:widths="400,600"
+          sizes="(min-width: 768px) 50vw, 100vw"
+          loading="{{ 'eager' if loop.first else 'lazy' }}"
           src="{{ image.fields.file.url | cfimg("fit=thumb&w=600&h=400") | safe }}" 
-          alt="{{ product.fields.description }}"/>
+          alt="{{ product.fields.name }}"/>
       {%- endfor -%}
 
     {%- else -%}
@@ -37,8 +41,7 @@ eleventyComputed:
     {%- endif -%}
 
     <div class="flex flex-col my-8 md:my-0 md:w-1/2 px-4 lg:px-16 text-center">
-      <h2 class="hidden md:block text-center font-bold text-3xl md:mb-8">{{ product.fields.name }}</h2>
-      <p class="text-xl mb-8 px-4 md:px-0">{{ product.fields.description }}</p>
+      <p class="text-xl mb-8 px-4 md:px-0">{{ product.fields.description | menuDescription(product.fields.name) }}</p>
       <div class="flex flex-row justify-center gap-8 mb-8">
         {%- if product.fields.price -%}
         <div class="text-5xl font-bold">$ {{ product.fields.price }}</div>
@@ -55,7 +58,9 @@ eleventyComputed:
 
         
       </div>
-      <a onclick="window.dataLayer.push({'event': 'order_started_event'});" id="order-product-page" class="solid-button" href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/">Start Your Order</a>
+      <p class="my-4">Confirm serving quantities, current pricing, minimum orders, and preparation time with the deli before booking. Pickup and delivery arrangements depend on your event.</p>
+      <a class="solid-button" href="/catering-inquiry/">Request catering</a>
+      <a class="text-lime-800 underline mt-4" href="tel:+16192018129">Discuss your event: 619-201-8129</a>
     </div>
 
   </div>

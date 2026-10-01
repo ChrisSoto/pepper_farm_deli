@@ -1,13 +1,14 @@
 ---
 pagination:
+  addAllPagesToCollections: true
   data: catering.items
   size: 1
   alias: category
 permalink: /catering/{{ category.fields.name | slugify }}/index.html
 layout: base.njk
 eleventyComputed:
-  title: "{{ category.fields.name }} | Pepper Farm Deli"
-  description: "The {{ category.fields.name }} is a {{ category.fields.description }}."
+  title: "{{ category.fields.name }} Catering in Santee | Pepper Farm Deli"
+  description: "Explore {{ category.fields.name }} for your Santee group meal. Contact Pepper Farm Deli to confirm quantities, pricing, and event availability."
 ---
 
 <div class="container max-w-screen-xl mx-auto mt-6 mb-12">
