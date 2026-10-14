@@ -2,6 +2,8 @@ export default [
   {
     slug: "breakfast-before-work-in-santee",
     title: "Breakfast Before Work in Santee: How to Plan Your Order",
+    image: "https://images.ctfassets.net/eldyi6e8kb6c/73LvziGehIO3Kc983UQgMS/6f28f78d2ae5b2f9edb08631844ef219/egg-and-cheese-breakfast-sandwich.jpg",
+    imageAlt: "Sausage, egg, and cheese breakfast sandwich",
     description: "Plan a Santee breakfast stop with tips for choosing wraps, sandwiches, and plates, checking availability, and organizing a group order.",
     date: "2026-10-01",
     intro: "A weekday breakfast stop works best when the food fits your schedule. At Pepper Farm Deli in Santee, start with the current breakfast menu and choose how you want to eat: a handheld meal for your break or a plate when you have time to sit down. Here is how to make the order easier.",
@@ -16,6 +18,8 @@ export default [
   {
     slug: "choosing-a-vegetarian-lunch-in-santee",
     title: "Choosing a Vegetarian Lunch in Santee: What to Check",
+    image: "https://images.ctfassets.net/eldyi6e8kb6c/1znPFThX0BugbhoGb5ViMr/cf22b130fc828f759add483dce4ea714/green-beret.jpg",
+    imageAlt: "Green Beret vegetarian sandwich",
     description: "Compare vegetarian sandwiches and salads in Santee, understand ingredient questions, and organize a group lunch with different dietary preferences.",
     date: "2026-10-01",
     intro: "Choosing a vegetarian lunch is easier when you look beyond the dish name. Pepper Farm Deli's menu includes explicitly vegetarian sandwiches alongside salads and other meals. Use the menu descriptions to build a shortlist, then ask the team about ingredients and preparation before ordering.",
@@ -30,6 +34,8 @@ export default [
   {
     slug: "planning-party-catering-in-santee",
     title: "Planning Party Catering in Santee: Portions, Timing & Pickup",
+    image: "https://images.ctfassets.net/eldyi6e8kb6c/4Tw9ccdebdsBaF6xd7m2C/88a110182bb9406c440200c0c3f96b4c/for-all-cold_sandw-catering.webp",
+    imageAlt: "Half sandwich catering platter",
     description: "Use this Santee party catering checklist to organize your guest count, menu, portions, dietary needs, and pickup or delivery arrangements.",
     date: "2026-10-01",
     intro: "A birthday lunch, family gathering, or team celebration starts with a few practical details: who is eating, when food is needed, and how it will reach the table. Use this checklist before requesting catering from Pepper Farm Deli in Santee.",

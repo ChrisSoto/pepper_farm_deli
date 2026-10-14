@@ -19,6 +19,7 @@ description: Read Pepper Farm Deli's guides to sandwiches, breakfast, healthy op
             <h2 class="text-zinc-600 hover:underline hover:text-red-500 text-3xl font-bold cursor-pointer mb-2"><a href="/blog/{{ article.slug }}/">{{ article.title }}</a></h2>
             <p class="text-pretty">{{ article.description }} <span class="text-red-400 italic font-thin hover:underline hover:text-red-500"><a href="/blog/{{ article.slug }}/">...Read More</a></span></p>
         </div>
+        <img eleventy:images="250" class="object-center w-full sm:w-1/4 pb-4" src="{{ article.image }}?w=250&h=250&fit=thumb" alt="{{ article.imageAlt }}">
     </div>
     {% endfor %}
     {% endif %}
