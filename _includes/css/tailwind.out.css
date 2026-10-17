@@ -1153,6 +1153,11 @@ video {
   border-color: rgb(212 212 216 / var(--tw-border-opacity));
 }
 
+.\!bg-red-600 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity)) !important;
+}
+
 .bg-amber-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 243 199 / var(--tw-bg-opacity));
@@ -2121,6 +2126,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .hover\:border-lime-600:hover {
   --tw-border-opacity: 1;
   border-color: rgb(101 163 13 / var(--tw-border-opacity));
+}
+
+.hover\:\!bg-red-800:hover {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity)) !important;
 }
 
 .hover\:bg-blue-700:hover {
