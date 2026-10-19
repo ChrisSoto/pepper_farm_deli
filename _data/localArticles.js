@@ -1,5 +1,21 @@
 export default [
   {
+    slug: "breakfast-sandwiches-burritos-santee",
+    title: "Breakfast in Santee: Try Pepper Farm Deli’s $7.99 Egg-and-Cheese Burrito",
+    image: "https://images.ctfassets.net/eldyi6e8kb6c/73LvziGehIO3Kc983UQgMS/6f28f78d2ae5b2f9edb08631844ef219/egg-and-cheese-breakfast-sandwich.jpg",
+    imageAlt: "Sausage, egg, and cheese breakfast sandwich",
+    description: "Looking for the best breakfast in Santee? Check out Pepper Farm Deli’s new $7.99 egg-and-cheese burrito, plus breakfast sandwiches and wraps.",
+    date: "2026-10-18",
+    displayDate: "October 18, 2026",
+    intro: "Searching for the best breakfast in Santee? Pepper Farm Deli has a new $7.99 egg-and-cheese burrito for a quick, filling start to the day. If you’re looking for a breakfast burrito in Santee, a breakfast sandwich, or a wrap, browse the current menu and choose what fits your morning.",
+    sections: [
+      { heading: "A new $7.99 egg-and-cheese breakfast burrito", text: "The new egg-and-cheese burrito is an easy handheld breakfast to enjoy on a busy morning. At $7.99, it gives Santee diners a simple breakfast option built around eggs and cheese. Check the breakfast menu for current details and availability before you head over." },
+      { heading: "More breakfast choices in Santee", text: "Prefer something different? Pepper Farm Deli also serves breakfast sandwiches and wraps. Compare the menu descriptions, then pick the style that suits your appetite and schedule. If you have a question about ingredients or a particular breakfast item, contact the deli before ordering." },
+      { heading: "Find your morning stop in Santee", text: "Pepper Farm Deli is at 235 Town Center Parkway, Suite H, Santee, CA 92071. Whether you searched for breakfast near me in Santee or already know what you want, check the menu and call ahead if you need to confirm that an item is available." }
+    ],
+    links: [{ label: "See the breakfast menu", url: "/menu/#breakfast" }, { label: "Read breakfast planning tips", url: "/blog/breakfast-before-work-in-santee/" }]
+  },
+  {
     slug: "breakfast-before-work-in-santee",
     title: "Breakfast Before Work in Santee: How to Plan Your Order",
     image: "https://images.ctfassets.net/eldyi6e8kb6c/73LvziGehIO3Kc983UQgMS/6f28f78d2ae5b2f9edb08631844ef219/egg-and-cheese-breakfast-sandwich.jpg",
