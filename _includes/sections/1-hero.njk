@@ -13,6 +13,6 @@
         <a onclick="window.dataLayer.push({'event': 'order_started_event'});" id="order-now-hero" class="solid-button w-64 bg-lime-800 text-center text-white" href="https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h">Order Now!</a>
       </div>
     </div>
-    <div id="hero-img" class="hidden sm:block sm:w-4/12 md:w-5/12 lg:w-7/12" style="background-image: url('https:{{ home.homeImage.fields.file.url }}');"></div>
+    <div id="hero-img" class="hidden sm:block sm:w-4/12 md:w-5/12 lg:w-7/12" style="background-image: url('{{ home.homeImage.fields.file.url | cfimg('w=1200&fm=webp&q=80') | safe }}');"></div>
   </div>
 </div>

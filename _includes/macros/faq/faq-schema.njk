@@ -1,26 +1,14 @@
-{%- macro faqSchema(fields) -%}
-
+{% macro faqSchema(fields) %}
 <script type="application/ld+json">
-
 {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "name": "FAQs {{ fields.name }}",
+  "@context": "https://schema.org", "@type": "FAQPage",
   "mainEntity": [
     {% for faq in fields %}
-    {
-      "@type": "Question",
-      "name": "{{ faq.fields.question }}",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "{{ faq.fields.answer }}"
-      }
-    }
-    {%- if not loop.last -%},{%- endif -%}
+    { "@type": "Question", "name": {{ faq.fields.question | json | safe }},
+      "acceptedAnswer": { "@type": "Answer", "text": {{ faq.fields.answer | json | safe }} }
+    }{{ ',' if not loop.last }}
     {% endfor %}
   ]
 }
-
 </script>
-
-{%- endmacro -%}
+{% endmacro %}
