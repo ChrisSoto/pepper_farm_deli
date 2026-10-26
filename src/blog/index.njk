@@ -1,52 +1,49 @@
 ---
-pagination:
-  addAllPagesToCollections: true
-  data: blog
-  size: 6
-  alias: posts
 layout: base.njk
 title: Pepper Farm Deli Blog | Santee Food, Sandwiches & Catering
 description: Read Pepper Farm Deli's guides to sandwiches, breakfast, healthy options, soups, and catering in Santee, CA.
 ---
 
-<div class="max-w-screen-md mx-auto">
-  <div class="flex flex-col m-4">
-    <h1 class="text-red-500 text-5xl font-bold my-8 font-display text-center sm:text-left">Pepper Farm Deli Blog</h1>
-    {% if pagination.pageNumber == 0 %}
+<main class="max-w-screen-xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+  <header class="mb-8">
+    <p class="text-lime-800 font-semibold uppercase tracking-wide">Pepper Farm Deli · Santee, CA</p>
+    <h1 class="text-4xl sm:text-5xl font-bold mt-2">From the Pepper Farm Deli Blog</h1>
+    <p class="text-lg text-zinc-700 mt-3 max-w-3xl">Local guides to deli sandwiches, subs, breakfast, catering, and more in Santee.</p>
+  </header>
+
+  <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" aria-label="All blog articles">
     {% for article in localArticles %}
-    <div class="flex flex-col items-start sm:flex-row mb-4">
-        <div class="flex flex-col mb-4 sm:mr-4 sm:w-3/4">
-            <h2 class="text-zinc-600 hover:underline hover:text-red-500 text-3xl font-bold cursor-pointer mb-2"><a href="/blog/{{ article.slug }}/">{{ article.title }}</a></h2>
-            <p class="text-pretty">{{ article.description }} <span class="text-red-400 italic font-thin hover:underline hover:text-red-500"><a href="/blog/{{ article.slug }}/">...Read More</a></span></p>
-        </div>
-    </div>
+    <article class="bg-white rounded-xl border border-zinc-200 shadow-sm overflow-hidden flex flex-col h-full">
+      <img eleventy:images="500" class="w-full h-52 object-cover" src="{{ article.image }}{% if article.image[0] != '/' %}?w=500&h=320&fit=thumb{% endif %}" alt="{{ article.imageAlt }}" loading="lazy">
+      <div class="p-5 flex flex-col flex-1">
+        <time class="text-sm text-lime-800 font-semibold" datetime="{{ article.date }}">{{ article.displayDate }}</time>
+        <h2 class="text-2xl font-bold mt-2 mb-3"><a class="text-lime-950 hover:text-lime-800 hover:underline" href="/blog/{{ article.slug }}/">{{ article.title }}</a></h2>
+        <p class="text-zinc-700 mb-5 flex-1">{{ article.description }}</p>
+        <a class="text-lime-800 font-bold hover:underline mt-auto" href="/blog/{{ article.slug }}/">Read article <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
     {% endfor %}
-    {% endif %}
 
-    <div class="flex flex-col items-start sm:flex-row mb-4">
-        <div class="flex flex-col mb-4 sm:mr-4 sm:w-3/4">
-            <h2 class="text-zinc-600 hover:underline hover:text-red-500 text-3xl font-bold cursor-pointer mb-2"><a href="/blog/planning-an-office-lunch-in-santee/">Planning an Office Lunch in Santee: A Sandwich Catering Checklist</a></h2>
-            <p class="text-pretty">A practical guide to planning a smooth group lunch, from headcounts and dietary needs to ordering and pickup timing. <span class="text-red-400 italic font-thin hover:underline hover:text-red-500"><a href="/blog/planning-an-office-lunch-in-santee/">...Read More</a></span></p>
-        </div>
-    </div>
+    <article class="bg-white rounded-xl border border-zinc-200 shadow-sm overflow-hidden flex flex-col h-full">
+      <img eleventy:images="500" class="w-full h-52 object-cover" src="https://images.ctfassets.net/eldyi6e8kb6c/4Tw9ccdebdsBaF6xd7m2C/88a110182bb9406c440200c0c3f96b4c/for-all-cold_sandw-catering.webp?w=500&h=320&fit=thumb" alt="Sandwich catering platter for an office lunch" loading="lazy">
+      <div class="p-5 flex flex-col flex-1">
+        <p class="text-sm text-lime-800 font-semibold">September 15, 2026</p>
+        <h2 class="text-2xl font-bold mt-2 mb-3"><a class="text-lime-950 hover:text-lime-800 hover:underline" href="/blog/planning-an-office-lunch-in-santee/">Planning an Office Lunch in Santee: A Sandwich Catering Checklist</a></h2>
+        <p class="text-zinc-700 mb-5 flex-1">A practical guide to planning a smooth group lunch, from headcounts and dietary needs to ordering and pickup timing.</p>
+        <a class="text-lime-800 font-bold hover:underline mt-auto" href="/blog/planning-an-office-lunch-in-santee/">Read article <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
 
-    {% for post in posts %}
-    <div class="flex flex-col items-start sm:flex-row mb-4">
-        <div class="flex flex-col mb-4 sm:mr-4 sm:w-3/4">
-            <h2 class="text-zinc-600 hover:underline hover:text-red-500 text-3xl font-bold cursor-pointer mb-2"><a href="/blog/{{ post.fields.hero[0].fields.h1 | slugify }}">{{post.fields.hero[0].fields.h1 }}</a></h2>
-            <p class="text-pretty">{{ post.fields.summary | safe }} <span class="text-red-400 italic font-thin hover:underline hover:text-red-500" ><a href="/blog/{{ post.fields.hero[0].fields.h1 | slugify }}">...Read More</a></span> </p>
-        </div>
-        <img eleventy:images="250" class="object-center w-full sm:w-1/4 pb-4" src="{{ post.fields.thumbnail.fields.file.url | cfimg }}?w=250&h=250&fit=thumb" alt="{{ post.fields.title }}">
-    </div>
+    {% for post in blog %}
+    <article class="bg-white rounded-xl border border-zinc-200 shadow-sm overflow-hidden flex flex-col h-full">
+      <img eleventy:images="500" class="w-full h-52 object-cover" src="{{ post.fields.thumbnail.fields.file.url | cfimg }}?w=500&h=320&fit=thumb" alt="{{ post.fields.title or post.fields.hero[0].fields.h1 }}" loading="lazy">
+      <div class="p-5 flex flex-col flex-1">
+        <time class="text-sm text-lime-800 font-semibold" datetime="{{ post.sys.createdAt | w3c }}">{{ post.sys.createdAt | w3c }}</time>
+        <h2 class="text-2xl font-bold mt-2 mb-3"><a class="text-lime-950 hover:text-lime-800 hover:underline" href="/blog/{{ post.fields.hero[0].fields.h1 | slugify }}/">{{ post.fields.hero[0].fields.h1 }}</a></h2>
+        <p class="text-zinc-700 mb-5 flex-1">{{ post.fields.summary | safe }}</p>
+        <a class="text-lime-800 font-bold hover:underline mt-auto" href="/blog/{{ post.fields.hero[0].fields.h1 | slugify }}/">Read article <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
     {% endfor %}
-  </div>
-
-  <nav aria-label="Blog pages" class="w-full my-8 p-4">
-      <ol class="flex flex-row justify-end gap-4">
-      {%- for pageEntry in pagination.pages %}
-          <li><a class="bg-red-500 text-white text-lg rounded-full p-2 px-6" href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>Page {{ loop.index }}</a></li>
-      {%- endfor %}
-      </ol>
-  </nav>
-
-</div>
+  </section>
+</main>

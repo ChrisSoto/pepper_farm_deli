@@ -46,7 +46,18 @@ eleventyComputed:
     <span class="text-zinc-500 text-sm">By Pepper Farm Deli · Published {{ post.sys.createdAt | w3c }} · Updated {{ post.sys.updatedAt | w3c }}</span>
   </div>
   
-  <img eleventy:images="740" class="object-center w-full pb-8" src="{{ post.fields.hero[0].fields.image[0].fields.file.url | cfimg }}" alt="{{ post.fields.title }}">
+  {% if post.fields.hero[0].fields.h1 == "Breakfast Near Me: Start Your Day Right in Santee" %}
+  <img eleventy:images="740" class="object-center w-full pb-8" src="/assets/breakfast-burrito.png" alt="Egg and cheese Breakfast Burrito, cut in half">
+  {% else %}
+  <img eleventy:images="740" class="object-center w-full pb-8" src="{{ post.fields.hero[0].fields.image[0].fields.file.url | cfimg }}" alt="{{ post.fields.title or post.fields.hero[0].fields.h1 }}">
+  {% endif %}
+
+  {% if post.fields.hero[0].fields.h1 == "Breakfast Near Me: Start Your Day Right in Santee" %}
+  <section class="bg-zinc-100 rounded-md p-5 mb-6" aria-labelledby="breakfast-burrito-blog-heading">
+    <h2 id="breakfast-burrito-blog-heading" class="text-2xl font-bold mb-3">Try Our $7.99 Egg and Cheese Breakfast Burrito</h2>
+    <p>Looking for a quick breakfast in Santee? Our new Breakfast Burrito is filled with egg and cheese and priced at $7.99. It is a warm, convenient option for a satisfying breakfast near you before work, school, or your morning plans.</p>
+  </section>
+  {% endif %}
 
   {{ post.fields.content | richText | safe }}
 
