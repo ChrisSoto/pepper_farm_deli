@@ -32,7 +32,9 @@
 
   <meta property="og:title" content="{{ title or home.metaTitle }}" />
   <meta property="og:description" content="{{ description or home.metaDescription }}" />
-  <meta property="og:image" content="{{ site.logo }}" />
+  <meta property="og:image" content="{{ featuredImage or site.logo }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{{ title or home.metaTitle }}" />
   <meta name="twitter:description" content="{{ description or home.metaDescription }}" />
@@ -55,5 +57,6 @@
     
     <main id="main-content" tabindex="-1">{{ content | safe }}</main>
 
+<script>{% include "js/analytics.js" %}</script>
 </body>
 </html>

@@ -1,33 +1,21 @@
 {
   "@context": "https://schema.org",
   "@type": "Menu",
-  "name": "Menu",
-  "mainEntityOfPage": "https://pepperfarmdeli.com/menu/",
-  "inLanguage": "English",
+  "@id": "{{ site.url }}/menu/#menu",
+  "name": "Pepper Farm Deli Menu",
+  "url": "{{ site.url }}/menu/",
   "hasMenuSection": [
-    {%- for category in menu -%}
+    {% for category in menu %}
     {
       "@type": "MenuSection",
-      "name": "{{category.fields.name}}",
+      "name": {{ category.fields.name | json | safe }},
+      "url": "{{ site.url }}/menu/#{{ category.fields.name | slugify }}",
       "hasMenuItem": [
-      {% for product in category.fields.products %}
-        {
-          "@type": "MenuItem",
-          "name": "{{product.fields.name | safe}}",
-          "description": "{{product.fields.description | menuDescription(product.fields.name) | replace('"', '\\"')}}",
-          {% if product.fields.images[0] %}
-          "image": "https:{{ product.fields.images[0].fields.file.url }}",
-          {% endif %}
-          "url": "{{ site.url }}/menu/{{ product.fields.name | slugify }}/",
-          "offers": {
-            "@type": "Offer",
-            "price": "{{product.fields.price}}",
-            "priceCurrency": "USD"
-          }
-        }{{ ',' if not loop.last else ''}}
-      {% endfor %}
+        {% for product in category.fields.products %}
+          {{ product | foodSchema(site.url + '/menu/' + (product.fields.name | slugify) + '/') | json | safe }}{{ ',' if not loop.last }}
+        {% endfor %}
       ]
-    }{{ ',' if not loop.last else ''}}
+    }{{ ',' if not loop.last }}
     {% endfor %}
   ]
 }
