@@ -40,6 +40,13 @@ eleventyExcludeFromCollections: true
   <lastmod>2026-09-15</lastmod>
 </url>
 
+{% for article in localArticles %}
+<url>
+  <loc>{{ site.url }}/blog/{{ article.slug }}/</loc>
+  <lastmod>{{ article.date }}</lastmod>
+</url>
+{% endfor %}
+
 {% for page in blog %}
 <url>
   <loc>{{ site.url }}/blog/{{ page.fields.hero[0].fields.h1 | slugify }}/</loc>
