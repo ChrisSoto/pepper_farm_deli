@@ -10,12 +10,38 @@ description: Enjoy fresh sandwiches, burgers, breakfast, salads, smoothies, and 
 {% include "sections/4-catering-ad.njk" %}
 {% include "sections/5-reviews.njk" %}
 {% include "sections/6-store-info.njk" %}
+<section class="section mb-16" aria-labelledby="breakfast-burrito-heading">
+  <div class="flex flex-col md:flex-row items-center gap-8 bg-zinc-100 rounded-md p-6">
+    <img eleventy:images="720" class="object-cover w-full md:w-1/2 rounded-md" src="/assets/breakfast-burrito.png" alt="Egg and cheese Breakfast Burrito, cut in half">
+    <div class="md:w-1/2">
+      <p class="text-lime-800 font-semibold mb-2">Breakfast in Santee</p>
+      <h2 id="breakfast-burrito-heading" class="text-3xl font-bold mb-4">Try Our $7.99 Breakfast Burrito</h2>
+      <p class="mb-4">Looking for the best breakfast in Santee? Start your morning at Pepper Farm Deli with a warm egg and cheese Breakfast Burrito, freshly prepared and easy to enjoy on the go.</p>
+      <p class="mb-5">Our new $7.99 Breakfast Burrito is a satisfying, affordable breakfast near you in Santee. Stop in for breakfast, or explore more morning favorites on our menu.</p>
+      <div class="flex flex-wrap gap-6 mt-6">
+        <a class="solid-button inline-block" href="/menu/#breakfast">See the Breakfast Menu</a>
+        <a class="text-lime-800 font-semibold hover:underline" href="/blog/breakfast-near-me-start-your-day-right-in-santee/">Read our Santee breakfast guide</a>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="section mb-16" aria-labelledby="blog-heading">
   <h2 id="blog-heading" class="text-3xl font-bold mb-6 text-center">From the Blog</h2>
-  <div class="bg-zinc-100 rounded-md p-6 text-center">
-    <h3 class="text-2xl font-bold mb-3"><a class="text-lime-800 hover:underline" href="/blog/planning-an-office-lunch-in-santee/">Planning an Office Lunch in Santee: A Sandwich Catering Checklist</a></h3>
-    <p class="mb-4">Use this practical checklist to plan a smooth group lunch, from headcounts and dietary needs to ordering and pickup timing.</p>
-    <a class="solid-button inline-block" href="/blog/">Read the Pepper Farm Deli Blog</a>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-4">
+    <article class="bg-zinc-100 rounded-xl p-6 flex flex-col">
+      <img eleventy:images="500" class="w-full h-52 object-cover rounded-md mb-5" src="{{ localArticles[0].image }}?w=500&h=320&fit=thumb" alt="{{ localArticles[0].imageAlt }}" loading="lazy">
+      <p class="text-lime-800 font-semibold mb-2">New Santee sandwich guide</p>
+      <h3 class="text-2xl font-bold mb-3"><a class="text-lime-950 hover:text-lime-800 hover:underline" href="/blog/subs-near-you-in-santee/">Subs Near You in Santee: Fresh Deli Sandwiches at Pepper Farm Deli</a></h3>
+      <p class="mb-5 flex-1">Explore sub sandwiches, deli favorites, and hot lunch options at Pepper Farm Deli on Town Center Parkway in Santee.</p>
+      <a class="solid-button inline-block self-start" href="/blog/subs-near-you-in-santee/">Read the Santee subs guide</a>
+    </article>
+    <article class="bg-zinc-100 rounded-xl p-6 flex flex-col">
+      <img eleventy:images="500" class="w-full h-52 object-cover rounded-md mb-5" src="https://images.ctfassets.net/eldyi6e8kb6c/4Tw9ccdebdsBaF6xd7m2C/88a110182bb9406c440200c0c3f96b4c/for-all-cold_sandw-catering.webp?w=500&h=320&fit=thumb" alt="Half sandwich catering platter for an office lunch" loading="lazy">
+      <p class="text-lime-800 font-semibold mb-2">Catering tips</p>
+      <h3 class="text-2xl font-bold mb-3"><a class="text-lime-950 hover:text-lime-800 hover:underline" href="/blog/planning-an-office-lunch-in-santee/">Planning an Office Lunch in Santee: A Sandwich Catering Checklist</a></h3>
+      <p class="mb-5 flex-1">Plan a smooth group lunch, from headcounts and dietary needs to ordering and pickup timing.</p>
+      <a class="solid-button inline-block self-start" href="/blog/">Browse all blog articles</a>
+    </article>
   </div>
 </section>
 <section class="section mb-16" aria-labelledby="home-faq-heading">

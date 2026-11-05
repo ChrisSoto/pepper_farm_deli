@@ -1,7 +1,42 @@
 export default [
   {
+    slug: "subs-near-you-in-santee",
+    title: "Subs Near You in Santee: Fresh Deli Sandwiches at Pepper Farm Deli",
+    image: "https://images.ctfassets.net/eldyi6e8kb6c/1y2zMpbfGEoMgoHzlP8Pl8/edfc8c7669501df6b937e17f3b1a8f66/philly-cheesesteak.jpg",
+    imageAlt: "Philly Cheesesteak from Pepper Farm Deli",
+    description: "Looking for subs in Santee? Explore sub sandwiches, hot favorites, and fresh lunch options at Pepper Farm Deli on Town Center Parkway.",
+    date: "2026-10-25",
+    displayDate: "October 25, 2026",
+    intro: "When a sandwich sounds right for lunch, it helps to find a spot with plenty of choices and freshly prepared ingredients. Pepper Farm Deli serves Santee with a wide menu of deli sandwiches, hot sandwiches, wraps, salads, and more. If you’re searching for subs near you in Santee, take a look at the menu and find a sandwich style that fits your appetite.",
+    sections: [
+      { heading: "How we craft a satisfying sub sandwich", text: "A great sub brings its ingredients together in every bite. At Pepper Farm Deli in Santee, start with a fresh roll, then choose the fillings and flavors you enjoy—from savory deli meats and cheese to a hot grilled sub or crisp vegetables and flavorful spreads. Explore the menu to find a sub sandwich in Santee that fits your appetite, and ask the deli about ingredients or customizations before ordering." },
+      { heading: "Explore sub sandwiches in Santee", text: "Pepper Farm Deli’s menu includes a range of sub sandwich favorites, from the Italian and Little Italy to the Philly Cheesesteak, French Dip, and Cubano. These options offer different combinations and flavors, so there’s more than one way to enjoy a sub sandwich in Santee. Browse the current menu to compare ingredients and find the right choice for lunch." },
+      { heading: "Find subs near you at Town Center Parkway", text: "Pepper Farm Deli is located at 235 Town Center Parkway, Suite H, Santee, California 92071. Stop by for a freshly prepared sandwich, or review the menu and online ordering options before you go. If you’re planning a meal for coworkers or a group, explore the deli’s catering options and contact the team to confirm current selections and timing." },
+      { heading: "A local Santee sandwich stop", text: "Whether you call them subs, submarine sandwiches, or deli sandwiches, the best choice depends on the fillings and flavors you’re in the mood for. Pepper Farm Deli brings a broad selection of hot and cold sandwich options together in one Santee location. Check the menu for current offerings, then visit the deli at Town Center Parkway for your next lunch." }
+    ],
+    links: [{ label: "Browse the full Pepper Farm Deli menu", url: "/menu/" }, { label: "Explore sandwich favorites in Santee", url: "/best-sandwiches/" }, { label: "View deli catering options", url: "/catering/" }]
+  },
+  {
+    slug: "breakfast-sandwiches-burritos-santee",
+    title: "Breakfast in Santee: Try Pepper Farm Deli’s $7.99 Egg-and-Cheese Burrito",
+    image: "/assets/breakfast-burrito.png",
+    imageAlt: "Egg and cheese Breakfast Burrito",
+    description: "Looking for the best breakfast in Santee? Check out Pepper Farm Deli’s new $7.99 egg-and-cheese burrito, plus breakfast sandwiches and wraps.",
+    date: "2026-10-18",
+    displayDate: "October 18, 2026",
+    intro: "Searching for the best breakfast in Santee? Pepper Farm Deli has a new $7.99 egg-and-cheese burrito for a quick, filling start to the day. If you’re looking for a breakfast burrito in Santee, a breakfast sandwich, or a wrap, browse the current menu and choose what fits your morning.",
+    sections: [
+      { heading: "A new $7.99 egg-and-cheese breakfast burrito", text: "The new egg-and-cheese burrito is an easy handheld breakfast to enjoy on a busy morning. At $7.99, it gives Santee diners a simple breakfast option built around eggs and cheese. Check the breakfast menu for current details and availability before you head over." },
+      { heading: "More breakfast choices in Santee", text: "Prefer something different? Pepper Farm Deli also serves breakfast sandwiches and wraps. Compare the menu descriptions, then pick the style that suits your appetite and schedule. If you have a question about ingredients or a particular breakfast item, contact the deli before ordering." },
+      { heading: "Find your morning stop in Santee", text: "Pepper Farm Deli is at 235 Town Center Parkway, Suite H, Santee, CA 92071. Whether you searched for breakfast near me in Santee or already know what you want, check the menu and call ahead if you need to confirm that an item is available." }
+    ],
+    links: [{ label: "See the breakfast menu", url: "/menu/#breakfast" }, { label: "Read breakfast planning tips", url: "/blog/breakfast-before-work-in-santee/" }]
+  },
+  {
     slug: "breakfast-before-work-in-santee",
     title: "Breakfast Before Work in Santee: How to Plan Your Order",
+    image: "https://images.ctfassets.net/eldyi6e8kb6c/73LvziGehIO3Kc983UQgMS/6f28f78d2ae5b2f9edb08631844ef219/egg-and-cheese-breakfast-sandwich.jpg",
+    imageAlt: "Sausage, egg, and cheese breakfast sandwich",
     description: "Plan a Santee breakfast stop with tips for choosing wraps, sandwiches, and plates, checking availability, and organizing a group order.",
     date: "2026-10-01",
     intro: "A weekday breakfast stop works best when the food fits your schedule. At Pepper Farm Deli in Santee, start with the current breakfast menu and choose how you want to eat: a handheld meal for your break or a plate when you have time to sit down. Here is how to make the order easier.",
@@ -16,6 +51,8 @@ export default [
   {
     slug: "choosing-a-vegetarian-lunch-in-santee",
     title: "Choosing a Vegetarian Lunch in Santee: What to Check",
+    image: "https://images.ctfassets.net/eldyi6e8kb6c/1znPFThX0BugbhoGb5ViMr/cf22b130fc828f759add483dce4ea714/green-beret.jpg",
+    imageAlt: "Green Beret vegetarian sandwich",
     description: "Compare vegetarian sandwiches and salads in Santee, understand ingredient questions, and organize a group lunch with different dietary preferences.",
     date: "2026-10-01",
     intro: "Choosing a vegetarian lunch is easier when you look beyond the dish name. Pepper Farm Deli's menu includes explicitly vegetarian sandwiches alongside salads and other meals. Use the menu descriptions to build a shortlist, then ask the team about ingredients and preparation before ordering.",
@@ -30,6 +67,8 @@ export default [
   {
     slug: "planning-party-catering-in-santee",
     title: "Planning Party Catering in Santee: Portions, Timing & Pickup",
+    image: "https://images.ctfassets.net/eldyi6e8kb6c/4Tw9ccdebdsBaF6xd7m2C/88a110182bb9406c440200c0c3f96b4c/for-all-cold_sandw-catering.webp",
+    imageAlt: "Half sandwich catering platter",
     description: "Use this Santee party catering checklist to organize your guest count, menu, portions, dietary needs, and pickup or delivery arrangements.",
     date: "2026-10-01",
     intro: "A birthday lunch, family gathering, or team celebration starts with a few practical details: who is eating, when food is needed, and how it will reach the table. Use this checklist before requesting catering from Pepper Farm Deli in Santee.",
@@ -41,4 +80,4 @@ export default [
     ],
     links: [{ label: "Compare catering options and portions", url: "/catering/" }, { label: "Send your event details", url: "/catering-inquiry/" }, { label: "Check same-day catering guidance", url: "/same-day-catering/" }]
   }
-];
+].sort((a, b) => b.date.localeCompare(a.date));

@@ -6,6 +6,7 @@
       <li><a href="/" class="nav-link hidden sm:block {{ 'active' if '/' == page.url }}">Home</a></li>
       <li><a href="/menu/" class="nav-link {{ 'active' if '/menu/' in page.url }}">Menu</a></li>
       <li><a href="/catering/" class="nav-link {{ 'active' if '/catering/' in page.url }}">Catering</a></li>
+      <li><a href="/blog/" class="nav-link {{ 'active' if '/blog/' in page.url }}">Blog</a></li>
 
       <li class="relative sm:h-[153px] sm:w-[210px] h-[55px] w-[75px]">
         <a class="absolute top-0 left-0" href="/" class="nav-link">
@@ -32,6 +33,7 @@
       <a href="tel:{{ phone }}" onclick="trackPhoneClick()" class="deli-grad-bg text-lime-950 px-4 py-2 rounded text-sm font-bold">
         CALL NOW
       </a>
+      <a href="/blog/" class="nav-link {{ 'active' if '/blog/' in page.url }}">Blog</a>
     </ul>
   </nav>
 

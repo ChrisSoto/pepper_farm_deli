@@ -15,10 +15,10 @@ eleventyComputed:
   "@context": "https://schema.org", "@type": "BlogPosting",
   "@id": "{{ site.url }}{{ page.url }}#article",
   "mainEntityOfPage": "{{ site.url }}{{ page.url }}",
-  "headline": {{ article.title | json | safe }},
-  "description": {{ article.description | json | safe }},
-  "datePublished": {{ article.date | json | safe }},
-  "dateModified": {{ article.date | json | safe }},
+  "headline": "{{ article.title | replace('"', '\\"') }}",
+  "description": "{{ article.description | replace('"', '\\"') }}",
+  "datePublished": "{{ article.date }}",
+  "dateModified": "{{ article.date }}",
   "author": { "@type": "Organization", "name": "Pepper Farm Deli", "url": "{{ site.url }}/" },
   "publisher": { "@type": "Organization", "name": "Pepper Farm Deli", "logo": { "@type": "ImageObject", "url": "{{ site.logo }}" } }
 }
@@ -26,7 +26,8 @@ eleventyComputed:
 <article class="max-w-screen-md mx-auto p-4">
   <nav class="my-4" aria-label="Breadcrumb"><a class="text-lime-800 underline" href="/blog/">Local food guides</a> / {{ article.title }}</nav>
   <h1 class="text-4xl font-bold mb-4">{{ article.title }}</h1>
-  <p class="text-zinc-600 mb-6">By Pepper Farm Deli · <time datetime="{{ article.date }}">October 1, 2026</time></p>
+  <p class="text-zinc-600 mb-6">By Pepper Farm Deli · <time datetime="{{ article.date }}">{{ article.displayDate or "October 1, 2026" }}</time></p>
+  <img eleventy:images="740" class="w-full rounded-xl mb-8" src="{{ article.image }}" alt="{{ article.imageAlt }}" loading="eager">
   <p class="mb-6">{{ article.intro }}</p>
   {% for section in article.sections %}
   <h2 class="text-2xl font-bold mt-8 mb-3">{{ section.heading }}</h2>
