@@ -1,0 +1,86 @@
+---
+layout: "base.njk"
+title: Breakfast in Santee, CA | Pepper Farm Deli
+description: Find breakfast in Santee at Pepper Farm Deli. Explore breakfast sandwiches, wraps, and the $7.99 egg-and-cheese Breakfast Burrito, with directions and online ordering.
+---
+
+<main class="section mt-8 mb-16">
+  <header class="max-w-4xl mx-auto text-center py-10">
+    <p class="text-lime-800 font-semibold mb-2">Your neighborhood deli in Santee, California</p>
+    <h1 class="text-4xl sm:text-5xl font-bold mb-5 deli-grad-text">Breakfast in Santee</h1>
+    <p class="text-lg mb-6">We make it easy to start your morning with breakfast in Santee. Choose from our breakfast sandwiches and wraps, or try our $7.99 egg-and-cheese Breakfast Burrito. Visit us on Town Center Parkway or order online for convenient pickup.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a class="solid-button" href="{{ site.orderUrl }}">Order online</a>
+      <a class="border-button" href="/menu/#breakfast">Browse breakfast menu</a>
+      <a class="text-lime-800 font-semibold underline self-center" href="tel:+16192018129">Call 619-201-8129</a>
+    </div>
+  </header>
+
+  <section class="grid md:grid-cols-2 gap-8 items-center bg-zinc-100 rounded-xl p-6 md:p-8 mb-12" aria-labelledby="breakfast-burrito-heading">
+    <img eleventy:images="720" class="w-full rounded-lg object-cover" src="/assets/breakfast-burrito.png" alt="Egg and cheese Breakfast Burrito cut in half" loading="lazy">
+    <div>
+      <p class="text-lime-800 font-semibold mb-2">One of our morning favorites</p>
+      <h2 id="breakfast-burrito-heading" class="text-3xl font-bold mb-4">$7.99 Egg-and-Cheese Breakfast Burrito</h2>
+      <p class="mb-5">We fill our Breakfast Burrito with eggs and cheese for a warm, handheld meal that fits a quick stop or breakfast on the go. Check our online menu for current availability and ordering details.</p>
+      <a class="solid-button inline-block" href="{{ site.orderUrl }}">Order breakfast online</a>
+    </div>
+  </section>
+
+  <section class="mb-12" aria-labelledby="santee-breakfast-menu-heading">
+    <div class="flex flex-wrap justify-between items-end gap-4 mb-6">
+      <div>
+        <p class="text-lime-800 font-semibold mb-2">Find your morning favorite</p>
+        <h2 id="santee-breakfast-menu-heading" class="text-3xl font-bold">Our breakfast menu</h2>
+      </div>
+      <a class="text-lime-800 font-semibold underline" href="/menu/#breakfast">See our full breakfast menu and prices</a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {%- for category in menu -%}
+        {%- if category.fields.name | slugify == "breakfast" -%}
+          {%- for product in category.fields.products -%}
+            <article class="bg-zinc-100 rounded-lg p-5">
+              {% if product.fields.images | length > 0 %}
+                {% for image in product.fields.images %}
+                  {% if loop.first %}
+                    <img class="w-full h-48 object-cover rounded-md mb-4" src="{{ image.fields.file.url | cfimg }}" alt="{{ product.fields.name }}" loading="lazy" onerror="this.onerror=null;this.src='/assets/img/missing_image.webp';">
+                  {% endif %}
+                {% endfor %}
+              {% else %}
+                <img class="w-full h-48 object-cover rounded-md mb-4" src="/assets/img/missing_image.webp" alt="Photo unavailable for {{ product.fields.name }}" loading="lazy">
+              {% endif %}
+              <h3 class="text-xl font-bold mb-2">{{ product.fields.name }}</h3>
+              <p class="mb-4">{{ product.fields.description | menuDescription(product.fields.name) }}</p>
+              <a class="text-lime-800 font-semibold underline" href="/menu/{{ product.fields.name | slugify }}">View details{% if product.fields.price %} · ${{ product.fields.price }}{% endif %}</a>
+            </article>
+          {%- endfor -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+    <p class="mt-5 text-sm text-zinc-700">Our menu items, prices, and availability can change. Please check our online ordering menu or call us to confirm current details.</p>
+  </section>
+
+  <section class="grid md:grid-cols-2 gap-8 mb-12" aria-label="Breakfast hours and location">
+    <div class="border border-zinc-200 rounded-lg p-6">
+      <h2 class="text-2xl font-bold mb-3">Breakfast hours</h2>
+      <p class="mb-3">We start serving breakfast at <strong>8:00 a.m. every day</strong>. Our posted hours are Monday–Saturday, 8:00 a.m.–7:00 p.m., and Sunday, 8:00 a.m.–5:00 p.m.</p>
+      <p class="text-sm text-zinc-700">Some breakfast items may not be available throughout the day. For a specific item or a late-day order, check our online menu or call us ahead.</p>
+    </div>
+    <div class="border border-zinc-200 rounded-lg p-6">
+      <h2 class="text-2xl font-bold mb-3">Visit us in Santee</h2>
+      <address class="not-italic mb-4">235 Town Center Parkway, Suite H<br>Santee, CA 92071</address>
+      <div class="flex flex-wrap gap-4">
+        <a class="solid-button" href="https://maps.google.com/?q=Pepper+Farm+Deli+235+Town+Center+Parkway+Santee+CA">Get directions</a>
+        <a class="border-button" href="tel:+16192018129">Call 619-201-8129</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-zinc-100 rounded-lg p-6 md:p-8" aria-labelledby="breakfast-faq-heading">
+    <h2 id="breakfast-faq-heading" class="text-2xl font-bold mb-4">Breakfast in Santee: common questions</h2>
+    <div class="space-y-4">
+      <div><h3 class="font-bold">What time do you start serving breakfast?</h3><p>We start serving breakfast at 8:00 a.m. every day.</p></div>
+      <div><h3 class="font-bold">Can I order breakfast online?</h3><p>Yes. Order from us online to view current breakfast options and pickup availability.</p></div>
+      <div><h3 class="font-bold">Where can I find you in Santee?</h3><p>We’re at 235 Town Center Parkway, Suite H, Santee, CA 92071.</p></div>
+    </div>
+  </section>
+</main>

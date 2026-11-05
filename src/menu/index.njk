@@ -42,6 +42,9 @@ layout: "base.njk"
 
         <div id="{{ category.fields.name | slugify }}" class="category-header p-4 deli-grad-bg my-8" tabindex="-1">
           <h2 class="text-3xl font-bold uppercase text-center text-black">{{ category.fields.name }}</h2>
+          {% if category.fields.name | slugify == "breakfast" %}
+          <p class="text-center mt-2"><a class="font-semibold underline" href="/breakfast-in-santee/">Breakfast in Santee: see serving hours, location, and ordering details</a></p>
+          {% endif %}
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-1">
