@@ -1,0 +1,1488 @@
+{
+  "menu": [
+    {
+      "slug": "philly-cheesesteak-special-half",
+      "name": "Philly Cheesesteak Special (Half)",
+      "category": "Lunch Specials",
+      "price": "11.99",
+      "description": "Hoagie roll, Ribeye steak, grilled onions, your choice of American cheddar or provolone cheese",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-special-philly-cheesesteak_2f58289a-28b1-4f7a-bac4-edc5726c2050"
+    },
+    {
+      "slug": "meatball-hero-sandwich-special-half",
+      "name": "Meatball Hero Sandwich Special (Half)",
+      "category": "Lunch Specials",
+      "price": "11.99",
+      "description": "Rib-eye meatballs made in-house, house roasted garlic red sauce, topped with melted mozzarella on a toasted hoagie roll",
+      "image": "/images/CjYNQ5xmv0-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-special-meatball-hero-sandwich_f9e0f1d0-9e9a-460b-a5af-0eda03f9070f"
+    },
+    {
+      "slug": "london-broil-bbq-special-half",
+      "name": "London Broil BBQ Special (Half)",
+      "category": "Lunch Specials",
+      "price": "11.99",
+      "description": "London Broil roast beef, Havarti cheese, sweet and tangy BBQ sauce, grilled red onions, mayo, on a fresh Brioche bun.",
+      "image": "/images/YSLgC22ZtW-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-special-london-broil-bbq_eba965df-f605-48dd-9372-3dbf7fa9189f"
+    },
+    {
+      "slug": "french-dip-special-half",
+      "name": "French Dip Special (Half)",
+      "category": "Lunch Specials",
+      "price": "11.99",
+      "description": "Tender, thinly sliced London broil marinated roast beef with our savory house-made au jus gravy, melted Swiss cheese, house-fried onions, nestled between two slices of a lightly buttered and toasted hoagie roll",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-special-french-dip_f6b35dc3-309f-43a7-8a9c-0e2e9a55841a"
+    },
+    {
+      "slug": "green-beret-special-vegetarian-half",
+      "name": "Green Beret Special (Vegetarian Half)",
+      "category": "Lunch Specials",
+      "price": "8.99",
+      "description": "hoagie roll, garlic aioli, pepper jack cheese, cucumbers, tomatoes, pickled onions, red bell peppers, sprouts, avocado, balsamic & olive oil.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-green-beret-vegetarian-special_43f2f99b-8e00-4450-bfa3-a3725b0d407a"
+    },
+    {
+      "slug": "green-bird-special-half",
+      "name": "Green Bird Special (Half)",
+      "category": "Lunch Specials",
+      "price": "8.99",
+      "description": "hoagie roll, turkey, thick-cut bacon, avocado, tomatoes, peppercorn aioli, spring mix.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-green-bird-special_a92a7956-0387-4c44-ab58-bd2e98860ad9"
+    },
+    {
+      "slug": "little-italy-special-half",
+      "name": "Little Italy Special (half)",
+      "category": "Lunch Specials",
+      "price": "8.99",
+      "description": "hoagie roll, mustard, mayo, ham, salami, mortadella, provolone cheese, tomatoes, red onions, banana peppers, arugula, balsamic & olive oil. Comes with chips and drink of your choice.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-little-italy-special_dbbda506-de5d-45b8-93ec-6c82d4daa078"
+    },
+    {
+      "slug": "bovine-special-half",
+      "name": "Bovine Special (Half)",
+      "category": "Lunch Specials",
+      "price": "8.99",
+      "description": "hoagie roll, garlic aioli, mustard, roast beef, havarti cheese, red onions, banana peppers, spring mix. Comes with drink and chips of your choice",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-bovine-special_2733ecc8-d2ee-433d-b621-caf5f0c7dbd0"
+    },
+    {
+      "slug": "garlic-cilantro-jumbo-shrimp-sandwich",
+      "name": "Garlic Cilantro Jumbo Shrimp Sandwich",
+      "category": "Hot Sandwiches",
+      "price": "17.99",
+      "description": "Jumbo shrimp marinated house garlic and pepper sauce, romaine lettuce, pepperoncini’s, tomatoes, Vermont cheddar cheese and cilantro garlic house sauce on a toasted hoagie roll",
+      "image": "/images/RD7324ttJ2-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-garlic-cilantro-jumbo-shrimp-sandwich_921d068c-ecf2-43de-a76c-faa2f694a46f"
+    },
+    {
+      "slug": "the-chicken-parm",
+      "name": "The Chicken Parm",
+      "category": "Hot Sandwiches",
+      "price": "15.99",
+      "description": "Panko-breaded antibiotic free chicken, house made roasted garlic marinara sauce, melted mozzarella sauce, topped with parmesan cheese, cilantro and green onions on a hoagie roll",
+      "image": "/images/P1I6qY1vBR-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-chicken-parm_0b300b39-4ad1-4a6a-ad5e-0775f01c4adc"
+    },
+    {
+      "slug": "meatball-hero-sandwich",
+      "name": "Meatball Hero Sandwich",
+      "category": "Hot Sandwiches",
+      "price": "16.99",
+      "description": "Rib-eye meatballs made in-house, House roasted garlic red sauce, topped with melted mozzarella on a toasted hoagie roll",
+      "image": "/images/CjYNQ5xmv0-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-meatball-hero-sandwich_ec794c15-4a5d-4838-93a4-6e55f0c644ea"
+    },
+    {
+      "slug": "chopped-cheese-sandwich",
+      "name": "Chopped Cheese Sandwich",
+      "category": "Hot Sandwiches",
+      "price": "16.99",
+      "description": "Chopped rib eye steak, grilled onions, grilled banana peppers, shredded romaine lettuce, chopped Roma tomatoes, garlic aioli, and Vermont cheddar cheese on a hoagie roll",
+      "image": "/images/89tbLypceh-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-chopped-cheese-sandwich_3f0a8f32-3c88-4d5e-b1ea-78ff91abb5f1"
+    },
+    {
+      "slug": "london-broil-bbq",
+      "name": "London Broil BBQ",
+      "category": "Hot Sandwiches",
+      "price": "15.99",
+      "description": "London Broil roast beef, Havarti cheese, sweet and tangy BBQ sauce, grilled red onions, mayo, on a fresh Brioche bun.",
+      "image": "/images/YSLgC22ZtW-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-london-broil-bbq_1a315f62-ac85-4097-973c-b3528569b936"
+    },
+    {
+      "slug": "filet-mignon-club",
+      "name": "Filet Mignon Club",
+      "category": "Hot Sandwiches",
+      "price": "22.99",
+      "description": "Ciabatta bread, garlic aioli, filet mignon, Havarti cheese, arugula, grilled onions",
+      "image": "/images/AtyzPcd3A_-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-filet-mignon-club_d19319bb-ac3c-4ca4-84c4-d74634159fbb"
+    },
+    {
+      "slug": "philly-cheesesteak",
+      "name": "Philly Cheesesteak",
+      "category": "Hot Sandwiches",
+      "price": "15.99",
+      "description": "Hoagie roll, Ribeye steak, grilled onions,  American white cheddar",
+      "image": "/images/kqmtw3p-eW-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-philly-cheesesteak_dfcadcf1-ad40-47b9-944b-b10a55dd1b5d"
+    },
+    {
+      "slug": "greek-gyro-sandwich",
+      "name": "Greek Gyro Sandwich",
+      "category": "Hot Sandwiches",
+      "price": "15.99",
+      "description": "Flame broiled hand-carved Gyro with our house made Tzatziki sauce, Roma tomatoes, thinly sliced red onion, sliced cucumbers, feta cheese, Kalamata olives, Romaine lettuce on an inner toasted roll",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-greek-gyro-sandwich_d2cb66a4-76e8-4bf8-b911-b4a5e8be2462"
+    },
+    {
+      "slug": "lobster-roll-sandwich",
+      "name": "Lobster Roll Sandwich",
+      "category": "Hot Sandwiches",
+      "price": "34.99",
+      "description": "100% Maine Lobster claw and knuckles mixed with our homemade New England style dressing on a split-top perfectly toasted Brioche bun. Comes with a side of chips,  speared pickle, pure Irish melted butter  and a lemon wedge.",
+      "image": "/images/hu9ea2jdKB-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-lobster-roll-sandwich_a87ea1cb-0b20-4bcc-9515-467e09ab1c7c"
+    },
+    {
+      "slug": "tuscan-vegetarian-sandwich",
+      "name": "Tuscan (Vegetarian) Sandwich",
+      "category": "Hot Sandwiches",
+      "price": "13.99",
+      "description": "Ciabatta bread, garlic aioli, grilled mushrooms, havarti cheese, avocado, tomatoes, grilled onions, arugula",
+      "image": "/images/TtlQUrNrYN-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-porto-vegetarian_356a7c97-61df-40fd-bf51-2e41bae98896"
+    },
+    {
+      "slug": "the-cubano-sandwich",
+      "name": "The Cubano Sandwich",
+      "category": "Hot Sandwiches",
+      "price": "16.99",
+      "description": "Smoked pulled pork, smoked ham, pickles, swiss cheese, mayo and mustard on a Hoagie Roll garnished with cilantro.",
+      "image": "/images/JFIz_ElOvZ-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-the-cubano-sandwich_3511a1a8-1c1d-44e0-be1f-8c5991560475"
+    },
+    {
+      "slug": "og-reuben",
+      "name": "OG Reuben",
+      "category": "Hot Sandwiches",
+      "price": "16.99",
+      "description": "Rye bread, Dijon and Thousand Island dressing, pastrami, swiss cheese, sauerkraut",
+      "image": "/images/SK1PVxCHc1-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-og-reuben_c5b192ed-ff3a-4523-af93-822126911af0"
+    },
+    {
+      "slug": "ahi-surf-and-turf",
+      "name": "Ahi Surf & Turf",
+      "category": "Hot Sandwiches",
+      "price": "17.99",
+      "description": "A Gourmet brioche bun layered with seared Ahi crispy bacon, sliced avocado, baby arugula, cucumbers, and roasted garlic aioli, finished with our house-made dressing.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-ahi-surf-turf_e6ef0806-e408-4a07-ad14-8507e7f71b0e"
+    },
+    {
+      "slug": "wild-caught-salmon-sandwich",
+      "name": "Wild-Caught Salmon Sandwich",
+      "category": "Hot Sandwiches",
+      "price": "17.99",
+      "description": "Grilled Wild-Caught Salmon, arugula, thinly sliced organic cucumbers, garlic Cilantro dressing on a Brioche Bun",
+      "image": "/images/op_VxRmBzB-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-wildcaught-salmon-sandwich_edd688b8-f92f-406d-a45a-ba61804d4643"
+    },
+    {
+      "slug": "crispy-chicken-chipotle-sandwich",
+      "name": "Crispy Chicken Chipotle Sandwich",
+      "category": "Hot Sandwiches",
+      "price": "16.99",
+      "description": "2 Japanese Panko-battered antibiotic-free chicken breasts, thick-cut bacon, Vermont cheddar cheese, sliced avocado, shredded Romaine lettuce, chopped jalapeños, Roma tomatoes on a toasted Dutch crunch roll.",
+      "image": "/images/vRcTKrxbMJ-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-crispy-chicken-chipotle-sandwich_f57f9897-2988-4f3c-ba6c-6f7c0ad2be07"
+    },
+    {
+      "slug": "chicken-pesto-sandwich",
+      "name": "Chicken Pesto Sandwich",
+      "category": "Hot Sandwiches",
+      "price": "15.49",
+      "description": "Ciabatta bread, pesto paste, chicken breast, mozzarella cheese, arugula, tomatoes",
+      "image": "/images/1KcYSvw73W-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-chicken-pesto-sandwich_1a571439-3d80-4ff1-9571-2322cdb8b80e"
+    },
+    {
+      "slug": "grilled-chicken-club",
+      "name": "Grilled Chicken Club",
+      "category": "Hot Sandwiches",
+      "price": "15.49",
+      "description": "Ciabatta bread, peppercorn aioli, chicken breast, bacon, Havarti cheese, tomatoes, pickles, spring mix",
+      "image": "/images/Jf1aZ8FHDp-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-grilled-chicken-club_29206fe5-3b5e-422f-8c5f-67798f184c81"
+    },
+    {
+      "slug": "chicken-chipotle-sandwich",
+      "name": "Chicken Chipotle Sandwich",
+      "category": "Hot Sandwiches",
+      "price": "15.49",
+      "description": "Ciabatta bread, chipotle aioli, chicken, provolone cheese, avocados, tomatoes, red onions, spring mix",
+      "image": "/images/GukbvRVoeV-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-chicken-chipotle-sandwich_c169ab5f-3c59-4a61-8d1f-700f4bc67a36"
+    },
+    {
+      "slug": "french-dip",
+      "name": "French Dip",
+      "category": "Hot Sandwiches",
+      "price": "15.99",
+      "description": "Tender, thinly sliced London broil marinated roast beef with our savory house-made au jus gravy, melted Swiss cheese, house-fried onions, nestled between two slices of a lightly buttered and toasted hoagie roll",
+      "image": "/images/BJ-rh65CJ--400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-french-dip_e017107f-ec4a-426e-a5e1-519c61046849"
+    },
+    {
+      "slug": "chopped-chicken",
+      "name": "Chopped Chicken",
+      "category": "Hot Sandwiches",
+      "price": "16.99",
+      "description": "Chopped grilled chicken, grilled onions, banana peppers, shredded romaine, chopped roma tomatoes, garlic aioli, diced pickles, and melted white cheddar cheese on a hoagie roll.",
+      "image": "/images/jRKMNxGUwm-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-chopped-chicken_d566f935-3521-4a67-9f21-e01ae6b9e9ae"
+    },
+    {
+      "slug": "grilled-cheese-double-patty-bacon-cheeseburger",
+      "name": "Grilled Cheese Double Patty Bacon Cheeseburger",
+      "category": "Legendary Burgers",
+      "price": "18.99",
+      "description": "Two 100% rib eye beef patties ground and hand patted on premises, Vermont cheddar cheese, thick cut bacon,  Roma tomatoes, thinly sliced onions, Boar’s Dill pickle chips, peppercorn aioli on a toasted and buttered Brioche bun",
+      "image": "/images/SAifhYZYvG-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-grilled-cheese-double-patty-bacon-cheeseburger_43752f3d-590d-4d47-a80a-a1d81e7a552f"
+    },
+    {
+      "slug": "starvin-marvin",
+      "name": "Starvin Marvin",
+      "category": "Legendary Burgers",
+      "price": "15.99",
+      "description": "100% rib eye beef patty ground and hand patted on premises, mushrooms, Vermont cheddar cheese, sliced avocado, thick cut bacon, Thousand Island dressing, garlic aioli on toasted sourdough bread",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-starvin-marvin_78d31c2c-9371-4e16-a8bb-fa95a604c21d"
+    },
+    {
+      "slug": "mushroom-avocado-burger",
+      "name": "Mushroom Avocado Burger",
+      "category": "Legendary Burgers",
+      "price": "15.99",
+      "description": "100% rib eye beef patty ground and hand patted on premises, mushrooms, melted Havarti cheese, garlic aioli, thinly sliced grilled onions, shredded Romaine lettuce, Roma tomatoes, Boar’s Dill pickle chips on a toasted and buttered Brioche bun",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-portobello-mushroom-avocado-burger_9a34ca2c-d244-4339-b357-d6e1b67193a3"
+    },
+    {
+      "slug": "chipotle-burger",
+      "name": "Chipotle Burger",
+      "category": "Legendary Burgers",
+      "price": "15.99",
+      "description": "100% rib eye beef patty ground and hand patted on premises, chipotle sauce, jalapenos, Pepper Jack cheese, sliced avocado, thinly sliced onions, Roma tomatoes, Boar’s Dill pickle chips on a toasted and buttered Brioche bun",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-chipotle-burger_32d1f779-98c8-4ab2-9345-a2ab367df09e"
+    },
+    {
+      "slug": "pepper-farm-burger",
+      "name": "Pepper Farm Burger",
+      "category": "Legendary Burgers",
+      "price": "13.99",
+      "description": "Brioche bun, peppercorn aioli, hand-patted ribeye, American cheddar, arugula, red onions, tomatoes, pickles",
+      "image": "/images/rQfMsAYtH1-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-pepper-farm-burger_a0029e53-802d-4e65-95e5-281dc7a03ab2"
+    },
+    {
+      "slug": "green-beret-vegetarian",
+      "name": "Green Beret (Vegetarian)",
+      "category": "Cold Sandwiches",
+      "price": "13.99",
+      "description": "Wheat bread, garlic aioli, Pepper Jack cheese, cucumbers, tomatoes, pickled red onions, red bell peppers, sprouts, avocados, balsamic & olive oil",
+      "image": "/images/MfA7_ReuHP-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-green-beret-vegetarian_16c58535-e0ff-485a-8d1a-d398d445409b"
+    },
+    {
+      "slug": "bovine",
+      "name": "Bovine",
+      "category": "Cold Sandwiches",
+      "price": "13.99",
+      "description": "Sourdough bread, garlic aioli, mustard, roast beef, Havarti cheese, tomatoes, red onions, pepperoncinis, spring mix",
+      "image": "/images/v88rvZzplH-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-bovine_5fc5722d-c7b7-4c2c-800b-ed6f4420bb29"
+    },
+    {
+      "slug": "greenbird",
+      "name": "Greenbird",
+      "category": "Cold Sandwiches",
+      "price": "13.99",
+      "description": "Sourdough bread, peppercorn aioli, turkey, thick-cut bacon, tomatoes, avocado, spring mix",
+      "image": "/images/kNGiIXptzv-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-greenbird_7ddd5e0a-5fc0-4787-9a1c-72a1cf421859"
+    },
+    {
+      "slug": "little-italy",
+      "name": "Little Italy",
+      "category": "Cold Sandwiches",
+      "price": "13.99",
+      "description": "Hoagie Roll, mustard, mayo, ham, salami, mortadella, provolone cheese, tomatoes, red onions, pepperoncini, arugula, balsamic & olive oil",
+      "image": "/images/HdeoRuo2G0-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-little-italy_f512bed0-9e81-44ad-94a7-a290517387c6"
+    },
+    {
+      "slug": "loaded-original-blt",
+      "name": "Loaded Original BLT",
+      "category": "Cold Sandwiches",
+      "price": "13.99",
+      "description": "Sourdough bread, garlic aioli, mayo, thick-cut bacon, tomatoes, spring mix",
+      "image": "/images/-5xAp6YDLh-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-loaded-blt_c5ed0fe9-22df-4ebe-997a-3082d19ccc09"
+    },
+    {
+      "slug": "sweetbird",
+      "name": "Sweetbird",
+      "category": "Cold Sandwiches",
+      "price": "13.99",
+      "description": "Wheat bread, garlic aioli, turkey, provolone cheese, green grapes, pickled red onions, balsamic glaze, spring mix, sprouts",
+      "image": "/images/h73c3Q9gIk-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-sweetbird_0e9c2008-596b-4970-9c3b-e78fea226be1"
+    },
+    {
+      "slug": "deluxe-club",
+      "name": "Deluxe Club",
+      "category": "Cold Sandwiches",
+      "price": "14.99",
+      "description": "Sourdough bread, mayo and Dijon mustard, ham, turkey, thick-cut bacon, American cheddar, tomatoes, spring mix",
+      "image": "/images/f4Qf9GSTvu-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-deluxe-club_4bbce0bb-4b46-4411-bc7b-1ce39819c658"
+    },
+    {
+      "slug": "pepper-farm-turkey-club",
+      "name": "Pepper Farm Turkey Club",
+      "category": "Cold Sandwiches",
+      "price": "14.99",
+      "description": "White bread, mayo, mustard, peppercorn aioli, roast beef, turkey, bacon, swiss cheese, American cheddar, tomatoes, arugula",
+      "image": "/images/xSpw9GaSeo-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-pepper-farm-turkey-club_81407b83-a1f7-4ca0-a395-fbae8f1b9a4e"
+    },
+    {
+      "slug": "fisherman-s-catch",
+      "name": "Fisherman’s Catch",
+      "category": "Cold Sandwiches",
+      "price": "14.99",
+      "description": "White bread, mayo, albacore tuna, tomatoes, red onions, pickles, sprouts, spring mix",
+      "image": "/images/SIyqwJ0Fso-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-fishermans-catch_ee80a283-1948-4e87-8acb-e11805a7695c"
+    },
+    {
+      "slug": "pepper-farm-pounder",
+      "name": "Pepper Farm Pounder",
+      "category": "Cold Sandwiches",
+      "price": "16.99",
+      "description": "Oven-roasted, turkey, roast beef, thick cut bacon, Havarti cheese, Vermont cheddar, Romaine lettuce, Roma tomatoes, banana peppers, pickles, Dijon, chipotle mayo, on a Dutch crunch roll",
+      "image": "/images/Zr5JC5yRvO-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-pepper-farm-pounder_1ccfef7e-524a-405b-b721-7ff5dab82a57"
+    },
+    {
+      "slug": "wild-turkey-gobbler",
+      "name": "Wild Turkey Gobbler",
+      "category": "Cold Sandwiches",
+      "price": "14.99",
+      "description": "Oven-roasted turkey breast, Philadelphia cream cheese, house made cranberry jam, romaine lettuce, tomatoes, thinly sliced onions on a Dutch crunch roll",
+      "image": "/images/d0qUvsMwQ1-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-wild-turkey-gobbler_32840d65-3725-4139-a403-20dbef918fa3"
+    },
+    {
+      "slug": "roast-beef-grinder",
+      "name": "Roast Beef Grinder",
+      "category": "Cold Sandwiches",
+      "price": "16.99",
+      "description": "Roast beef, house peppercorn sauce, Havarti cheese, romaine lettuce, pickles, tomatoes, house roasted bell peppers, banana peppers, house pickled onions on a Dutch crunch roll",
+      "image": "/images/xb3JgPmOJI-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-roast-beef-grinder_9c6cfbae-7656-4a1e-be8e-4296278d9b6d"
+    },
+    {
+      "slug": "big-italian-goombah",
+      "name": "Big Italian Goombah",
+      "category": "Cold Sandwiches",
+      "price": "15.99",
+      "description": "Sliced oven-roasted Turkey breast, Salami, thick cut bacon, Vermont cheddar cheese, shredded Romaine lettuce, house-pickled onions, tomatoes, spicy Italian seasoning, topped with House Italian dressing, house peppercorn sauce on a Dutch crunch roll",
+      "image": "/images/4pOv9Hkx2G-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-big-italian-goombah_e5c244ff-03fc-440f-bdbd-b5561030a9ed"
+    },
+    {
+      "slug": "abc-wrap",
+      "name": "ABC Wrap",
+      "category": "Breakfast",
+      "price": "15.99",
+      "description": "Eggs, avocado, thick-cut bacon, yellow cheddar cheese, hash-brown, aioli and a dash of maple syrup, wrapped in a flour tortilla.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-abc-wrap_8e97d7b4-1b89-4c97-89e5-d6515e317eb8"
+    },
+    {
+      "slug": "denver-wrap",
+      "name": "Denver Wrap",
+      "category": "Breakfast",
+      "price": "15.99",
+      "description": "Eggs, ham, grilled red onions, red bell peppers, yellow cheddar cheese, hash-brown, aioli and a dash of maple syrup, wrapped in a flour tortilla.",
+      "image": "/images/4qgx3siDG_-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-denver-wrap_32c84dea-dd21-4fde-9b66-fefcc0382eb9"
+    },
+    {
+      "slug": "breakfast-veggie-wrap",
+      "name": "Breakfast Veggie Wrap",
+      "category": "Breakfast",
+      "price": "14.99",
+      "description": "Eggs, organic spinach, mushrooms, feta cheese, hashbrown, aioli and a dash of maple syrup, wrapped in a flour tortilla.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-breakfast-veggie-wrap_59e04e8f-f4eb-4994-96de-39a0ebdefe12"
+    },
+    {
+      "slug": "ribeye-steak-breakfast-wrap",
+      "name": "Ribeye Steak Breakfast Wrap",
+      "category": "Breakfast",
+      "price": "15.99",
+      "description": "Eggs, ribeye steak, grilled red onions, swiss cheese, green onions, hashbrown, aioli and a dash of maple syrup, wrapped in a flour tortilla.",
+      "image": "/images/V2TmWUWiJn-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-ribeye-steak-breakfast-wrap_3b5b5924-1e31-45fc-ba7e-5bb0d2a4f852"
+    },
+    {
+      "slug": "ultimate-wrap",
+      "name": "Ultimate Wrap",
+      "category": "Breakfast",
+      "price": "16.99",
+      "description": "Eggs, bacon, yellow cheddar cheese, jalapeños, avocado, chipotle sauce, hash-brown, and a dash of maple syrup, wrapped in a flour tortilla.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-ultimate-wrap_2ac8a73f-47cb-49ae-a08d-d8ab8d26ed85"
+    },
+    {
+      "slug": "big-city-wrap",
+      "name": "Big City Wrap",
+      "category": "Breakfast",
+      "price": "17.99",
+      "description": "Eggs, smoked grilled ham, thick cut bacon, hash-brown, avocado, swiss cheese, Chipotle sauce, garlic aioli, wrapped in a flour tortilla.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-big-city-wrap_c4919825-00f8-4635-944d-1d9ee55f9cb5"
+    },
+    {
+      "slug": "pepper-farm-breakfast-plate",
+      "name": "Pepper Farm Breakfast Plate",
+      "category": "Breakfast",
+      "price": "19.99",
+      "description": "Eggs (sunny side up or scrambled),  thick-cut bacon, smoked grilled ham, with a side of hash-brown and fruit.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-pepper-farm-breakfast-plate_30f82fd4-f42c-46ca-87df-d9c3fb086ebb"
+    },
+    {
+      "slug": "san-diego-river-breakfast-plate",
+      "name": "San Diego River Breakfast Plate",
+      "category": "Breakfast",
+      "price": "24.99",
+      "description": "Grilled filet mignon, two sunny-side up or scrambled eggs, Italian herb-seasoned skillet potatoes, sliced avocado, your choice of toast (white, wheat, sourdough)",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-san-diego-river-breakfast-plate_b9889424-5edc-4793-839a-9a2c74486770"
+    },
+    {
+      "slug": "monte-cristo",
+      "name": "Monte Cristo",
+      "category": "Breakfast",
+      "price": "17.99",
+      "description": "Oven-roasted ham, havarti cheese, mustard, mayo, on egg batter-dipped white bread, pan fried and garnished with powdered sugar!",
+      "image": "/images/OwfIxLERpv-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-monte-cristo_ed3d7c5b-d507-436e-90bd-4ea57de09fd8"
+    },
+    {
+      "slug": "sausage-egg-and-cheese-sandwich",
+      "name": "Sausage, Egg & Cheese Sandwich",
+      "category": "Breakfast",
+      "price": "12.99",
+      "description": "Brioche bun, garlic aioli, sausage, egg, Yellow cheddar cheese, arugula",
+      "image": "/images/NNDj-Z_Fi6-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-sausage-egg-cheese-sandwich_fb43d5a2-ee5d-4cd1-9e94-5e2419c02f12"
+    },
+    {
+      "slug": "breakfast-burger",
+      "name": "Breakfast Burger",
+      "category": "Breakfast",
+      "price": "16.99",
+      "description": "Brioche bun, peppercorn aioli, rib-eye burger, bacon, sunny side up egg, yellow cheddar, arugula, hash-brown with a dash of maple syrup.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-breakfast-burger_403c14ad-4dda-4c10-b04c-96c33591a812"
+    },
+    {
+      "slug": "bacon-and-egg-sandwich",
+      "name": "Bacon & Egg Sandwich",
+      "category": "Breakfast",
+      "price": "13.99",
+      "description": "Buttered brioche bun, thick-cut bacon, sunny-side up egg, pepper Jack cheese, spring mix",
+      "image": "/images/Ar5mEOS8q5-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-bacon-egg-sandwich_6e836533-e6fd-4158-9c21-c1ffbe5043f7"
+    },
+    {
+      "slug": "ham-egg-and-cheese-sandwich",
+      "name": "Ham, Egg, & Cheese Sandwich",
+      "category": "Breakfast",
+      "price": "12.99",
+      "description": "Brioche bun with butter, ham, eggs, American yellow cheddar cheese",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-ham-egg-cheese-sandwich_5ee06d89-70c8-4263-8284-834840283d83"
+    },
+    {
+      "slug": "egg-and-cheese-sandwich",
+      "name": "Egg & Cheese Sandwich",
+      "category": "Breakfast",
+      "price": "8.99",
+      "description": "Brioche bun, scrambled eggs, Vermont cheddar cheese",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-egg-cheese-sandwich_dfdba518-4655-4636-805e-678c801da960"
+    },
+    {
+      "slug": "avocado-toast",
+      "name": "Avocado Toast",
+      "category": "Breakfast",
+      "price": "13.99",
+      "description": "Toasted rye bread, avocado, sliced heirloom tomato, pickled red onions, sprouts, Balsamic glaze",
+      "image": "/images/ONyb4zNCYX-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-avocado-toast_b421d769-884e-4f04-9270-95df7071012f"
+    },
+    {
+      "slug": "avocado-and-egg-toast",
+      "name": "Avocado & Egg Toast",
+      "category": "Breakfast",
+      "price": "14.99",
+      "description": "Thinly sliced avocado, sunny-side up egg, pickled red onions, sprouts, balsamic glaze, on rustic sourdough bread.",
+      "image": "/images/_4-ivJ5_j7-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-avocado-egg-toast_7da75ea1-ad6a-45a1-8715-549c3e8de151"
+    },
+    {
+      "slug": "grilled-filet-mignon-plate",
+      "name": "Grilled Filet Mignon Plate",
+      "category": "Low Carb Plates",
+      "price": "24.99",
+      "description": "Grilled filet mignon, Includes choice of 2 veggie sides, broccoli, mushroom, zucchini, or carrots with your choice of soup or house salad.",
+      "image": "/images/GswTzIyzML-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-grilled-filet-mignon-plate_898ee2aa-6f91-47e1-867e-f6c73a427dcc"
+    },
+    {
+      "slug": "grilled-chicken-plate",
+      "name": "Grilled Chicken Plate",
+      "category": "Low Carb Plates",
+      "price": "24.99",
+      "description": "Antibiotic-free chicken breast, sautéed mushrooms, broccoli with your choice of soup or house salad.",
+      "image": "/images/bnA0qaxPbt-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-grilled-chicken-plate_efa3e4d8-1849-4045-bfd4-dd0d8a79edd5"
+    },
+    {
+      "slug": "grilled-wild-caught-salmon-plate",
+      "name": "Grilled Wild-Caught Salmon Plate",
+      "category": "Low Carb Plates",
+      "price": "24.99",
+      "description": "Wild-caught salmon marinated in garlic and Italian herbs, balsamic glazed asparagus mixed with mushroom with your choice of soup or house salad",
+      "image": "/images/zcvEGhFXEo-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-grilled-wildcaught-salmon-plate_cc0bbbeb-fb0f-4134-8f7d-29171cae8f3a"
+    },
+    {
+      "slug": "garlic-jumbo-shrimp-plate",
+      "name": "Garlic Jumbo Shrimp Plate",
+      "category": "Low Carb Plates",
+      "price": "24.99",
+      "description": "Tantalizingly crispy and flavorful jumbo shrimp marinated in our house garlic sauce spread with garlic cilantro dressing, sauteed fresh broccoli and asparagus, with your choice of soup or house salad",
+      "image": "/images/KLoT0RA6Dz-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-jumbo-garlic-pepper-shrimp-plate_5de9b900-617e-4ff7-a209-d34e1472f735"
+    },
+    {
+      "slug": "surf-and-turf-plate",
+      "name": "Surf and Turf Plate",
+      "category": "Low Carb Plates",
+      "price": "29.99",
+      "description": "Grilled Filet Mignon, tantalizingly crispy and flavorful jumbo shrimp marinated in our house garlic sauce with garlic cilantro dressing, sauteed fresh broccoli and asparagus with your choice of soup or house salad.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-surf-and-turf-plate_c2c98f46-5d99-44e1-8748-d9eb15b29d4d"
+    },
+    {
+      "slug": "greek-gyro-low-carb-plate",
+      "name": "Greek Gyro Low Carb Plate",
+      "category": "Low Carb Plates",
+      "price": "19.99",
+      "description": "Flame broiled hand-carved gyro with our house made tzatziki sauce, roma tomatoes, thinly sliced red onion, sliced cucumbers, feta cheese, kalamata olives, romaine lettuce with your choice of with your choice of soup or house salad.",
+      "image": "/images/eQx-e0H340-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-greek-gyro-low-carb-plate_45e15cf2-77a7-47c2-ade2-1a75a0dcd1a7"
+    },
+    {
+      "slug": "chicken-chipotle-flatbread",
+      "name": "Chicken Chipotle Flatbread",
+      "category": "Flatbread",
+      "price": "14.99",
+      "description": "Chicken, mozzarella cheese, house chipotle sauce, red onions, avocado and bacon.",
+      "image": "/images/gqQ62BU84c-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-chicken-chipotle-flatbread_87868660-59ef-424d-863e-112170e8f3f4"
+    },
+    {
+      "slug": "bbq-chicken-flatbread",
+      "name": "BBQ Chicken Flatbread",
+      "category": "Flatbread",
+      "price": "14.99",
+      "description": "Chicken, mozzarella cheese, sweet and tangy BBQ sauce, red onions garnished with cilantro",
+      "image": "/images/-kYS_sbx3V-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-bbq-chicken-flatbread_4f3f1a91-25de-4064-adbe-6b1f1a48c353"
+    },
+    {
+      "slug": "pepperoni-flatbread",
+      "name": "Pepperoni Flatbread",
+      "category": "Flatbread",
+      "price": "13.99",
+      "description": "House made Garlic tomato sauce, mozzarella cheese, pepperoni.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-pepperoni-flatbread_78c9b6e0-9cc3-4f6d-a35a-4b91c61f1c81"
+    },
+    {
+      "slug": "pepperoni-and-mushroom-flatbread",
+      "name": "Pepperoni & Mushroom Flatbread",
+      "category": "Flatbread",
+      "price": "13.99",
+      "description": "Garlic tomato sauce, mozzarella cheese, pepperoni, mushrooms.",
+      "image": "/images/ZxQqXwgleV-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-pepperoni-mushroom-flatbread_06c406a3-70d2-464f-afbe-da69234f435d"
+    },
+    {
+      "slug": "chicken-pesto-flatbread",
+      "name": "Chicken Pesto Flatbread",
+      "category": "Flatbread",
+      "price": "14.99",
+      "description": "Nut-free pesto sauce, mozzarella cheese, charbroiled chicken breast, heirloom tomatoes.",
+      "image": "/images/azANnNKPa9-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-chicken-pesto-flatbread_9d117dec-226f-4e88-9888-8a640f76553d"
+    },
+    {
+      "slug": "margherita-veggie-flatbread",
+      "name": "Margherita Veggie Flatbread",
+      "category": "Flatbread",
+      "price": "13.99",
+      "description": "Roasted garlic tomato sauce, mozzarella cheese, roma tomatoes, fresh basil",
+      "image": "/images/tS0_gfm1am-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-margherita-veggie-flatbread_68f27597-242a-4d9e-90aa-12c455ee7e32"
+    },
+    {
+      "slug": "meat-lovers-flatbread",
+      "name": "Meat Lovers Flatbread",
+      "category": "Flatbread",
+      "price": "16.99",
+      "description": "Roasted garlic tomato sauce, mozzarella cheese, filet mignon, bacon, sausage.",
+      "image": "/images/zss3T-MkKO-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-meat-lovers-flatbread_abdaf465-be12-4d68-925c-96800aa3849a"
+    },
+    {
+      "slug": "cheesey-flatbread",
+      "name": "Cheesey Flatbread",
+      "category": "Flatbread",
+      "price": "11.99",
+      "description": "Roasted garlic tomato sauce, mozzarella cheese.",
+      "image": "/images/eLK6TJJDQH-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-cheesey-flatbread_7d355f77-9ce8-4a1d-9c0d-f780ed655ab2"
+    },
+    {
+      "slug": "hawaiian-flatbread",
+      "name": "Hawaiian Flatbread",
+      "category": "Flatbread",
+      "price": "13.99",
+      "description": "Crispy flatbread topped with sweet pineapple, savory ham, melted mozzarella cheese, and a zesty house-made marinara sauce",
+      "image": "/images/yUkzXlDQ0Y-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-hawaiian-flatbread_bf1592d2-b5b1-4a9c-a7c7-8e4a3dcd10f5"
+    },
+    {
+      "slug": "avocado-goddess",
+      "name": "Avocado Goddess",
+      "category": "Salads",
+      "price": "14.99",
+      "description": "Baby spinach, arugula, pickled red onions, tomatoes, feta cheese, avocado, bacon, cilantro lime vinaigrette dressing on the side.",
+      "image": "/images/LaZkAePqzg-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-avocado-goddess_5578c9d4-aa58-4fe8-aef2-1f5331af1b4a"
+    },
+    {
+      "slug": "cobb-salad",
+      "name": "Cobb Salad",
+      "category": "Salads",
+      "price": "14.99",
+      "description": "Romaine lettuce, heirloom tomatoes, red onions, thick-cut bacon, avocado, sliced eggs, blue cheese, balsamic vinaigrette dressing on the side.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-cobb-salad_b7bfee29-af2b-47b3-b3bd-d0e3432d990d"
+    },
+    {
+      "slug": "caesar-salad",
+      "name": "Caesar Salad",
+      "category": "Salads",
+      "price": "14.99",
+      "description": "Romaine lettuce, croutons, grated parmesan, lemon wedge, house caesar dressing dressing on the side.",
+      "image": "/images/xR8WKhOp3l-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-caesar-salad_ed5323b5-ba20-4ca3-8cd8-cb01b8fb6527"
+    },
+    {
+      "slug": "chef-salad",
+      "name": "Chef Salad",
+      "category": "Salads",
+      "price": "14.99",
+      "description": "Romaine lettuce and baby spinach, cucumbers, heirloom tomatoes, turkey breast, ham, bacon, sliced hard-boiled eggs, swiss cheese, house ranch dressing on the side.",
+      "image": "/images/v2JlbWNpiC-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-chef-salad_e3652e32-371a-419f-acb7-f8c344dbaeed"
+    },
+    {
+      "slug": "simple-dimple",
+      "name": "Simple-Dimple",
+      "category": "Salads",
+      "price": "14.99",
+      "description": "Baby spinach, spring mix, red onions, fuji sliced apples, almonds, goat cheese, champagne vinaigrette dressing on the side.",
+      "image": "/images/iTp0AP6yqZ-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-simpledimple_d03e83f8-238e-4313-9a64-fcfa9c452bd1"
+    },
+    {
+      "slug": "spring-time",
+      "name": "Spring Time",
+      "category": "Salads",
+      "price": "14.99",
+      "description": "Spring mix, grapes, strawberries, pine nuts, dried cranberries, feta cheese, lemon honey dressing on the side.",
+      "image": "/images/VRpdkRLFTr-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-spring-time_097c610a-ce8a-4da2-8542-250439389a4a"
+    },
+    {
+      "slug": "cilantro-lime-toss-up",
+      "name": "Cilantro-Lime Toss Up",
+      "category": "Salads",
+      "price": "14.99",
+      "description": "Spring mix, arugula, bell peppers, heirloom tomatoes, roasted corn, shredded jack cheese, pepita seeds, cilantro lime vinaigrette dressing on the side.",
+      "image": "/images/snqcByBEZQ-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-cilantrolime-toss-up_ed9fe49d-7e72-47d9-a903-972d59275878"
+    },
+    {
+      "slug": "beet-salad",
+      "name": "Beet Salad",
+      "category": "Salads",
+      "price": "14.99",
+      "description": "Spring mix, beets, pears, walnuts, goat cheese, pomegranate-champagne vinaigrette dressing on the side.",
+      "image": "/images/HHnzg_Qz3B-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-beet-salad_7ca2e89a-a6d8-4bd6-8dd9-633a0ac74a03"
+    },
+    {
+      "slug": "asian-crunch",
+      "name": "Asian Crunch",
+      "category": "Salads",
+      "price": "14.99",
+      "description": "Baby spring mix, edamame, crunchy matchstick carrots, cucumbers, toasted cashews, green onions, sesame seeds, cilantro, and crispy chow mein noodles served with our homemade dressing.",
+      "image": "/images/G-Ua37S3Ii-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-asian-crunch_901d5c91-54ff-42b2-9875-878672060c78"
+    },
+    {
+      "slug": "mediterranean",
+      "name": "Mediterranean",
+      "category": "Salads",
+      "price": "14.99",
+      "description": "Crisp romaine, kalamata olives, red onions, chickpeas, roasted red bell peppers, cucumbers, Roma tomatoes, sliced yellow peppers, and feta cheese, served with our homemade dressing.",
+      "image": "/images/bpJj8J4Zb6-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-mediterranean_d8d97d8e-6098-4f6b-96f6-36cbc5c0a676"
+    },
+    {
+      "slug": "half-avocado-goddess",
+      "name": "Half Avocado Goddess",
+      "category": "Salads",
+      "price": "9.99",
+      "description": "Baby spinach, arugula, pickled red onions, tomatoes, feta cheese, avocado, bacon, cilantro lime vinaigrette",
+      "image": "/images/LaZkAePqzg-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-half-avocado-goddess_0c68b01c-387f-4f8d-b6f8-84388ed52d96"
+    },
+    {
+      "slug": "half-cobb-salad",
+      "name": "Half Cobb Salad",
+      "category": "Salads",
+      "price": "9.99",
+      "description": "Romaine lettuce, heirloom tomatoes, red onions, thick-cut bacon, avocado, sliced eggs, blue cheese, balsamic vinaigrette",
+      "image": "/images/OsWqR0ntqF-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-half-cobb-salad_83cc5e0d-23e9-4bc5-b312-eb20354af0f0"
+    },
+    {
+      "slug": "half-caesar-salad",
+      "name": "Half Caesar Salad",
+      "category": "Salads",
+      "price": "9.99",
+      "description": "Romaine lettuce, croutons, grated parmesan, lemon wedge, house Caesar dressing",
+      "image": "/images/xR8WKhOp3l-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-half-caesar-salad_bc3f89db-cf3a-47a8-86f9-975a396a8e50"
+    },
+    {
+      "slug": "half-chef-salad",
+      "name": "Half Chef Salad",
+      "category": "Salads",
+      "price": "9.99",
+      "description": "Romaine lettuce and baby spinach, cucumbers, heirloom tomatoes, turkey breast, ham, bacon, sliced hard-boiled eggs, swiss cheese, house ranch dressing",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-half-chef-salad_000d8539-0aec-492a-88cd-e23b964dcb8e"
+    },
+    {
+      "slug": "half-simple-dimple",
+      "name": "Half Simple-Dimple",
+      "category": "Salads",
+      "price": "9.99",
+      "description": "Baby spinach, spring mix, red onions, apples, almonds, goat cheese, champagne vinaigrette",
+      "image": "/images/iTp0AP6yqZ-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-half-simpledimple_b7cd1519-4eed-491a-81c6-017f547d17f9"
+    },
+    {
+      "slug": "half-spring-time",
+      "name": "Half Spring Time",
+      "category": "Salads",
+      "price": "9.99",
+      "description": "Spring mix, grapes, strawberries, pine nuts, dried cranberries, feta cheese, lemon honey dressing",
+      "image": "/images/VRpdkRLFTr-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-half-spring-time_51c2e623-0ae6-468d-abeb-6d5934a541e4"
+    },
+    {
+      "slug": "half-cilantro-lime-toss-up",
+      "name": "Half Cilantro-Lime Toss Up",
+      "category": "Salads",
+      "price": "9.99",
+      "description": "Spring mix, arugula, bell peppers, tomatoes, roasted corn, shredded jack cheese, pepita seeds, cilantro lime vinaigrette",
+      "image": "/images/snqcByBEZQ-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-half-cilantrolime-toss-up_2711cdcb-0d15-4f36-9c76-a49cde17e57c"
+    },
+    {
+      "slug": "half-beet-salad",
+      "name": "Half Beet Salad",
+      "category": "Salads",
+      "price": "9.99",
+      "description": "Spring mix, beets, pears, walnuts, goat cheese, pomegranate-champagne vinaigrette",
+      "image": "/images/HHnzg_Qz3B-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-half-beet-salad_34cca6fa-f006-438b-b6b0-7d410ecfdb0f"
+    },
+    {
+      "slug": "half-asian-crunch",
+      "name": "Half Asian Crunch",
+      "category": "Salads",
+      "price": "9.99",
+      "description": "Baby spring mix, edamame, crunchy matchstick carrots, cucumbers, toasted cashews, green onions, sesame seeds, cilantro, and crispy chow mein noodles served with our homemade dressing.",
+      "image": "/images/G-Ua37S3Ii-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-half-asian-crunch_f376b370-1625-430c-beaf-0fedbfb93df2"
+    },
+    {
+      "slug": "half-mediterranean",
+      "name": "Half Mediterranean",
+      "category": "Salads",
+      "price": "9.99",
+      "description": "Crisp romaine, kalamata olives, red onions, chickpeas, roasted red bell peppers, cucumbers, Roma tomatoes, sliced yellow peppers, and feta cheese, served with our homemade dressing.",
+      "image": "/images/bpJj8J4Zb6-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-half-mediterranean_a0d37716-e7ea-4761-8ab4-0c95eca40d36"
+    },
+    {
+      "slug": "garlic-cilantro-shrimp-wrap",
+      "name": "Garlic Cilantro Shrimp Wrap",
+      "category": "Wraps",
+      "price": "17.99",
+      "description": "Jumbo shrimp marinated house garlic sauce, romaine lettuce, banana peppers, Roma tomatoes, vermont cheddar cheese and cilantro garlic house sauce wrapped in a fresh tortilla.",
+      "image": "/images/n9ZOYMPBom-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-garlic-cilantro-shrimp-wrap_af914082-62a5-42cb-bc1f-684c345fc10a"
+    },
+    {
+      "slug": "chicken-caesar-wrap",
+      "name": "Chicken Caesar Wrap",
+      "category": "Wraps",
+      "price": "15.99",
+      "description": "Flour tortilla, Caesar dressing, chicken breast, bacon, tomatoes, romaine lettuce, parmesan cheese, crushed croutons.",
+      "image": "/images/x3CLhrU6aS-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-chicken-caesar-wrap_56bdd598-5d1e-4857-ba56-180f3e885f6a"
+    },
+    {
+      "slug": "deluxe-club-wrap",
+      "name": "Deluxe Club Wrap",
+      "category": "Wraps",
+      "price": "14.99",
+      "description": "Flour tortilla, mayo, dijon mustard, turkey, ham, thick-cut bacon, roma tomatoes, american cheddar cheese, spring mix.",
+      "image": "/images/zFTkaxDrG_-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-deluxe-club-wrap_42ba857f-cd0a-4728-af6f-6c752408ea99"
+    },
+    {
+      "slug": "crispy-chicken-chipotle-wrap",
+      "name": "Crispy Chicken Chipotle Wrap",
+      "category": "Wraps",
+      "price": "14.99",
+      "description": "Panko-battered antibiotic-free chicken breasts, thick-cut bacon, vermont cheddar cheese, sliced avocado, shredded romaine lettuce, chopped jalapeños, chipotle aioli, roma tomatoes in a flour tortilla.",
+      "image": "/images/Ic4Ez2ACNU-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-crispy-chicken-chipotle-wrap_b3c4a97e-ffa0-44e4-83d7-60182389e291"
+    },
+    {
+      "slug": "fishermans-wrap",
+      "name": "Fisherman's Wrap",
+      "category": "Wraps",
+      "price": "14.99",
+      "description": "Flour tortilla, mayo, albacore tuna, red onions, tomatoes, pickles, sprouts, spring mix.",
+      "image": "/images/U4YH9XTcZl-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-fishermas-wrap_1018d327-25bb-44b1-bd3b-ca6333400f91"
+    },
+    {
+      "slug": "chicken-chipotle-wrap",
+      "name": "Chicken Chipotle Wrap",
+      "category": "Wraps",
+      "price": "14.99",
+      "description": "Flour tortilla, chipotle sauce, charbroiled chicken breast, provolone cheese, red onions, avocado, spring mix.",
+      "image": "/images/j-ucyKORzG-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-chicken-chipotle-wrap_a3b3116c-4be6-4640-9589-73db3ea55cf3"
+    },
+    {
+      "slug": "filet-mignon-wrap",
+      "name": "Filet Mignon Wrap",
+      "category": "Wraps",
+      "price": "22.99",
+      "description": "Flour tortilla, garlic aioli, filet mignon, arugula, havarti cheese, pickled onions, tomatoes.",
+      "image": "/images/jaMGPaWPfX-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-filet-mignon-wrap_15ba5a7a-8d0b-40f0-8ec5-54ddea9fd255"
+    },
+    {
+      "slug": "veggie-wrap",
+      "name": "Veggie Wrap",
+      "category": "Wraps",
+      "price": "14.99",
+      "description": "Flour tortilla, garlic aioli, cucumbers, roma tomatoes, pickled red onions, red bell peppers, avocado, sprouts, spring mix.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-veggie-wrap_6a620d18-34d0-48f3-8bbc-20768f1b0a47"
+    },
+    {
+      "slug": "greek-gyro-wrap",
+      "name": "Greek Gyro Wrap",
+      "category": "Wraps",
+      "price": "15.99",
+      "description": "Flame broiled hand-carved Gyro with our house made tzatziki sauce, roma tomatoes, thinly sliced red onion, sliced cucumbers, feta cheese, kalamata olives, romaine lettuce in a flower tortilla.",
+      "image": "/images/Nqhub8gJSl-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-greek-gyro-wrap_29e6e627-17ce-41b8-a5d7-aeaaefe2539c"
+    },
+    {
+      "slug": "tomato-basil",
+      "name": "Tomato Basil",
+      "category": "Soups",
+      "price": "5.49",
+      "description": "A creamy blend of ripe tomatoes and fresh basil, bursting with rich, savory flavors.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-cup-tomato-basil_a05da700-5cd0-4211-bdf2-f24015c60f2e"
+    },
+    {
+      "slug": "clam-chowder",
+      "name": "Clam Chowder",
+      "category": "Soups",
+      "price": "5.99",
+      "description": "A hearty New England classic with tender clams and diced potatoes in a creamy broth.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-cup-tomato-basil_a05da700-5cd0-4211-bdf2-f24015c60f2e"
+    },
+    {
+      "slug": "chicken-noodle",
+      "name": "Chicken Noodle",
+      "category": "Soups",
+      "price": "5.49",
+      "description": "A comforting, home-style soup with tender chicken, noodles, and vegetables in a savory broth.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-cup-chicken-noodle_87577cc7-9264-479b-94cc-8a8253c73a35"
+    },
+    {
+      "slug": "chilli",
+      "name": "Chilli",
+      "category": "Soups",
+      "price": "5.99",
+      "description": "A robust and spicy chili packed with ground beef, beans, and a medley of bold spices.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-cup-chili_c4e1e59e-0378-4af9-a6c5-cd50ad35bf0e"
+    },
+    {
+      "slug": "cheese-quesadilla-with-fries",
+      "name": "Cheese Quesadilla with fries",
+      "category": "Kids",
+      "price": "9.49",
+      "description": "Flour tortilla, mozzarella, American cheddar",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-cheese-quesadilla-with-fries_e698507f-ddcc-4705-948c-f08d30d5b429"
+    },
+    {
+      "slug": "grilled-chicken-with-fries",
+      "name": "Grilled Chicken with Fries",
+      "category": "Kids",
+      "price": "11.99",
+      "description": "Grilled chicken breast and fries",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-grilled-chicken-with-fries_e49be0f3-676f-4aa2-9262-2d788b5fbb5f"
+    },
+    {
+      "slug": "chicken-tenders-and-fries",
+      "name": "Chicken Tenders and Fries",
+      "category": "Kids",
+      "price": "10.99",
+      "description": "Panko-Breaded Chicken Breast Tenders (No antibiotics ever) and fries",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-chicken-tenders-and-fries_81139e8c-0ffd-474b-8077-b7196309c779"
+    },
+    {
+      "slug": "grilled-cheese-sandwich",
+      "name": "Grilled Cheese Sandwich",
+      "category": "Kids",
+      "price": "7.99",
+      "description": "Provolone and Monterey Jack cheese pressed on White Bread",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-grilled-cheese-sandwich_8e10f042-a5d8-490c-b4d2-d2ada4527796"
+    },
+    {
+      "slug": "kids-ham-and-cheese",
+      "name": "Kids Ham & Cheese",
+      "category": "Kids",
+      "price": "7.99",
+      "description": "White bread, cheddar cheese & ham",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-kids-ham-cheese_559b3f6c-9667-4030-9a26-01efb0fcd353"
+    },
+    {
+      "slug": "kids-turkey-and-cheese",
+      "name": "Kids Turkey & Cheese",
+      "category": "Kids",
+      "price": "8.99",
+      "description": "White bread, cheddar cheese & turkey",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-kids-turkey-cheese_dcd54b19-027e-49e2-99d4-e292d62d42f3"
+    },
+    {
+      "slug": "cheeseburger-with-fries",
+      "name": "Cheeseburger with Fries",
+      "category": "Kids",
+      "price": "13.99",
+      "description": "Angus rib-eye burger, American cheddar, fries",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-cheeseburger-with-fries_816699b6-af5f-4b71-b0e6-917b3dc5a8e9"
+    },
+    {
+      "slug": "cheesy-flatbread",
+      "name": "Cheesy Flatbread",
+      "category": "Kids",
+      "price": "11.99",
+      "description": "Marinara sauce, mozzarella",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-cheesy-flatbread_88fcd4e2-7af2-43b9-bae9-21e8a48cdbc5"
+    },
+    {
+      "slug": "macaroni-salad",
+      "name": "Macaroni Salad",
+      "category": "Sides",
+      "price": "4.99",
+      "description": "Explore Macaroni Salad on Pepper Farm Deli's Santee menu. Contact the deli for current ingredients and availability.",
+      "image": "/images/Lonl7ngjcH-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-macaroni-salad_a4b00e8c-e95e-4078-b10f-61a03e9a308b"
+    },
+    {
+      "slug": "potato-salad",
+      "name": "Potato Salad",
+      "category": "Sides",
+      "price": "4.99",
+      "description": "Explore Potato Salad on Pepper Farm Deli's Santee menu. Contact the deli for current ingredients and availability.",
+      "image": "/images/pkPfFCs2cr-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-potato-salad_a90c1aea-b1a4-4317-94dd-e8505c8b9884"
+    },
+    {
+      "slug": "fruit-salad",
+      "name": "Fruit Salad",
+      "category": "Sides",
+      "price": "4.99",
+      "description": "Explore Fruit Salad on Pepper Farm Deli's Santee menu. Contact the deli for current ingredients and availability.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-fruit-salad_611ea29e-ff27-4f39-aa8f-2c32f6104811"
+    },
+    {
+      "slug": "french-fries",
+      "name": "French Fries",
+      "category": "Sides",
+      "price": "4.49",
+      "description": "Explore French Fries on Pepper Farm Deli's Santee menu. Contact the deli for current ingredients and availability.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-french-fries_d0f04fc5-68b1-49e4-8452-944fa14de042"
+    },
+    {
+      "slug": "house-salad",
+      "name": "House Salad",
+      "category": "Sides",
+      "price": "7.99",
+      "description": "Spring mix, heirloom tomatoes, cucumbers, pickled onions, pepperoncinis",
+      "image": "",
+      "orderUrl": ""
+    },
+    {
+      "slug": "mac-and-cheese",
+      "name": "Mac & Cheese",
+      "category": "Sides",
+      "price": "7.99",
+      "description": "Explore Mac & Cheese on Pepper Farm Deli's Santee menu. Contact the deli for current ingredients and availability.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-mac-cheese_123bc502-667b-4b8c-aba0-c7200ba69f51"
+    },
+    {
+      "slug": "skillet-potatoes",
+      "name": "Skillet Potatoes",
+      "category": "Sides",
+      "price": "8.99",
+      "description": "Explore Skillet Potatoes on Pepper Farm Deli's Santee menu. Contact the deli for current ingredients and availability.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-skilett-potatoes_e02a6222-ac11-4eaf-915d-8357a398193a"
+    },
+    {
+      "slug": "sauteed-portabello-mushroom",
+      "name": "Sautéed Portabello Mushroom",
+      "category": "Sides",
+      "price": "7.99",
+      "description": "Explore Sautéed Portabello Mushroom on Pepper Farm Deli's Santee menu. Contact the deli for current ingredients and availability.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-sauteed-portabello-mushroom_03bf50f4-a986-40be-9d4d-9062dea7bfbb"
+    },
+    {
+      "slug": "sauteed-broccoli",
+      "name": "Sautéed Broccoli",
+      "category": "Sides",
+      "price": "5.99",
+      "description": "Explore Sautéed Broccoli on Pepper Farm Deli's Santee menu. Contact the deli for current ingredients and availability.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-sauteed-brocolli_3dc09af1-145b-4f1a-b742-40c808093c32"
+    },
+    {
+      "slug": "sauteed-asparagus",
+      "name": "Sautéed Asparagus",
+      "category": "Sides",
+      "price": "7.99",
+      "description": "Explore Sautéed Asparagus on Pepper Farm Deli's Santee menu. Contact the deli for current ingredients and availability.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-sauteed-asparagus_252cce81-135c-467e-a1fe-34ee34e38e02"
+    },
+    {
+      "slug": "grilled-chicken",
+      "name": "Grilled Chicken",
+      "category": "Sides",
+      "price": "8.99",
+      "description": "Explore Grilled Chicken on Pepper Farm Deli's Santee menu. Contact the deli for current ingredients and availability.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-side-grilled-chicken_4429793f-66d6-4aee-9d02-f8b06235a203"
+    },
+    {
+      "slug": "filet-mignon",
+      "name": "Filet Mignon",
+      "category": "Sides",
+      "price": "9.99",
+      "description": "Explore Filet Mignon on Pepper Farm Deli's Santee menu. Contact the deli for current ingredients and availability.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-side-filet-mignon_ce21f37b-f8ac-429e-b62c-e6d375422a97"
+    },
+    {
+      "slug": "wild-caught-salmon",
+      "name": "Wild-Caught Salmon",
+      "category": "Sides",
+      "price": "9.99",
+      "description": "Explore Wild-Caught Salmon on Pepper Farm Deli's Santee menu. Contact the deli for current ingredients and availability.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-side-wildcaught-salmon_b1ff7729-f8d6-4a08-83fe-18c347e53aa6"
+    },
+    {
+      "slug": "jumbo-garlic-shrimp",
+      "name": "Jumbo Garlic Shrimp",
+      "category": "Sides",
+      "price": "8.99",
+      "description": "Explore Jumbo Garlic Shrimp on Pepper Farm Deli's Santee menu. Contact the deli for current ingredients and availability.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-side-jumbo-shrimp_908da1a5-c583-45df-808b-b4e87d7c5a9e"
+    },
+    {
+      "slug": "tropical-green",
+      "name": "Tropical Green",
+      "category": "Smoothies",
+      "price": "12.99",
+      "description": "Coconut water, spinach, banana, pineapple, mango, dates, lemon",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-tropical-green_12d9b074-e96b-46fe-acc8-a6edc1d714ec"
+    },
+    {
+      "slug": "strawberry-banana",
+      "name": "Strawberry Banana",
+      "category": "Smoothies",
+      "price": "11.99",
+      "description": "strawberries, bananas and coconut water",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-strawberry-banana_8ecc9cef-f631-49d2-835b-21956ddf9ffc"
+    },
+    {
+      "slug": "apple-berry",
+      "name": "Apple Berry",
+      "category": "Smoothies",
+      "price": "12.99",
+      "description": "Strawberries, blueberries, raspberries, apple Juice",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-apple-berry_18b32783-a7dd-4e92-94fa-aeaab98b1b0e"
+    },
+    {
+      "slug": "mango-mamba",
+      "name": "Mango Mamba",
+      "category": "Smoothies",
+      "price": "11.99",
+      "description": "Mango, oranges, coconut water",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-mango-mamba_bce2f277-7973-48fd-8878-f15c84f7320b"
+    },
+    {
+      "slug": "peanut-butter-fit",
+      "name": "Peanut Butter Fit",
+      "category": "Smoothies",
+      "price": "12.99",
+      "description": "Almond milk, banana, peanut butter & Iso Surge whey protein.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-peanut-butter-fit_594f5665-93bb-403a-9b7a-a2b1470dea03"
+    },
+    {
+      "slug": "raspy-pineapple",
+      "name": "Raspy Pineapple",
+      "category": "Smoothies",
+      "price": "11.49",
+      "description": "Raspberries, pineapple, coconut water",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-raspy-pineapple_628b7657-5a3b-4ee0-b62f-665ac32e4a02"
+    },
+    {
+      "slug": "blue-moon",
+      "name": "Blue Moon",
+      "category": "Smoothies",
+      "price": "13.99",
+      "description": "Almond milk, blue spirulina, bananas, almond butter, Iso surge whey protein, dates, cinnamon.",
+      "image": "",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h"
+    },
+    {
+      "slug": "just-beet-it",
+      "name": "Just Beet it",
+      "category": "Cold Pressed Juice",
+      "price": "6.99",
+      "description": "Cold pressed juice done in-house. This juice contains beets, apples, lemon and ginger",
+      "image": "/images/4rHRd87nrw-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-just-beet-it_3022963d-c94a-4442-b5ca-677c395cd923"
+    },
+    {
+      "slug": "24-carrots",
+      "name": "24 Carrots",
+      "category": "Cold Pressed Juice",
+      "price": "6.99",
+      "description": "Cold pressed juice done in-house. This juice contains carrots, oranges, lemon, and ginger",
+      "image": "/images/4rHRd87nrw-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-24-carrots_7830770e-5faa-4922-a57b-bba082291273"
+    },
+    {
+      "slug": "green-machine",
+      "name": "Green Machine",
+      "category": "Cold Pressed Juice",
+      "price": "6.99",
+      "description": "Cold pressed juice done in-house. This juice contains celery, cucumber, pineapple and lemon",
+      "image": "/images/4rHRd87nrw-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-green-machine_8e72d7f1-5b91-4959-ad83-bf2e052b44f5"
+    },
+    {
+      "slug": "freshly-squeezed-orange-juice",
+      "name": "Freshly Squeezed Orange Juice",
+      "category": "Cold Pressed Juice",
+      "price": "4.99",
+      "description": "Cold pressed juice done in-house. Refreshing freshly pressed orange juice.",
+      "image": "/images/4rHRd87nrw-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-freshly-squeezed-orange-juice_ff319039-bd31-495c-9ea8-c5239f043534"
+    },
+    {
+      "slug": "coke",
+      "name": "Coke",
+      "category": "Drinks",
+      "price": "2.99",
+      "description": "A Recipe for Magic",
+      "image": "/images/sFt1XKvHQC-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-coke_a555e86a-2c74-4107-9cf9-a0f67b189b99"
+    },
+    {
+      "slug": "diet-coke",
+      "name": "Diet Coke",
+      "category": "Drinks",
+      "price": "2.99",
+      "description": "Refreshing Taste With No Calories",
+      "image": "/images/mQp5Yblgo--400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-diet-coke_5245ad83-392d-486b-bcc8-eaea8f9bb4b5"
+    },
+    {
+      "slug": "sprite",
+      "name": "Sprite",
+      "category": "Drinks",
+      "price": "2.99",
+      "description": "Obey your thirst!",
+      "image": "/images/faHfnKPCIh-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-sprite_84d8c40b-654e-4834-8243-2e195294d427"
+    },
+    {
+      "slug": "fanta",
+      "name": "Fanta",
+      "category": "Drinks",
+      "price": "2.99",
+      "description": "Do More of What You Wanta",
+      "image": "/images/c_E3zoBBsb-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-fanta_3a3599a4-aee4-4323-b26e-066949931d36"
+    },
+    {
+      "slug": "root-beer",
+      "name": "Root Beer",
+      "category": "Drinks",
+      "price": "2.99",
+      "description": "You haven't tasted root beer this good in years.",
+      "image": "/images/07lM_rAOLA-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-root-beer_c2ec53d9-9cde-44d5-9490-9da859ac932b"
+    },
+    {
+      "slug": "minute-maid-lemonade",
+      "name": "Minute Maid Lemonade",
+      "category": "Drinks",
+      "price": "2.99",
+      "description": "Filled with life.",
+      "image": "/images/60eXkLV44T-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-minute-maide-lemonade_09f4cabf-5069-4571-bffe-58b20c54e287"
+    },
+    {
+      "slug": "dr-pepper",
+      "name": "Dr. Pepper",
+      "category": "Drinks",
+      "price": "2.99",
+      "description": "It's a Pepper thing.",
+      "image": "/images/isGrOFlP0X-400.webp",
+      "orderUrl": "https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/item-dr-pepper_ff838a7c-179d-4051-9072-0a4be38105f4"
+    },
+    {
+      "slug": "breakfast-burrito",
+      "name": "Egg & Cheese Breakfast Burrito",
+      "category": "Breakfast",
+      "price": "7.99",
+      "description": "Warm eggs and cheese wrapped in a toasted tortilla. A satisfying start to your Santee morning.",
+      "image": "/images/breakfast-burrito.png",
+      "orderUrl": ""
+    }
+  ],
+  "blogs": [
+    {
+      "slug": "pepper-farm-deli-santee-sandwiches-breakfast-lunch",
+      "title": "Inside Pepper Farm Deli: Sandwiches, Breakfast & Lunch in Santee",
+      "date": "2026-11-16",
+      "description": "Explore Pepper Farm Deli in Santee, CA: Philly Cheesesteak, French Dip, deli sandwiches, breakfast burritos, fresh salads and online ordering.",
+      "image": "/images/kqmtw3p-eW-400.webp",
+      "html": "\n  <p>Looking for a local deli in Santee with a menu that has something for breakfast, lunch, and everything in between? Pepper Farm Deli brings together hot and cold sandwiches, breakfast favorites, salads, wraps, soups, and more at 235 Town Center Parkway, Suite H. Whether you are planning a quick lunch break, picking up a breakfast burrito on the way to work, or choosing a sandwich for a relaxed meal, our menu offers plenty of flavors and formats to explore.</p>\n\n  <h2>A neighborhood deli with a menu for every appetite</h2>\n  <p>A good neighborhood deli makes it easy to find a meal that fits your day. At Pepper Farm Deli, you can browse hearty hot sandwiches, classic cold deli sandwiches, fresh salads, wraps, flatbreads, breakfast plates, smoothies, and sides. That variety makes our Santee deli a convenient stop when one person wants a toasted sandwich and someone else is in the mood for a salad or wrap. Check the <a href=\"/menu/\">full Pepper Farm Deli menu</a> to compare current selections and ingredients before you order.</p>\n\n  <h2>Hot sandwiches made for a satisfying lunch</h2>\n  <p>If you are craving a hot sandwich in Santee, the menu includes familiar favorites with their own distinctive combinations. The Philly Cheesesteak pairs ribeye steak and grilled onions with American white cheddar on a hoagie roll. The French Dip features thinly sliced marinated roast beef, melted Swiss cheese, house-fried onions, and house-made au jus with a toasted hoagie roll. For a different savory option, the OG Reuben layers pastrami, Swiss cheese, and sauerkraut on rye with Dijon and Thousand Island dressing.</p>\n  <p>There are plenty of other hot deli sandwiches to discover, too. Chicken Pesto brings chicken breast, mozzarella, pesto, arugula, and tomatoes together on ciabatta. The Grilled Chicken Club combines chicken breast with bacon, Havarti, tomatoes, pickles, spring mix, and peppercorn aioli. If you enjoy a warm, substantial sandwich for lunch, browse the hot sandwich section and choose the combination that sounds right to you.</p>\n\n  <h2>Cold deli sandwiches with classic flavor combinations</h2>\n  <p>Sometimes a freshly made cold sandwich is exactly what lunch calls for. Little Italy layers ham, salami, mortadella, provolone, tomatoes, red onions, pepperoncini, and arugula on a hoagie roll, finished with balsamic and olive oil. Bovine pairs roast beef and Havarti with tomatoes, red onions, pepperoncinis, garlic aioli, and mustard on sourdough. The cold sandwich menu also includes turkey, bacon, roast beef, cheese, vegetables, and house sauces in a range of combinations.</p>\n  <p>When you are searching for deli sandwiches in Santee, the bread, toppings, and sauces all help shape the meal. Read each menu description to find the ingredients you prefer, then ask our team if you have a question about a specific item or possible customization.</p>\n\n  <h2>Salads, wraps, soups, and more</h2>\n  <p>A deli lunch can be more than a sandwich. Pepper Farm Deli also serves salads with ingredients such as spinach, arugula, tomatoes, avocado, feta, bacon, and house dressings. Wraps give you another easy-to-carry option, while soups and sides can round out a meal. The broader menu includes flatbreads, burgers, low-carb plates, smoothies, and drinks, so friends, families, and coworkers can each find a different kind of lunch at the same Santee deli.</p>\n  <p>Menu items and ingredients can change, so use the current online menu for the most accurate descriptions. If you have food allergies or specific dietary needs, contact the deli directly to discuss ingredients and preparation before ordering.</p>\n\n  <h2>Start the morning with breakfast in Santee</h2>\n  <p>Pepper Farm Deli serves breakfast starting at 8 am. One convenient morning choice is the $7.99 egg-and-cheese Breakfast Burrito, wrapped in a toasted tortilla for an easy breakfast on the go. The breakfast menu also includes sandwiches, wraps, and plates, giving you several ways to start the day near Town Center Parkway. Visit our dedicated <a href=\"/breakfast-in-santee/\">Breakfast in Santee page</a> to browse breakfast items, find serving information, get directions, and review online ordering options.</p>\n\n  <h2>Order lunch or plan food for a group</h2>\n  <p>For an everyday lunch, review the menu and use the online ordering link to see available choices and pickup details. Ordering ahead can make a short lunch break easier to plan. If you are organizing a work lunch, meeting, or family gathering, explore <a href=\"/catering/\">Pepper Farm Deli catering options</a> and contact the team to discuss current selections, portions, timing, and availability. For more sandwich ideas, read our <a href=\"/blog/subs-near-you-in-santee/\">guide to sub sandwiches in Santee</a>.</p>\n\n  <h2>Visit Pepper Farm Deli in Santee, California</h2>\n  <p>Find Pepper Farm Deli at 235 Town Center Parkway, Suite H, Santee, CA 92071. We are a local choice for breakfast in Santee, freshly prepared sandwiches, deli lunch, salads, and group catering. The posted hours are Monday through Saturday, 8 am to 7 pm, and Sunday, 8 am to 5 pm. Hours, menu items, prices, and ordering availability can change, so check current details before making a special trip.</p>\n  <p>Explore the <a href=\"/menu/\">menu</a>, plan your morning on the <a href=\"/breakfast-in-santee/\">breakfast page</a>, or call <a href=\"tel:+16192018129\">619-201-8129</a> with questions. We look forward to serving you at Pepper Farm Deli, your neighborhood deli in Santee.</p>\n  ",
+      "imageAlt": "Pepper Farm Deli Philly Cheesesteak with ribeye, grilled onions, and melted cheese on a hoagie roll"
+    },
+    {
+      "slug": "breakfast-at-pepper-farm-deli-in-santee",
+      "title": "Breakfast at Pepper Farm Deli in Santee: Burritos, Sandwiches & Morning Favorites",
+      "date": "2026-11-04",
+      "description": "Plan a satisfying morning in Santee with Pepper Farm Deli’s $7.99 egg-and-cheese Breakfast Burrito, breakfast sandwiches, wraps, and local ordering tips.",
+      "image": "/images/NNDj-Z_Fi6-1440.webp",
+      "html": "\n  \n  \n  \n  \n  <p>A good breakfast can make a busy morning feel easier. At Pepper Farm Deli in Santee, you can choose a warm, handheld meal, look through breakfast sandwiches and wraps, or take a little more time over a plate. The deli’s $7.99 egg-and-cheese Breakfast Burrito is a simple, filling option for mornings when you want something easy to carry. This guide covers the burrito, other breakfast choices, how to plan a quick stop, and where to find Pepper Farm Deli in Santee.</p>\n  \n  <h2>A warm egg-and-cheese burrito for busy mornings</h2>\n  <p>The $7.99 Breakfast Burrito brings eggs and cheese together in a portable breakfast made for an on-the-go morning. It is a straightforward choice when you want a warm bite before work, school, errands, or a day exploring Santee. The familiar combination makes it easy to choose, while the burrito format is convenient to enjoy during a short break. If you are comparing breakfast in Santee, a handheld option can be especially useful when your morning schedule is already full. Check the current menu or ask the deli about availability before making a special trip.</p>\n  \n  <h2>Choose the breakfast that fits your morning</h2>\n  <p>Not every day calls for the same kind of breakfast. Some mornings you may want a sandwich that is easy to eat between appointments; another day, a wrap may be the right fit. Pepper Farm Deli’s breakfast menu includes burritos, sandwiches, wraps, and plate options, so you can browse different formats and choose what suits your appetite and schedule. Review the menu descriptions before ordering, since ingredients and preparation can differ by item. If you have a question about a specific ingredient or customization, contact the deli and confirm the details with the team.</p>\n  \n  <h2>Make a quick breakfast stop in Santee</h2>\n  <p>A little planning can make breakfast pickup feel simpler. Before leaving, look at the current menu and online ordering options, decide what you want, and check whether a pickup time is available. If you are on a tight schedule, allow time for the kitchen to prepare your food and for the drive to the deli. For an item you especially want, such as the egg-and-cheese Breakfast Burrito, call ahead to ask about current availability. These small steps can help turn a morning food stop into a more predictable part of your day.</p>\n  \n  <h2>Breakfast near Town Center Parkway</h2>\n  <p>Pepper Farm Deli is located at 235 Town Center Parkway, Suite H, Santee, California 92071. Its location makes it a convenient place to consider when you are looking for breakfast in Santee before continuing with your day. You can check the directions, browse the menu, and choose whether to order ahead or visit in person. If you are new to the area, use the full street address to plan your route and confirm the deli’s current hours before you head out. The team can help answer questions about menu items and ordering.</p>\n  \n  <h2>Breakfast for a group or workplace</h2>\n  <p>When you are organizing breakfast for coworkers, friends, or a morning meeting, start with the headcount and the time food needs to be ready. Ask the deli which breakfast items and group options are currently available, and confirm portions, pricing, pickup timing, and any ordering lead time. If people have dietary preferences or ingredient questions, collect those details before you place the order. Keeping each selection and any notes clearly labeled can make pickup and serving easier. For a larger order, contact Pepper Farm Deli directly so the team can discuss what works for your group and schedule.</p>\n  \n  <h2>A satisfying start without overcomplicating the choice</h2>\n  <p>A breakfast routine does not have to involve a long search or a complicated order. If you already know you enjoy eggs and cheese, the $7.99 Breakfast Burrito offers a clear, familiar option. If you want to compare, browse the breakfast sandwiches, wraps, and plates on the menu and select what sounds right that day. Check current pricing and ingredients online, and ask the deli if anything is unclear. Having a couple of go-to choices can make weekday mornings easier while still leaving room to try a different breakfast when you have more time.</p>\n  \n  <h2>Find a breakfast style you will look forward to</h2>\n  <p>Choosing breakfast can be about more than getting out the door quickly. Think about whether you want a handheld meal, a sandwich with your favorite breakfast ingredients, or a plate that gives you a chance to sit down. Pepper Farm Deli’s range of formats makes it easy to compare options without needing to settle on the same thing every visit. You can keep the egg-and-cheese burrito in mind for a busy morning, then take another look at the menu when you have time to explore. If a particular combination matters to you, review the listed ingredients and ask the team what is available that day.</p>\n  \n  <h2>A local breakfast stop for Santee routines</h2>\n  <p>A dependable neighborhood breakfast spot can become part of all kinds of routines: grabbing a bite before a shift, picking up food on the way to an appointment, or meeting a friend for a morning catch-up. Pepper Farm Deli is in Santee at Town Center Parkway, making it a local option to consider when breakfast is on your plans. Before visiting, check the latest hours and menu details so the stop fits your schedule. If you are picking up several meals, placing selections together and confirming the requested time can help everyone start the day with the right order.</p>\n  \n  <h2>Visit Pepper Farm Deli for breakfast in Santee</h2>\n  <p>Whether you are heading to work, meeting someone nearby, or simply looking for a convenient morning meal, Pepper Farm Deli offers breakfast choices in Santee, including its egg-and-cheese Breakfast Burrito for $7.99. Take a look at the breakfast menu, confirm the details that matter to you, and plan your visit to 235 Town Center Parkway, Suite H. For more ideas, read our breakfast-before-work guide or browse the full menu. We look forward to being part of your morning in Santee.</p>\n  \n  <h2>Plan your visit or order</h2>\n  <ul><li><a href=\"/menu/#breakfast\">Browse the breakfast menu</a></li><li><a href=\"/blog/breakfast-before-work-in-santee/\">Plan breakfast before work</a></li><li><a href=\"/contact/\">Find Pepper Farm Deli in Santee</a></li></ul>\n  <p>Questions? <a href=\"tel:+16192018129\">Call Pepper Farm Deli at 619-201-8129</a>.</p>\n"
+    },
+    {
+      "slug": "subs-near-you-in-santee",
+      "title": "Subs Near You in Santee: Fresh Deli Sandwiches at Pepper Farm Deli",
+      "date": "2026-10-25",
+      "description": "Looking for subs in Santee? Explore sub sandwiches, hot favorites, and fresh lunch options at Pepper Farm Deli on Town Center Parkway.",
+      "image": "/images/kqmtw3p-eW-458.webp",
+      "html": "\n  \n  \n  \n  \n  <p>When a sandwich sounds right for lunch, it helps to find a spot with plenty of choices and freshly prepared ingredients. Pepper Farm Deli serves Santee with a wide menu of deli sandwiches, hot sandwiches, wraps, salads, and more. If you’re searching for subs near you in Santee, take a look at the menu and find a sandwich style that fits your appetite.</p>\n  \n  <h2>How we craft a satisfying sub sandwich</h2>\n  <p>A great sub brings its ingredients together in every bite. At Pepper Farm Deli in Santee, start with a fresh roll, then choose the fillings and flavors you enjoy—from savory deli meats and cheese to a hot grilled sub or crisp vegetables and flavorful spreads. Explore the menu to find a sub sandwich in Santee that fits your appetite, and ask the deli about ingredients or customizations before ordering.</p>\n  \n  <h2>Explore sub sandwiches in Santee</h2>\n  <p>Pepper Farm Deli’s menu includes a range of sub sandwich favorites, from the Italian and Little Italy to the Philly Cheesesteak, French Dip, and Cubano. These options offer different combinations and flavors, so there’s more than one way to enjoy a sub sandwich in Santee. Browse the current menu to compare ingredients and find the right choice for lunch.</p>\n  \n  <h2>Find subs near you at Town Center Parkway</h2>\n  <p>Pepper Farm Deli is located at 235 Town Center Parkway, Suite H, Santee, California 92071. Stop by for a freshly prepared sandwich, or review the menu and online ordering options before you go. If you’re planning a meal for coworkers or a group, explore the deli’s catering options and contact the team to confirm current selections and timing.</p>\n  \n  <h2>A local Santee sandwich stop</h2>\n  <p>Whether you call them subs, submarine sandwiches, or deli sandwiches, the best choice depends on the fillings and flavors you’re in the mood for. Pepper Farm Deli brings a broad selection of hot and cold sandwich options together in one Santee location. Check the menu for current offerings, then visit the deli at Town Center Parkway for your next lunch.</p>\n  \n  <h2>Plan your visit or order</h2>\n  <ul><li><a href=\"/menu/\">Browse the full Pepper Farm Deli menu</a></li><li><a href=\"/best-sandwiches/\">Explore sandwich favorites in Santee</a></li><li><a href=\"/catering/\">View deli catering options</a></li></ul>\n  <p>Questions? <a href=\"tel:+16192018129\">Call Pepper Farm Deli at 619-201-8129</a>.</p>\n"
+    },
+    {
+      "slug": "breakfast-sandwiches-burritos-santee",
+      "title": "Breakfast in Santee: Try Pepper Farm Deli’s $7.99 Egg-and-Cheese Burrito",
+      "date": "2026-10-18",
+      "description": "Looking for the best breakfast in Santee? Check out Pepper Farm Deli’s new $7.99 egg-and-cheese burrito, plus breakfast sandwiches and wraps.",
+      "image": "/images/0hUo3yYTHG-1446.webp",
+      "html": "\n  \n  \n  \n  \n  <p>Searching for the best breakfast in Santee? Pepper Farm Deli has a new $7.99 egg-and-cheese burrito for a quick, filling start to the day. If you’re looking for a breakfast burrito in Santee, a breakfast sandwich, or a wrap, browse the current menu and choose what fits your morning.</p>\n  \n  <h2>A new $7.99 egg-and-cheese breakfast burrito</h2>\n  <p>The new egg-and-cheese burrito is an easy handheld breakfast to enjoy on a busy morning. At $7.99, it gives Santee diners a simple breakfast option built around eggs and cheese. Check the breakfast menu for current details and availability before you head over.</p>\n  \n  <h2>More breakfast choices in Santee</h2>\n  <p>Prefer something different? Pepper Farm Deli also serves breakfast sandwiches and wraps. Compare the menu descriptions, then pick the style that suits your appetite and schedule. If you have a question about ingredients or a particular breakfast item, contact the deli before ordering.</p>\n  \n  <h2>Find your morning stop in Santee</h2>\n  <p>Pepper Farm Deli is at 235 Town Center Parkway, Suite H, Santee, CA 92071. Whether you searched for breakfast near me in Santee or already know what you want, check the menu and call ahead if you need to confirm that an item is available.</p>\n  \n  <h2>Plan your visit or order</h2>\n  <ul><li><a href=\"/menu/#breakfast\">See the breakfast menu</a></li><li><a href=\"/blog/breakfast-before-work-in-santee/\">Read breakfast planning tips</a></li></ul>\n  <p>Questions? <a href=\"tel:+16192018129\">Call Pepper Farm Deli at 619-201-8129</a>.</p>\n"
+    },
+    {
+      "slug": "breakfast-before-work-in-santee",
+      "title": "Breakfast Before Work in Santee: How to Plan Your Order",
+      "date": "2026-10-01",
+      "description": "Plan a Santee breakfast stop with tips for choosing wraps, sandwiches, and plates, checking availability, and organizing a group order.",
+      "image": "/images/NNDj-Z_Fi6-1440.webp",
+      "html": "\n  \n  \n  \n  \n  <p>A weekday breakfast stop works best when the food fits your schedule. At Pepper Farm Deli in Santee, start with the current breakfast menu and choose how you want to eat: a handheld meal for your break or a plate when you have time to sit down. Here is how to make the order easier.</p>\n  \n  <h2>Choose by your morning, then by your ingredients</h2>\n  <p>Breakfast wraps and sandwiches are convenient when you have limited table space. Plates make sense when you can pause for a meal. The menu includes egg-based options with different breads, proteins, vegetables, and sauces. Read the full descriptions instead of choosing by the name alone; ask about substitutions before placing an order.</p>\n  \n  <h2>Check the menu before leaving</h2>\n  <p>Use the online ordering page to review current options and any available pickup times. Restaurant opening hours do not necessarily tell you when every breakfast item is offered. Call if your plans depend on a specific dish, a tight pickup window, or an ingredient change. Leave time for the kitchen to prepare the order and for your trip to the deli.</p>\n  \n  <h2>Make a team breakfast easy to collect</h2>\n  <p>For several individual meals, put names beside each person's selection and keep dietary notes clear. For a meeting, ask about breakfast catering platters and confirm how the listed pieces translate into portions for your group. Decide who will pick up, who will receive the food, and whether the team needs utensils, napkins, or drinks.</p>\n  \n  <h2>Find Pepper Farm Deli</h2>\n  <p>The deli is at 235 Town Center Parkway, Suite H, Santee, CA 92071. Call 619-201-8129 if you need help finding the location or confirming breakfast availability. For a meeting order, share the headcount and meal time before committing to a menu.</p>\n  \n  <h2>Plan your visit or order</h2>\n  <ul><li><a href=\"/menu/#breakfast\">Browse the breakfast menu</a></li><li><a href=\"/catering/\">Plan breakfast catering</a></li></ul>\n  <p>Questions? <a href=\"tel:+16192018129\">Call Pepper Farm Deli at 619-201-8129</a>.</p>\n"
+    },
+    {
+      "slug": "choosing-a-vegetarian-lunch-in-santee",
+      "title": "Choosing a Vegetarian Lunch in Santee: What to Check",
+      "date": "2026-10-01",
+      "description": "Compare vegetarian sandwiches and salads in Santee, understand ingredient questions, and organize a group lunch with different dietary preferences.",
+      "image": "/images/MfA7_ReuHP-2000.webp",
+      "html": "\n  \n  \n  \n  \n  <p>Choosing a vegetarian lunch is easier when you look beyond the dish name. Pepper Farm Deli's menu includes explicitly vegetarian sandwiches alongside salads and other meals. Use the menu descriptions to build a shortlist, then ask the team about ingredients and preparation before ordering.</p>\n  \n  <h2>Start with an explicitly vegetarian option</h2>\n  <p>A vegetable in a dish name does not make the entire meal vegetarian. A salad may include bacon, and a mushroom burger may still contain a beef patty. Start with items labeled vegetarian and read every ingredient. If you are comparing sandwiches, consider the bread, cheese, dressing, and spread as well as the vegetables.</p>\n  \n  <h2>Vegetarian and vegan are different requests</h2>\n  <p>Vegetarian menu items may contain dairy or eggs. If you avoid those ingredients too, ask about the full recipe and available changes. Do not assume that removing cheese makes an item vegan: bread, sauces, and preparation can also matter. The team can explain current options, but an unconfirmed substitution should not be treated as part of your order.</p>\n  \n  <h2>Talk about allergies separately</h2>\n  <p>An ingredient preference is different from a food allergy. Tell the deli what you need to avoid and ask about preparation and shared equipment before ordering. Menu descriptions are useful starting points, but they are not a guarantee that a meal is free from a particular allergen or cross-contact.</p>\n  \n  <h2>Plan a mixed group lunch</h2>\n  <p>Collect dietary preferences before choosing platters so vegetarian guests have an actual meal option. Confirm serving quantities with the team and ask how different selections can be identified at pickup. Keep ingredient questions attached to the correct order. For an office lunch or celebration, contact Pepper Farm Deli in Santee with your headcount, preferred time, and menu shortlist.</p>\n  \n  <h2>Plan your visit or order</h2>\n  <ul><li><a href=\"/healthy-food/\">Explore salads and vegetarian options</a></li><li><a href=\"/menu/\">Browse the full menu</a></li><li><a href=\"/catering-inquiry/\">Request a group meal</a></li></ul>\n  <p>Questions? <a href=\"tel:+16192018129\">Call Pepper Farm Deli at 619-201-8129</a>.</p>\n"
+    },
+    {
+      "slug": "planning-party-catering-in-santee",
+      "title": "Planning Party Catering in Santee: Portions, Timing & Pickup",
+      "date": "2026-10-01",
+      "description": "Use this Santee party catering checklist to organize your guest count, menu, portions, dietary needs, and pickup or delivery arrangements.",
+      "image": "/images/Th98ZKRJNQ-1488.webp",
+      "html": "\n  \n  \n  \n  \n  <p>A birthday lunch, family gathering, or team celebration starts with a few practical details: who is eating, when food is needed, and how it will reach the table. Use this checklist before requesting catering from Pepper Farm Deli in Santee.</p>\n  \n  <h2>Count guests and choose a meal format</h2>\n  <p>Start with the number of adults and children and decide whether you are serving a full meal or food alongside other dishes. Sandwich and wrap platters suit a casual gathering; salads and sides add variety. Ask the deli to help translate your guest count into quantities. A platter labeled with half sandwiches tells you the number of pieces, not necessarily how many people it will feed.</p>\n  \n  <h2>Build the order around real dietary needs</h2>\n  <p>Ask guests about dietary requirements before finalizing the menu. Include a suitable option for each person instead of assuming everyone can make a meal from the sides. For allergies, discuss ingredients and preparation directly with the deli. Confirm any substitutions and ask how separate selections will be identified.</p>\n  \n  <h2>Confirm price and timing together</h2>\n  <p>Share your event date, meal time, headcount, and preferred selections. Ask about the minimum quantity for those items, the lead time needed, and the total cost. Online menu prices are a starting point; get confirmation for your actual order. Short-notice availability depends on the kitchen's schedule, so call directly when an event is coming up today.</p>\n  \n  <h2>Arrange the handoff</h2>\n  <p>For pickup, confirm the collection time and who will collect at 235 Town Center Parkway, Suite H, Santee. If you need delivery, ask whether your address can be accommodated and confirm any fee and arrival window. At the venue, plan table space, serving utensils, and a contact person. An inquiry is a request for information; wait for confirmation before treating the order as booked.</p>\n  \n  <h2>Plan your visit or order</h2>\n  <ul><li><a href=\"/catering/\">Compare catering options and portions</a></li><li><a href=\"/catering-inquiry/\">Send your event details</a></li><li><a href=\"/same-day-catering/\">Check same-day catering guidance</a></li></ul>\n  <p>Questions? <a href=\"tel:+16192018129\">Call Pepper Farm Deli at 619-201-8129</a>.</p>\n"
+    },
+    {
+      "slug": "breakfast-near-me-start-your-day-right-in-santee",
+      "title": "Breakfast Near Me: Start Your Day Right in Santee",
+      "date": "2026-09-15",
+      "description": "Looking for the best breakfast in Santee? Discover fresh breakfast sandwiches, wraps, and more at Pepper Farm Deli. Perfect for your morning commute or pre-adventure fuel!",
+      "image": "/images/0hUo3yYTHG-1446.webp",
+      "html": "\n\n    \n\n\n<div>\n  \n  <div>\n    \n    <span>By Pepper Farm Deli · Published 2025-01-14 · Updated 2025-01-14</span>\n  </div>\n  \n  \n  \n  \n\n  \n  <section>\n    <h2>Try Our $7.99 Egg and Cheese Breakfast Burrito</h2>\n    <p>Looking for a quick breakfast in Santee? Our new Breakfast Burrito is filled with egg and cheese and priced at $7.99. It is a warm, convenient option for a satisfying breakfast near you before work, school, or your morning plans.</p>\n  </section>\n  \n\n  <p>Your Morning Favorites in Santee</p><p>Looking for the perfect breakfast spot in Santee? Our <a href=\"/menu#breakfast\">breakfast menu</a> serves up fresh, made-to-order options that'll kickstart your day. Our most popular breakfast items include:</p><ul><li><p><b>Signature Breakfast Wraps</b><i> </i>: Packed with fresh ingredients and served with our house-made aioli</p></li><li><p><b>ABC Wrap </b>: A local favorite featuring eggs, avocado, bacon, and Vermont cheddar cheese</p></li><li><p><b>Breakfast Sandwiches</b><i> </i>: From classic egg and cheese to our <a href=\"/menu/monte-cristo\">indulgent Monte Cristo</a></p></li></ul><h2>Perfect for Your Morning Adventure</h2><p>Located conveniently on <a href=\"/contact/\">Town Center Parkway</a>, we're your ideal breakfast stop before:</p><ul><li><p>Morning pickleball at Big Rock Park</p></li><li><p>A round of golf at Carlton Oaks Country Club</p></li><li><p>Hiking Cowles Mountain</p></li><li><p>Walking your dog at Mast Park</p></li><li><p>Heading to class at Grossmont Community College</p></li></ul><h2>Quick Breakfast for Busy Mornings</h2><p>Running late for school or work? Our efficient service ensures you'll get a fresh, delicious breakfast without the wait. We're perfectly situated for:</p><ul><li><p>Santana High School students and staff</p></li><li><p>Chaparral High School morning commuters</p></li><li><p>Grossmont College early birds</p></li><li><p>Local professionals heading to work</p></li></ul><p><i>Pro tip: </i><a href=\"/contact\"><i>Call ahead</i></a><i> to place your order for even faster service!</i></p><h3>Healthy Options to Power Your Day</h3><p>Start your morning right with our <a href=\"/menu#breakfast\">healthier breakfast choices</a>, including:</p><ul><li><p><a href=\"/menu/breakfast-veggie-wrap\">Breakfast Veggie Wrap</a> with organic spinach</p></li><li><p><a href=\"/menu/avocado-and-egg-toast\">Avocado &amp; Egg Toast</a> on rustic sourdough</p></li><li><p>Fresh fruit sides and <a href=\"/menu#smoothies\">smoothies</a></p></li></ul><h3>Early Bird Special Hours</h3><p><a href=\"/contact/\">Open from 8:00 AM daily</a>, we're ready to serve you a fresh breakfast whether you're:</p><ul><li><p>Catching the sunrise at Cowles Mountain</p></li><li><p>Heading to early morning classes</p></li><li><p>Starting your workday</p></li><li><p>Meeting friends for breakfast</p></li></ul><p>Ready to start your day right? <a href=\"/contact\">Visit us</a> at 235 Town Center Pkwy H in Santee, or <a href=\"https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h\">order online</a> for pickup. Your perfect breakfast in Santee awaits!</p>\n\n  <div>\n  \n  \n\n\n\n\n<div><h3><button>What time does Pepper Farm Deli start serving breakfast?</button></h3>\n    <div>\n      <p>We open at 8:00 AM every day, serving our full breakfast menu including wraps, sandwiches, and healthy options.</p>\n\n    </div><h3><button>Do you offer vegetarian breakfast options?</button></h3>\n    <div>\n      <p>Yes! We have several vegetarian options including our Breakfast Veggie Wrap, Veggie Omelet, and Avocado Toast variations.</p>\n\n    </div><h3><button>Can I order ahead for quick pickup?</button></h3>\n    <div>\n      <p>Absolutely! We welcome call-ahead or online orders to help you get your breakfast quickly and start your day right. Perfect for those morning commutes to school or work.</p>\n\n    </div></div>\n  </div>\n\n</div>\n\n    \n  "
+    },
+    {
+      "slug": "fresh-homemade-soups-in-santee-your-daily-comfort-food-fix",
+      "title": "Fresh Homemade Soups in Santee: Your Daily Comfort Food Fix",
+      "date": "2026-09-15",
+      "description": "Warm up with fresh, comforting soups at Pepper Farm Deli in Santee. From classic Chicken Noodle to creamy New England Clam Chowder. Perfect alone or paired with our signature sandwiches.",
+      "image": "/images/kegzvXtPTn-639.webp",
+      "html": "\n\n    \n\n\n<div>\n  \n  <div>\n    \n    <span>By Pepper Farm Deli · Published 2025-01-14 · Updated 2025-01-14</span>\n  </div>\n  \n  \n  \n  \n\n  \n\n  <p>There's something magical about finding the perfect soup and sandwich combination. At <a href=\"/\">Pepper Farm Deli</a>, we offer four classic soups that pair beautifully with our <a href=\"/menu/#hot-sandwiches\">extensive sandwich menu</a>, creating endless possibilities for a satisfying meal.</p><h2>Our Fresh Soup Selection</h2><p>Every day, we serve four classic soups that warm both body and soul:</p><ul><li><p><b>New England Clam Chowder </b>: A hearty coastal favorite with tender clams and diced potatoes in a creamy broth</p></li><li><p><b>Tomato Basil </b>: A creamy blend of ripe tomatoes and fresh basil, bursting with rich, savory flavors</p></li><li><p><b>Classic Chicken Noodle </b>: A comforting, home-style soup with tender chicken, noodles, and vegetables in a savory broth</p></li><li><p><b>Hearty Chili </b>: A robust and spicy chili packed with ground beef, beans, and a medley of bold spices</p></li></ul><h3>Perfect Pairings: Our Recommended Combinations</h3><p>Looking for the ideal soup and sandwich match? Here are some of our favorite pairings that bring out the best flavors in both:</p><ul><li><p><i>Clam Chowder + </i><a href=\"/menu/little-italy\"><i>Little Italy</i></a> : Our creamy chowder perfectly complements the Italian-style sandwich loaded with ham, salami, mortadella, and provolone</p></li><li><p><i>Tomato Basil + </i><a href=\"/menu/loaded-original-blt\"><i>Loaded Original BLT</i></a> : A classic combination! Our creamy tomato basil soup alongside the Loaded Original BLT creates comfort food perfection</p></li><li><p><i>Chicken Noodle + </i><a href=\"/menu/french-dip\"><i>French Dip</i></a> : The savory chicken broth pairs beautifully with our tender roast beef sandwich and au jus</p></li><li><p><i>Hearty Chili + </i><a href=\"/menu/pepper-farm-burger\"><i>Pepper Farm Burger</i></a> : For those extra hungry days, our spicy chili alongside our signature burger creates an unbeatable combo</p></li></ul><h2>Why Choose Pepper Farm Deli Soups?</h2><ul><li><p>Fresh daily selection</p></li><li><p>Perfect portion sizes</p></li><li><p>Affordable prices</p></li><li><p>Available for dine-in or takeout</p></li><li><p>Four classic options to satisfy any craving</p></li></ul><h3>Serving Suggestions</h3><p>Each soup comes with our fresh-baked bread on the side, perfect for dipping. Add a <a href=\"/menu/house-salad\">side salad</a> to make it a complete meal, or try one of our recommended sandwich pairings for a truly satisfying dining experience.</p><p><a href=\"/menu/\">View our full menu</a> | <a href=\"https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h\">Order online</a> | <a href=\"/contact/\">Find us in Santee</a> </p>\n\n  <div>\n  \n  \n\n\n\n\n<div><h3><button>Can I order soups for takeout or delivery?</button></h3>\n    <div>\n      <p>Yes! All our soups are available for takeout and delivery through our partner services including <a href=\"https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h/\">Toast</a> for pickup and <a href=\"https://www.doordash.com/store/pepper-farm-deli-santee-2431793/\">DoorDash</a>, <a href=\"https://www.ubereats.com/store/pepper-farm-deli/w3dNm-8xRvetqmpA9nq2rg\">Uber Eats</a>, and <a href=\"https://www.grubhub.com/restaurant/pepper-farm-deli-235-town-center-pkwy-santee/3069315\">Grubhub</a>.</p>\n\n    </div><h3><button>Do you offer vegetarian soup options?</button></h3>\n    <div>\n      <p>Yes! Our Tomato Basil soup is vegetarian-friendly and pairs perfectly with many of our vegetarian sandwiches.</p>\n\n    </div><h3><button>What size portions do you offer?</button></h3>\n    <div>\n      <p>Our soups come in generous portions perfect for a light meal or as a side with your favorite sandwich.</p>\n\n    </div></div>\n  </div>\n\n</div>\n\n    \n  "
+    },
+    {
+      "slug": "healthy-food-options-near-me-fresh-and-nutritious-choices-in-santee",
+      "title": "Healthy Food Options Near Me: Fresh & Nutritious Choices in Santee",
+      "date": "2026-09-15",
+      "description": "Discover fresh, healthy food options at Pepper Farm Deli in Santee. From keto-friendly plates to vegetarian delights, enjoy nutritious meals made with quality ingredients. Your local spot for healthy eating!",
+      "image": "/images/HHnzg_Qz3B-902.webp",
+      "html": "\n\n    \n\n\n<div>\n  \n  <div>\n    \n    <span>By Pepper Farm Deli · Published 2025-01-14 · Updated 2026-09-16</span>\n  </div>\n  \n  \n  \n  \n\n  \n\n  <p>Finding healthy food options that don't compromise on taste can be challenging. At Pepper Farm Deli in Santee, we've created a menu that caters to various dietary preferences while ensuring every bite is packed with flavor. From our popular low-carb plates to vegetarian delights, we're your neighborhood destination for nutritious, satisfying meals.</p><h2>Fresh Ingredients, Healthier Choices</h2><p>At Pepper Farm Deli, freshness isn't just a promise – it's our standard. Our bread is delivered fresh daily, ensuring every sandwich starts with the best foundation. We carefully select our ingredients to provide you with meals that are both nutritious and delicious.</p><h3>Low-Carb and Keto-Friendly Options</h3><p>Our <b>signature Grilled Filet Mignon Plate</b> leads our selection of low-carb options. This customer favorite features:</p><ul><li><p>Perfectly grilled filet mignon</p></li><li><p>Sautéed fresh vegetables (broccoli, mushroom, zucchini, and carrots)</p></li><li><p>Choice of soup or house salad</p></li><li><p>Zero added sugars or unnecessary carbs</p></li></ul><h2>Vegetarian and Special Dietary Needs</h2><p>We understand that healthy eating means different things to different people. That's why we offer:</p><ul><li><p>The <i>Green Beret </i>- our popular vegetarian sandwich featuring fresh vegetables and avocado</p></li><li><p>Gluten-free options available upon request</p></li><li><p><a href=\"/menu/#salads\">Customizable salads</a> with various protein options</p></li><li><p><a href=\"/menu/#cold-pressed-juice\">Fresh-pressed juices</a> packed with nutrients</p></li></ul><h3>Protein-Rich, Health-Conscious Meals</h3><p>Our <a href=\"/menu/#low-carb-plates\">Low Carb Plates</a> section features multiple options for health-conscious diners, including:</p><ul><li><p>Wild-caught salmon with balsamic glazed asparagus</p></li><li><p>Grilled chicken with sautéed vegetables</p></li><li><p>Greek Gyro protein plate</p></li><li><p>Jumbo Garlic &amp; Pepper Shrimp plate</p></li></ul><h2>Making Healthy Choices Easy</h2><p>Whether you're following a specific diet or simply trying to eat more nutritiously, our menu offers plenty of options. Each dish is prepared fresh to order, allowing for customization to meet your dietary needs.</p><h3>Fresh Alternatives to Traditional Sides</h3><p>Instead of traditional sides, opt for our healthy alternatives:</p><ul><li><p>Fresh fruit salad</p></li><li><p>Sautéed vegetables</p></li><li><p>House salad with light dressing</p></li><li><p>Sautéed broccoli or asparagus</p></li></ul><p></p>\n\n  <div>\n  \n  \n\n\n\n\n<div><h3><button>Do you offer keto-friendly options?</button></h3>\n    <div>\n      <p>Yes! Our low-carb plates are perfect for keto dieters, featuring protein-rich meats and fresh vegetables with no added sugars or unnecessary carbs.</p>\n\n    </div><h3><button>Can you accommodate vegetarian diets?</button></h3>\n    <div>\n      <p>Absolutely! We offer several vegetarian options, including our popular Green Beret sandwich, various salads, and customizable plates with fresh vegetables.</p>\n\n    </div><h3><button>Are your healthy options available for takeout?</button></h3>\n    <div>\n      <p>Yes, all our healthy options are available for both dine-in and takeout. Order through our <a href=\"https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h\">online ordering system</a> for convenient pickup.</p>\n\n    </div></div>\n  </div>\n\n</div>\n\n    \n  "
+    },
+    {
+      "slug": "planning-an-office-lunch-in-santee",
+      "title": "Planning an Office Lunch in Santee: A Sandwich Catering Checklist",
+      "date": "2026-09-15",
+      "description": "Use this practical checklist to plan a smooth office lunch in Santee, from headcount and dietary needs to pickup timing and ordering.",
+      "image": "/images/Th98ZKRJNQ-1488.webp",
+      "html": "\n  <header>\n    \n    \n  </header>\n  \n\n  <p>A good office lunch does more than fill a table. It gives people a chance to step away from work, makes guests feel welcome, and keeps the day on schedule. Whether you are planning a team meeting, training session, client visit, or casual celebration in Santee, a little preparation makes group ordering much easier.</p>\n\n  <h2>1. Start with an accurate headcount</h2>\n  <p>Confirm how many people will eat before choosing food. Ask attendees to respond by a clear deadline, then build in a small buffer for last-minute guests when your budget allows. A final count helps you order the right quantity and avoids running short or creating unnecessary waste.</p>\n\n  <h2>2. Ask about dietary needs early</h2>\n  <p>Send a quick message before ordering to identify vegetarian preferences, food allergies, gluten-related needs, and ingredient dislikes. Group lunches are easier when there is more than one kind of sandwich or salad available. If someone has an allergy, contact the restaurant directly before ordering so the team can explain current ingredients and preparation options.</p>\n\n  <h2>3. Choose food that works for the meeting format</h2>\n  <p>For a working lunch, handheld options and clearly labeled sides keep setup simple. For a longer gathering, add a mix of sandwiches, salads, wraps, and drinks so people can choose what suits them. Keep serving space, utensils, napkins, and refrigeration in mind if food will sit out before the meeting begins.</p>\n\n  <h2>4. Set the pickup or delivery time around the agenda</h2>\n  <p>Plan for food to arrive shortly before the meal break rather than at the beginning of the event. This helps keep hot food hot and cold food fresh. If your event has a fixed start time, leave room for traffic, building access, and setup. For a pickup order, assign one person to confirm the order and collect it.</p>\n\n  <h2>5. Make ordering details easy to find</h2>\n  <p>Include the event date, desired serving time, headcount, contact name, phone number, and any dietary notes in one place. For offices, it also helps to provide the business name, suite number, parking details, and a point of contact who can meet the order. Clear details reduce follow-up calls and make the day smoother for everyone.</p>\n\n  <h2>6. Confirm availability before making promises</h2>\n  <p>Catering availability, lead times, and menu selections can change. Contact Pepper Farm Deli before finalizing your plans—especially for large groups or short-notice events. The team can help you review current options and choose an order that fits your event.</p>\n\n  <h2>Plan your next group meal in Santee</h2>\n  <p>Pepper Farm Deli is located at 235 Town Center Parkway, Suite H, Santee, CA 92071. Explore the <a href=\"/menu/\">full menu</a>, review <a href=\"/catering/\">catering options</a>, or call <a href=\"tel:+16192018129\">619-201-8129</a> to discuss your event.</p>\n"
+    },
+    {
+      "slug": "ultimate-guide-to-gourmet-sandwiches-near-me-in-santee-what-makes-a-sandwich-exceptional",
+      "title": "Ultimate Guide to Gourmet Sandwiches Near Me in Santee: What Makes a Sandwich Exceptional?",
+      "date": "2026-09-15",
+      "description": "Discover what makes a truly gourmet sandwich, from artisanal ingredients to expert preparation. Learn why Santee's food lovers choose handcrafted sandwiches for an exceptional dining experience.",
+      "image": "/images/BJ-rh65CJ--950.webp",
+      "html": "\n\n    \n\n\n<div>\n  \n  <div>\n    \n    <span>By Pepper Farm Deli · Published 2025-01-14 · Updated 2025-01-14</span>\n  </div>\n  \n  \n  \n  \n\n  \n\n  <h2>The Foundation: Quality Ingredients Matter</h2><p>The journey to an exceptional sandwich begins with ingredient selection. True gourmet sandwiches start with:</p><ul><li><p><b>Premium Meats</b>: High-quality proteins like Boar's Head meats, house-made meatballs, or premium cuts like filet mignon</p></li><li><p><b>Artisanal Breads</b>: Fresh-baked breads with proper texture and crust, from classic hoagie rolls to Dutch crunch</p></li><li><p><b>Fresh Produce</b>: Locally-sourced vegetables and greens picked at peak ripeness</p></li><li><p><b>Specialty Cheeses</b>: Premium varieties like aged Havarti, Vermont cheddar, and fresh mozzarella</p></li></ul><p>For example, our <a href=\"/menu/filet-mignon-club/\">Filet Mignon Club</a> demonstrates this commitment to quality with tender filet mignon, creamy Havarti cheese, and fresh arugula on artisanal ciabatta bread.</p><h2>The Art of Preparation</h2><h3>Expert Assembly Techniques</h3><p>What separates a good sandwich from a great one often comes down to preparation. Professional sandwich crafting involves:</p><ul><li><p><i>Proper layering </i>for optimal taste in every bite</p></li><li><p><i>Temperature control </i>for both hot and cold ingredients</p></li><li><p><i>Precise cutting </i>techniques that keep ingredients secure</p></li><li><p><i>Balanced proportions </i>of meat, cheese, vegetables, and condiments</p></li></ul><h3>House-Made Elements</h3><p>Gourmet sandwiches often feature unique, house-made components that elevate the entire creation:</p><ul><li><p>Custom-crafted sauces and aiolis</p></li><li><p>Specially marinated meats</p></li><li><p>Pickled vegetables</p></li><li><p>Signature spreads and dressings</p></li></ul><h2>Beyond Basic: Gourmet Sandwich Styles</h2><p>Modern gourmet sandwiches often fall into several distinctive categories:</p><h3>Classic Elevated</h3><p>Traditional favorites made exceptional through superior ingredients and preparation, like our <a href=\"/menu/french-dip/\">French Dip</a> with premium London broil and house-made au jus.</p><h3>Global Fusion</h3><p>International flavors reimagined between two slices of bread, exemplified by our <a href=\"/menu/greek-gyro-sandwich/\">Greek Gyro Sandwich</a> with house-made tzatziki sauce.</p><h3>Innovative Combinations</h3><p>Creative pairings that challenge conventional sandwich making, such as our <a href=\"/menu/wild-turkey-gobbler/\">Wild Turkey Gobbler</a> with house-made cranberry jam.</p><h2>Making the Right Choice</h2><p>When seeking out gourmet sandwiches in Santee, consider:</p><ol><li><p>Ingredient transparency: Can you see the quality of meats and produce being used?</p></li><li><p>Preparation methods: Are items made fresh to order?</p></li><li><p>House-made elements: Does the establishment create their own special sauces and additions?</p></li><li><p>Bread quality: Is the bread fresh and appropriate for each sandwich style?</p></li></ol><hr><p>Experience these principles in action at <a href=\"/menu/\">Pepper Farm Deli</a>, where we craft each sandwich with care using premium ingredients and expert techniques. Whether you're craving a classic <a href=\"/menu/little-italy/\">Italian</a> or an innovative creation like our <a href=\"/menu/lobster-roll-sandwich/\">Lobster Roll</a>, you'll taste the difference quality makes in every bite.</p><p><a href=\"https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h\">Order now</a> to experience Santee's finest handcrafted sandwiches, or visit our deli to watch our sandwich artisans at work.</p>\n\n  <div>\n  \n  \n\n\n\n\n<div><h3><button>What makes a sandwich worth a premium price?</button></h3>\n    <div>\n      <p>Premium sandwiches justify their price through high-quality ingredients, expert preparation, generous portions, and house-made components that create a memorable dining experience.</p>\n\n    </div><h3><button>How can I tell if a sandwich shop uses quality ingredients?</button></h3>\n    <div>\n      <p>Look for partnerships with premium suppliers (like Boar's Head), house-made components, and fresh, seasonal ingredients. Quality establishments proudly share information about their ingredient sources.</p>\n\n    </div><h3><button>What's the difference between a regular and gourmet sandwich?</button></h3>\n    <div>\n      <p>Gourmet sandwiches feature premium ingredients, expert preparation techniques, unique combinations, and often include house-made components that elevate them beyond basic deli fare.</p>\n\n    </div></div>\n  </div>\n\n</div>\n\n    \n  "
+    }
+  ],
+  "pages": {
+    "privacy-policy": {
+      "title": "Privacy Policy",
+      "html": "\n\n    <div>\n    <div>\n        \n        \n        <p>Last updated: January 13, 2025</p>\n        \n        <h2>Introduction</h2>\n        <p>Welcome to Pepper Farm Deli (\"we,\" \"our,\" or \"us\"). We respect your privacy and are committed to protecting any personal information that you may share with us through our website pepperfarmdeli.com.</p>\n        \n        <h2>Information We Collect</h2>\n        <p>We collect very limited information through our website:</p>\n        \n        <h3>Automatically Collected Information</h3>\n        <p>Through Google Analytics, we collect:</p>\n        <ul>\n            <li>IP addresses</li>\n            <li>Browser type and version</li>\n            <li>Operating system</li>\n            <li>Pages visited on our website</li>\n            <li>Time and duration of visits</li>\n            <li>Referring websites</li>\n            <li>General geographic location</li>\n            <li>Device information</li>\n            <li>Other standard web analytics information</li>\n        </ul>\n        \n        <h3>Information You Provide</h3>\n        <p>When you contact us through our website, you may choose to provide:</p>\n        <ul>\n            <li>Name</li>\n            <li>Email address</li>\n            <li>Phone number</li>\n            <li>Any other information you choose to include in your message</li>\n        </ul>\n        \n        <h2>Cookies and Analytics</h2>\n        <p>Our website uses Google Analytics, a web analytics service provided by Google, Inc. (\"Google\"). Google Analytics uses cookies, which are text files placed on your computer, to help the website analyze how users use the site.</p>\n        \n        <p>The information generated by the cookie about your use of the website (including your IP address) will be transmitted to and stored by Google on servers in the United States. Google will use this information for the purpose of evaluating your use of the website, compiling reports on website activity for website operators, and providing other services relating to website activity and internet usage.</p>\n        \n        <p>You can prevent the storage of cookies by adjusting your browser settings. You can also opt-out of Google Analytics tracking by installing the Google Analytics Opt-out Browser Add-on available at: <a href=\"https://tools.google.com/dlpage/gaoptout\">https://tools.google.com/dlpage/gaoptout</a></p>\n        \n        <h2>How We Use Your Information</h2>\n        <p>We use the information we collect to:</p>\n        <ul>\n            <li>Provide and maintain our website</li>\n            <li>Respond to your inquiries</li>\n            <li>Improve our website functionality</li>\n            <li>Analyze website usage</li>\n        </ul>\n        \n        <h2>Third-Party Services</h2>\n        <p>Our website includes links to third-party services:</p>\n        <ul>\n            <li>Toast (for online ordering)</li>\n            <li>Google Business Profile (for business information and reviews)</li>\n        </ul>\n        \n        <p>These third-party services have their own privacy policies, and we recommend reviewing their policies before using their services.</p>\n        \n        <h2>Data Security</h2>\n        <p>We implement reasonable security measures to protect your information. However, no method of transmission over the Internet is 100% secure.</p>\n        \n        <h2>Children's Privacy</h2>\n        <p>Our website is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>\n        \n        <h2>Changes to This Policy</h2>\n        <p>We may update this privacy policy from time to time. We will post any changes on this page and update the \"Last updated\" date.</p>\n        \n        <h2>Contact Us</h2>\n        <p>If you have questions about this privacy policy, please contact us at:</p>\n        <p>\n            Pepper Farm Deli<br>\n            235 Town Center Parkway, Suite H<br>\n            619-201-8129<br>\n            <a href=\"mailto:pepperfarmdeli@gmail\">pepperfarmdeli@gmail.com</a>\n        </p>\n        \n        <h2>California Privacy Rights</h2>\n        <p>If you are a California resident, you have the right to request information about how we share certain categories of personal information with third parties.</p>\n    </div>\n</div>\n\n    \n  "
+    },
+    "terms-of-use": {
+      "title": "Terms of Service",
+      "html": "\n\n    <div>\n    <div>\n        \n        \n        <p>Last updated: January 13, 2025</p>\n        \n        <h2>1. Acceptance of Terms</h2>\n        <p>By accessing and using pepperfarmdeli.com (\"Website\"), you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our Website.</p>\n        \n        <h2>2. Use of Website</h2>\n        <p>You agree to use our Website only for lawful purposes and in a way that does not infringe upon the rights of others or restrict their use of the Website.</p>\n        \n        <h2>3. Online Ordering</h2>\n        <p>Our online ordering service is provided through Toast. By using our online ordering system, you agree to:</p>\n        <ul>\n            <li>Provide accurate and complete information when placing orders</li>\n            <li>Pay for all orders placed through your account</li>\n            <li>Pick up orders at the designated time</li>\n            <li>Follow any special instructions or requirements for orders</li>\n        </ul>\n        \n        <h2>4. Pricing and Accuracy</h2>\n        <p>While we strive to provide accurate pricing and product information, errors may occur. We reserve the right to correct any errors and to change or update information at any time without prior notice.</p>\n        \n        <h2>5. Intellectual Property</h2>\n        <p>All content on this Website, including text, graphics, logos, and images, is the property of Pepper Farm Deli and is protected by United States copyright laws.</p>\n        \n        <h2>6. Limitation of Liability</h2>\n        <p>Pepper Farm Deli is not liable for any damages arising from the use or inability to use our Website or services. This includes but is not limited to direct, indirect, incidental, or consequential damages.</p>\n        \n        <h2>7. Food Allergies and Special Dietary Requirements</h2>\n        <p>While we take precautions to accurately list ingredients, we cannot guarantee that our food is free from allergens. Customers with food allergies or special dietary requirements should contact us directly before placing an order.</p>\n        \n        <h2>8. Modifications to Terms</h2>\n        <p>We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting to the Website. Your continued use of the Website after any changes constitutes acceptance of those changes.</p>\n        \n        <h2>9. Governing Law</h2>\n        <p>These terms are governed by the laws of the State of California, without regard to its conflict of law principles.</p>\n        \n        <h2>10. Contact Information</h2>\n        <p>For questions about these Terms of Service, please contact us at:</p>\n        <p>\n            Pepper Farm Deli<br>\n            235 Town Center Parkway, Suite H<br>\n            619-201-8129<br>\n            <a href=\"mailto:pepperfarmdeli@gmail\">pepperfarmdeli@gmail.com</a>\n        </p>\n    </div>\n</div>\n\n    \n  "
+    },
+    "best-sandwiches": {
+      "title": "Find your next favorite sandwich in Santee",
+      "html": "\n\n    <article>\n  \n  <p>From hot sandwiches to cold deli favorites, compare the bread, fillings, and sauces on Pepper Farm Deli's current menu. Visit us at 235 Town Center Parkway, Suite H, Santee, or view online ordering options.</p>\n  <div><a href=\"https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h\">Order online</a><a href=\"/menu/\">See the full menu</a></div>\n  \n  \n  \n\n  \n  <section>\n    <h2>Hot Sandwiches</h2>\n    <div>\n    \n      \n      <div>\n        \n        <img src=\"/images/RD7324ttJ2-400.webp\" alt=\"Garlic Cilantro Jumbo Shrimp Sandwich\">\n        \n        <h3><a href=\"/menu/garlic-cilantro-jumbo-shrimp-sandwich/\">Garlic Cilantro Jumbo Shrimp Sandwich</a></h3>\n        <p>Jumbo shrimp marinated house garlic and pepper sauce, romaine lettuce, pepperoncini’s, tomatoes, Vermont cheddar cheese and cilantro garlic house sauce on a toasted hoagie roll</p>\n      </div>\n      \n    \n      \n      <div>\n        \n        <img src=\"/images/P1I6qY1vBR-400.webp\" alt=\"The Chicken Parm\">\n        \n        <h3><a href=\"/menu/the-chicken-parm/\">The Chicken Parm</a></h3>\n        <p>Panko-breaded antibiotic free chicken, house made roasted garlic marinara sauce, melted mozzarella sauce, topped with parmesan cheese, cilantro and green onions on a hoagie roll</p>\n      </div>\n      \n    \n      \n      <div>\n        \n        <img src=\"/images/CjYNQ5xmv0-400.webp\" alt=\"Meatball Hero Sandwich\">\n        \n        <h3><a href=\"/menu/meatball-hero-sandwich/\">Meatball Hero Sandwich</a></h3>\n        <p>Rib-eye meatballs made in-house, House roasted garlic red sauce, topped with melted mozzarella on a toasted hoagie roll</p>\n      </div>\n      \n    \n      \n      <div>\n        \n        <img src=\"/images/89tbLypceh-400.webp\" alt=\"Chopped Cheese Sandwich\">\n        \n        <h3><a href=\"/menu/chopped-cheese-sandwich/\">Chopped Cheese Sandwich</a></h3>\n        <p>Chopped rib eye steak, grilled onions, grilled banana peppers, shredded romaine lettuce, chopped Roma tomatoes, garlic aioli, and Vermont cheddar cheese on a hoagie roll</p>\n      </div>\n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n    </div>\n    <p><a href=\"/menu/#hot-sandwiches\">View all Hot Sandwiches</a></p>\n  </section>\n  \n\n  \n\n  \n  <section>\n    <h2>Cold Sandwiches</h2>\n    <div>\n    \n      \n      <div>\n        \n        <img src=\"/images/MfA7_ReuHP-400.webp\" alt=\"Green Beret (Vegetarian)\">\n        \n        <h3><a href=\"/menu/green-beret-vegetarian/\">Green Beret (Vegetarian)</a></h3>\n        <p>Wheat bread, garlic aioli, Pepper Jack cheese, cucumbers, tomatoes, pickled red onions, red bell peppers, sprouts, avocados, balsamic &amp; olive oil</p>\n      </div>\n      \n    \n      \n      <div>\n        \n        <img src=\"/images/v88rvZzplH-400.webp\" alt=\"Bovine\">\n        \n        <h3><a href=\"/menu/bovine/\">Bovine</a></h3>\n        <p>Sourdough bread, garlic aioli, mustard, roast beef, Havarti cheese, tomatoes, red onions, pepperoncinis, spring mix</p>\n      </div>\n      \n    \n      \n      <div>\n        \n        <img src=\"/images/kNGiIXptzv-400.webp\" alt=\"Greenbird\">\n        \n        <h3><a href=\"/menu/greenbird/\">Greenbird</a></h3>\n        <p>Sourdough bread, peppercorn aioli, turkey, thick-cut bacon, tomatoes, avocado, spring mix</p>\n      </div>\n      \n    \n      \n      <div>\n        \n        <img src=\"/images/HdeoRuo2G0-400.webp\" alt=\"Little Italy\">\n        \n        <h3><a href=\"/menu/little-italy/\">Little Italy</a></h3>\n        <p>Hoagie Roll, mustard, mayo, ham, salami, mortadella, provolone cheese, tomatoes, red onions, pepperoncini, arugula, balsamic &amp; olive oil</p>\n      </div>\n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n    </div>\n    <p><a href=\"/menu/#cold-sandwiches\">View all Cold Sandwiches</a></p>\n  </section>\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\n\n  <h2>Ordering for a meeting or party?</h2>\n  <p>Compare <a href=\"/catering/\">sandwich platters and catering options</a> and discuss your headcount with the deli. Read our <a href=\"/blog/planning-an-office-lunch-in-santee/\">office lunch checklist</a> for help organizing the details.</p>\n</article>\n\n    \n  "
+    },
+    "healthy-food": {
+      "title": "Salads, vegetarian options & protein plates in Santee",
+      "html": "\n\n    <article>\n  \n  <p>Choose a lunch that suits your preferences at Pepper Farm Deli, 235 Town Center Parkway, Suite H. Start with our current menu, then ask the team about ingredients or possible substitutions.</p>\n  <div><a href=\"/menu/#salads\">Browse salads</a><a href=\"/menu/#low-carb-plates\">Explore protein plates</a></div>\n  <h2>A closer look at the menu</h2>\n  <p>Our menu includes salads, vegetable-focused sandwiches, and plates with protein and sides. A dish's name does not tell the whole ingredient story: dressings, cheese, bread, and sauces matter too. Review the full description and speak with the team if you have a food allergy or need a specific preparation.</p>\n  \n  \n  \n\n  \n\n  \n\n  \n\n  \n\n  \n  <section>\n    <h2>Low Carb Plates</h2>\n    <div>\n    \n      \n      <div>\n        \n        <img src=\"/images/GswTzIyzML-400.webp\" alt=\"Grilled Filet Mignon Plate\">\n        \n        <h3><a href=\"/menu/grilled-filet-mignon-plate/\">Grilled Filet Mignon Plate</a></h3>\n        <p>Grilled filet mignon, Includes choice of 2 veggie sides, broccoli, mushroom, zucchini, or carrots with your choice of soup or house salad.</p>\n      </div>\n      \n    \n      \n      <div>\n        \n        <img src=\"/images/bnA0qaxPbt-400.webp\" alt=\"Grilled Chicken Plate\">\n        \n        <h3><a href=\"/menu/grilled-chicken-plate/\">Grilled Chicken Plate</a></h3>\n        <p>Antibiotic-free chicken breast, sautéed mushrooms, broccoli with your choice of soup or house salad.</p>\n      </div>\n      \n    \n      \n      <div>\n        \n        <img src=\"/images/zcvEGhFXEo-400.webp\" alt=\"Grilled Wild-Caught Salmon Plate\">\n        \n        <h3><a href=\"/menu/grilled-wild-caught-salmon-plate/\">Grilled Wild-Caught Salmon Plate</a></h3>\n        <p>Wild-caught salmon marinated in garlic and Italian herbs, balsamic glazed asparagus mixed with mushroom with your choice of soup or house salad</p>\n      </div>\n      \n    \n      \n      <div>\n        \n        <img src=\"/images/KLoT0RA6Dz-400.webp\" alt=\"Garlic Jumbo Shrimp Plate\">\n        \n        <h3><a href=\"/menu/garlic-jumbo-shrimp-plate/\">Garlic Jumbo Shrimp Plate</a></h3>\n        <p>Tantalizingly crispy and flavorful jumbo shrimp marinated in our house garlic sauce spread with garlic cilantro dressing, sauteed fresh broccoli and asparagus, with your choice of soup or house salad</p>\n      </div>\n      \n    \n      \n    \n      \n    \n    </div>\n    <p><a href=\"/menu/#low-carb-plates\">View all Low Carb Plates</a></p>\n  </section>\n  \n\n  \n\n  \n  <section>\n    <h2>Salads</h2>\n    <div>\n    \n      \n      <div>\n        \n        <img src=\"/images/LaZkAePqzg-400.webp\" alt=\"Avocado Goddess\">\n        \n        <h3><a href=\"/menu/avocado-goddess/\">Avocado Goddess</a></h3>\n        <p>Baby spinach, arugula, pickled red onions, tomatoes, feta cheese, avocado, bacon, cilantro lime vinaigrette dressing on the side.</p>\n      </div>\n      \n    \n      \n      <div>\n        \n        <h3><a href=\"/menu/cobb-salad/\">Cobb Salad</a></h3>\n        <p>Romaine lettuce, heirloom tomatoes, red onions, thick-cut bacon, avocado, sliced eggs, blue cheese, balsamic vinaigrette dressing on the side.</p>\n      </div>\n      \n    \n      \n      <div>\n        \n        <img src=\"/images/xR8WKhOp3l-400.webp\" alt=\"Caesar Salad\">\n        \n        <h3><a href=\"/menu/caesar-salad/\">Caesar Salad</a></h3>\n        <p>Romaine lettuce, croutons, grated parmesan, lemon wedge, house caesar dressing dressing on the side.</p>\n      </div>\n      \n    \n      \n      <div>\n        \n        <img src=\"/images/v2JlbWNpiC-400.webp\" alt=\"Chef Salad\">\n        \n        <h3><a href=\"/menu/chef-salad/\">Chef Salad</a></h3>\n        <p>Romaine lettuce and baby spinach, cucumbers, heirloom tomatoes, turkey breast, ham, bacon, sliced hard-boiled eggs, swiss cheese, house ranch dressing on the side.</p>\n      </div>\n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n    </div>\n    <p><a href=\"/menu/#salads\">View all Salads</a></p>\n  </section>\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\n\n  <h2>Choosing a vegetarian meal</h2>\n  <p>Look for explicitly vegetarian menu items and confirm the ingredients before ordering. Vegetarian dishes may contain eggs or dairy; they are not automatically vegan. Our <a href=\"/blog/choosing-a-vegetarian-lunch-in-santee/\">vegetarian lunch guide</a> explains what to ask.</p>\n  <p><a href=\"tel:+16192018129\">Call 619-201-8129</a> with ingredient questions, or <a href=\"https://order.toasttab.com/online/pepper-farm-deli-235-town-center-parkway-suite-h\">view current ordering options</a>.</p>\n</article>\n\n    \n  "
+    },
+    "same-day-catering": {
+      "title": "Need catering in Santee today?",
+      "html": "\n\n    <article>\n  \n  <p>Call <a href=\"tel:+16192018129\">619-201-8129</a> to check whether the kitchen can accommodate your order. Same-day catering depends on preparation time, menu choices, quantities, and existing orders.</p>\n  <div><a href=\"tel:+16192018129\">Call to check availability</a><a href=\"/catering/\">Browse catering options</a></div>\n  <h2>Have these details ready</h2>\n  <ul>\n    <li>How many people need food and when the meal must be ready.</li>\n    <li>Your preferred sandwiches, wraps, salads, or breakfast platters.</li>\n    <li>Dietary requirements and any ingredient or allergy questions.</li>\n    <li>Whether you can pick up at 235 Town Center Parkway, Suite H, or need to discuss delivery.</li>\n  </ul>\n  <h2>Confirm the order before planning around it</h2>\n  <p>Ask the team to confirm the menu, portions, total price, preparation time, and collection or delivery details. Sending an inquiry does not reserve a slot or confirm an order. For a time-sensitive request, call the deli directly.</p>\n  <p>Planning further ahead? <a href=\"/catering-inquiry/\">Send a catering inquiry</a> or read our <a href=\"/blog/planning-party-catering-in-santee/\">party catering checklist</a>.</p>\n</article>\n\n    \n  "
+    },
+    "links": {
+      "title": "Our Links",
+      "html": "\n\n    \n<div>\n    <div>\n        \n        <p>\n            Check out the different ways to connect with us.\n        </p>\n    </div>\n    <div>\n        \n            <a href=\"https://pepperfarmdeli.com/\">Website</a>\n        \n            <a href=\"https://www.instagram.com/pepperfarmdeli\">Instagram</a>\n        \n            <a href=\"https://www.tiktok.com/@pepperfarmdeli\">TikTok</a>\n        \n            <a href=\"https://www.facebook.com/pepperfarmdeli/\">Facebook</a>\n        \n    </div>\n</div>\n\n    \n  "
+    }
+  }
+}
